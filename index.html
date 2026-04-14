@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>OBRAVEN | Renewable Energy Advisory</title>
-  <meta name="description" content="OBRAVEN helps developers, investors, lenders, and advisory partners make better-structured renewable energy decisions across energy analysis, wind measurement strategy, bankability-focused technical review, and selected specialist or fractional senior support." />
+  <meta name="description" content="OBRAVEN helps developers, investors, lenders, and advisory partners make better-structured renewable energy decisions through independent technical-commercial judgement across energy yield, measurement, bankability, diligence, and owner-side advisory." />
 
   <meta property="og:title" content="OBRAVEN | Renewable Energy Advisory" />
-  <meta property="og:description" content="OBRAVEN helps developers, investors, lenders, and advisory partners make better-structured renewable energy decisions across energy analysis, wind measurement strategy, bankability-focused technical review, and selected specialist or fractional senior support." />
+  <meta property="og:description" content="OBRAVEN helps developers, investors, lenders, and advisory partners make better-structured renewable energy decisions through independent technical-commercial judgement across energy yield, measurement, bankability, diligence, and owner-side advisory." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.obraven.com" />
   <meta name="theme-color" content="#ffffff" />
@@ -23,7 +23,8 @@
 
       --page-padding-inline: 28px;
       --page-padding-top: 40px;
-      --page-padding-bottom: 96px;
+      --footer-space: 72px;
+      --page-padding-bottom: var(--footer-space);
 
       --hero-padding-top: 12px;
       --hero-padding-bottom: 32px;
@@ -31,7 +32,10 @@
       --content-row-gap: 52px;
       --content-column-gap: 48px;
       --offer-gap: 56px;
-      --footer-padding-top: 78px;
+      --decision-section-top: 68px;
+      --decision-grid-gap: 18px;
+      --decision-card-padding: 22px;
+      --footer-padding-top: var(--footer-space);
 
       --body-size: 1.05rem;
       --body-leading: 1.82;
@@ -41,7 +45,18 @@
       --eyebrow-size: 0.78rem;
       --eyebrow-spacing: 0.24em;
       --eyebrow-margin-top: 0;
-      --eyebrow-margin-bottom: 12px;
+      --section-head-gap: 14px;
+      --eyebrow-margin-bottom: var(--section-head-gap);
+
+      --decision-title-size: 1.08rem;
+      --decision-title-leading: 1.24;
+      --decision-body-size: 0.96rem;
+      --decision-body-leading: 1.6;
+      --decision-label-size: 0.72rem;
+      --decision-label-spacing: 0.18em;
+
+      --decision-card-bg: #f3f4f8;
+      --card-radius: var(--photo-radius);
 
       --link-thickness: 0.1em;
       --link-offset: 0.4em;
@@ -56,7 +71,8 @@
       :root {
         --page-padding-inline: 48px;
         --page-padding-top: 44px;
-        --page-padding-bottom: 96px;
+        --footer-space: 72px;
+      --page-padding-bottom: var(--footer-space);
 
         --hero-padding-top: 16px;
         --hero-padding-bottom: 36px;
@@ -64,9 +80,13 @@
         --content-row-gap: 64px;
         --content-column-gap: 76px;
         --offer-gap: 60px;
-        --footer-padding-top: 76px;
+        --decision-section-top: 82px;
+        --decision-grid-gap: 22px;
+        --decision-card-padding: 24px;
+        --footer-padding-top: var(--footer-space);
 
         --lead-size: 1.12rem;
+        --decision-title-size: 1.1rem;
       }
     }
 
@@ -74,7 +94,8 @@
       :root {
         --page-padding-inline: 64px;
         --page-padding-top: 48px;
-        --page-padding-bottom: 96px;
+        --footer-space: 72px;
+      --page-padding-bottom: var(--footer-space);
 
         --hero-padding-top: 18px;
         --hero-padding-bottom: 68px;
@@ -82,7 +103,10 @@
         --content-row-gap: 0;
         --content-column-gap: 112px;
         --offer-gap: 64px;
-        --footer-padding-top: 110px;
+        --decision-section-top: 108px;
+        --decision-grid-gap: 26px;
+        --decision-card-padding: 28px;
+        --footer-padding-top: var(--footer-space);
       }
     }
 
@@ -165,6 +189,10 @@
           "intro intro"
           "founder offer";
       }
+
+      h1 {
+        font-size: clamp(1.9rem, 4.6vw, 2.7rem);
+      }
     }
 
     @media (min-width: 1280px) {
@@ -179,6 +207,7 @@
       display: flex;
       flex-direction: column;
       gap: 28px;
+      min-width: 0;
     }
 
     @media (min-width: 760px) {
@@ -199,6 +228,7 @@
       line-height: 1.08;
       letter-spacing: -0.05em;
       font-weight: 700;
+      text-wrap: balance;
     }
 
     .lead {
@@ -207,6 +237,7 @@
       font-size: var(--lead-size);
       line-height: var(--lead-leading);
       letter-spacing: 0.045em;
+      text-wrap: pretty;
     }
 
     .section-text,
@@ -216,12 +247,14 @@
       line-height: var(--body-leading);
       font-weight: 400;
       color: var(--text);
+      text-wrap: pretty;
     }
 
     .founder-col {
       grid-area: founder;
       display: flex;
       flex-direction: column;
+      min-width: 0;
     }
 
     .offer-col {
@@ -229,8 +262,8 @@
       display: flex;
       flex-direction: column;
       gap: var(--offer-gap);
+      min-width: 0;
     }
-
 
     .eyebrow {
       margin: var(--eyebrow-margin-top) 0 var(--eyebrow-margin-bottom);
@@ -245,8 +278,8 @@
     .founder-stack {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-	  padding-top: 12px;
+      gap: var(--section-head-gap);
+      padding-top: 12px;
     }
 
     .founder-photo {
@@ -262,7 +295,7 @@
       padding: 0;
       display: flex;
       flex-direction: column;
-      gap: 0.65em;
+      gap: 0.68em;
     }
 
     .capability-list li {
@@ -298,6 +331,92 @@
       text-decoration-color: var(--accent);
       text-underline-offset: var(--link-offset-hover);
       outline: none;
+    }
+
+    .decision-section {
+      margin-top: var(--decision-section-top);
+      display: flex;
+      flex-direction: column;
+      gap: var(--decision-grid-gap);
+    }
+
+    .decision-header {
+      display: flex;
+      flex-direction: column;
+      gap: var(--section-head-gap);
+      width: 100%;
+      max-width: none;
+    }
+
+    .decision-header .eyebrow {
+      margin-bottom: 0;
+    }
+
+    .decision-intro {
+      margin: 0;
+    }
+
+    .decision-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--decision-grid-gap);
+      align-items: stretch;
+    }
+
+    @media (min-width: 760px) {
+      .decision-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .decision-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .decision-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      height: 100%;
+      padding: var(--decision-card-padding);
+      border: none;
+      border-radius: var(--card-radius);
+      background: var(--decision-card-bg);
+    }
+
+    .decision-card-title {
+      margin: 0;
+      font-size: var(--decision-title-size);
+      line-height: var(--decision-title-leading);
+      letter-spacing: -0.02em;
+      font-weight: 600;
+      text-wrap: balance;
+    }
+
+    .decision-card-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .decision-label {
+      margin: 0;
+      font-size: var(--decision-label-size);
+      line-height: 1;
+      letter-spacing: var(--decision-label-spacing);
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .decision-card-text {
+      margin: 0;
+      font-size: var(--decision-body-size);
+      line-height: var(--decision-body-leading);
+      color: var(--text);
+      text-wrap: pretty;
     }
 
     .footer {
@@ -364,7 +483,7 @@
       <section class="intro-col" aria-labelledby="intro-heading">
         <h1 id="intro-heading">Clear judgement for complex renewable energy decisions.</h1>
         <p class="lead">Helping developers, investors, lenders, and advisory partners make better-structured decisions where technical detail, market context, and commercial consequence meet.</p>
-              </section>
+      </section>
 
       <section class="founder-col" aria-labelledby="founder-heading">
         <h2 class="eyebrow" id="founder-heading">Founder</h2>
@@ -378,25 +497,110 @@
             loading="eager"
             decoding="async"
           />
-          <p class="section-text">Founded by <a class="text-link" href="https://www.linkedin.com/in/shrsmnk/" target="_blank" rel="noopener noreferrer">Stan Herasymenko</a>, OBRAVEN draws on 17+ years across renewable energy advisory and developer roles, including leadership of the Energy Analysis Group at Mainstream Renewable Power and earlier advisory work at DNV.</p>
+          <p class="section-text">Founded by <a class="text-link" href="https://www.linkedin.com/in/shrsmnk/" target="_blank" rel="noopener noreferrer">Stan Herasymenko</a>, OBRAVEN draws on 17+ years across renewable energy advisory and developer roles spanning energy analysis, measurement strategy, and technical-commercial decision support. Stan previously led Mainstream Renewable Power’s global Energy Analysis Group across a multi-GW wind and solar portfolio, supported projects across 30+ countries, and brings earlier hands-on measurement delivery experience including 110+ meteorological masts and floating LiDAR work.</p>
         </div>
       </section>
 
       <div class="offer-col">
         <section aria-labelledby="capabilities-heading">
-          <h2 class="eyebrow" id="capabilities-heading">Capabilities</h2>
+          <h2 class="eyebrow" id="capabilities-heading">Core capabilities</h2>
           <ul class="capability-list">
-            <li>Energy yield and resource-informed project decisions</li>
-            <li>Wind measurement strategy, including LiDAR and floating LiDAR campaigns</li>
-            <li>Independent review of energy-analysis methods, key assumptions, and technical-commercial bankability decisions</li>
-            <li>Specialist support on selected bankability, diligence, and measurement assignments</li>
+            <li>Energy yield, resource and measurement judgement for decision-critical projects</li>
+            <li>Independent challenge of technical assumptions, consultant outputs and bankability logic</li>
+            <li>Technical-commercial integration across disciplines, workstreams and decision gates</li>
+            <li>Selected support on diligence, procurement and owner-side advisory assignments</li>
           </ul>
         </section>
 
         <section aria-labelledby="engagement-heading">
           <h2 class="eyebrow" id="engagement-heading">Engagement model</h2>
-          <p class="section-text">Project-based specialist support, independent diligence input, and selected fractional or collaboration roles with developers, advisory firms, and due-diligence teams.</p>
+          <ul class="capability-list">
+            <li>Project-based specialist support on defined decision-critical workstreams</li>
+            <li>Independent owner-side review, challenge, and interpretation of technical outputs</li>
+            <li>Selected collaboration or fractional support alongside developers, advisory firms, investors, lenders, and diligence teams</li>
+          </ul>
         </section>
+      </div>
+    </section>
+
+    <section class="decision-section" aria-labelledby="decision-heading">
+      <div class="decision-header">
+        <h2 class="eyebrow" id="decision-heading">Typical decision situations</h2>
+        <p class="section-text decision-intro">Not every technical risk is visible from a single report, supplier scope, or discipline. Much of the value lies in spotting where campaign design, data quality, assumptions, procurement choices, or specialist inputs are not aligned with the end result – a proportionate, financeable, decision-fit project.</p>
+      </div>
+
+      <div class="decision-grid">
+        <article class="decision-card">
+          <h3 class="decision-card-title">Offshore measurement route</h3>
+          <div class="decision-card-group">
+            <p class="decision-label">Hidden risk</p>
+            <p class="decision-card-text">Offshore campaigns can be over-scoped, under-designed, or badly sequenced – leaving clients with either wasted spend or data that will not stand up when bankability matters.</p>
+          </div>
+          <div class="decision-card-group">
+            <p class="decision-label">How we help</p>
+            <p class="decision-card-text">We help define the offshore measurement route from the decision backward – including floating LiDAR campaign design, scope, sequencing, and procurement support – so the campaign is lean enough to be commercially sensible while still robust enough to produce a genuinely bankable outcome.</p>
+          </div>
+        </article>
+
+        <article class="decision-card">
+          <h3 class="decision-card-title">Bankable dataset quality</h3>
+          <div class="decision-card-group">
+            <p class="decision-label">Hidden risk</p>
+            <p class="decision-card-text">A campaign can look compliant on paper yet still under-deliver through weak supplier obligations, QA, maintenance, monitoring, or escalation.</p>
+          </div>
+          <div class="decision-card-group">
+            <p class="decision-label">How we help</p>
+            <p class="decision-card-text">We help teams set up and govern measurement programmes so that RFPs, contracts, supplier scope, maintenance expectations, review rhythms, and escalation paths are aligned to one objective – a robust, decision-fit, bankable dataset at proportionate cost.</p>
+          </div>
+        </article>
+
+        <article class="decision-card">
+          <h3 class="decision-card-title">Do we need a new campaign at all?</h3>
+          <div class="decision-card-group">
+            <p class="decision-label">Hidden risk</p>
+            <p class="decision-card-text">Projects often default into new measurement spend before anyone proves that the decision really needs it.</p>
+          </div>
+          <div class="decision-card-group">
+            <p class="decision-label">How we help</p>
+            <p class="decision-card-text">We assess whether the right route is a full new campaign, a reduced scope, a different evidence base, or a bankable path that avoids new measurements altogether – with the aim of protecting decision quality without buying unnecessary work.</p>
+          </div>
+        </article>
+
+        <article class="decision-card">
+          <h3 class="decision-card-title">Are the numbers decision-fit?</h3>
+          <div class="decision-card-group">
+            <p class="decision-label">Hidden risk</p>
+            <p class="decision-card-text">Seller and consultant cases can look plausible while still carrying optimism that is too aggressive for the decision at hand.</p>
+          </div>
+          <div class="decision-card-group">
+            <p class="decision-label">How we help</p>
+            <p class="decision-card-text">We test whether yield assumptions, losses, confidence levels, and technical conclusions are proportionate, defensible, and aligned with the real investment or acquisition decision – including helping clients true up aggressive cases before they become expensive mistakes.</p>
+          </div>
+        </article>
+
+        <article class="decision-card">
+          <h3 class="decision-card-title">Do the workstreams add up?</h3>
+          <div class="decision-card-group">
+            <p class="decision-label">Hidden risk</p>
+            <p class="decision-card-text">Technical studies can all be completed and signed off, yet still fail to add up to a financeable, decision-ready project.</p>
+          </div>
+          <div class="decision-card-group">
+            <p class="decision-label">How we help</p>
+            <p class="decision-card-text">We interpret and connect outputs across energy yield, layout, noise, turbine choice, and related disciplines so the combined picture is judged against bankability, delivery reality, and technical-commercial consequence – not just report-by-report completion.</p>
+          </div>
+        </article>
+
+        <article class="decision-card">
+          <h3 class="decision-card-title">What should we procure or rely on?</h3>
+          <div class="decision-card-group">
+            <p class="decision-label">Hidden risk</p>
+            <p class="decision-card-text">Measurement, monitoring, and energy-assessment tools or services are often chosen through habit, politics, or legacy preference rather than fit for purpose.</p>
+          </div>
+          <div class="decision-card-group">
+            <p class="decision-label">How we help</p>
+            <p class="decision-card-text">We scope the real need first, then compare relevant measurement, monitoring, energy-analysis, data, and bankability-support tools or services on fitness for purpose, integration, downstream use, and commercial logic – rather than inertia or internal preference.</p>
+          </div>
+        </article>
       </div>
     </section>
 

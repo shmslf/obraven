@@ -29,6 +29,10 @@
         --gold: #C6942F;
         --max-width: 1560px;
 
+        --font-display: "Instrument Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        --type-scale: 0.94;
+
         --page-padding-inline: 28px;
         --page-padding-top: 40px;
         --footer-space: 72px;
@@ -45,22 +49,30 @@
         --decision-card-padding: 22px;
         --footer-padding-top: var(--footer-space);
 
-        --body-size: 1.05rem;
+        --h1-min: calc(2.05rem * var(--type-scale));
+        --h1-fluid: calc(6.2vw * var(--type-scale));
+        --h1-max: calc(3.1rem * var(--type-scale));
+        --h1-tablet-min: calc(1.9rem * var(--type-scale));
+        --h1-tablet-fluid: calc(4.6vw * var(--type-scale));
+        --h1-tablet-max: calc(2.7rem * var(--type-scale));
+
+        --body-size: calc(1.05rem * var(--type-scale));
         --body-leading: 1.74;
-        --lead-size: 1.05rem;
+        --lead-size: calc(1.05rem * var(--type-scale));
         --lead-leading: 1.62;
 
-        --eyebrow-size: 0.78rem;
+        --eyebrow-size: calc(0.78rem * var(--type-scale));
         --eyebrow-spacing: 0.24em;
         --eyebrow-margin-top: 0;
         --section-head-gap: 14px;
         --eyebrow-margin-bottom: var(--section-head-gap);
 
-        --decision-title-size: 1.08rem;
+        --decision-title-size: calc(1.08rem * var(--type-scale));
         --decision-title-leading: 1.24;
-        --decision-body-size: 0.96rem;
+        --decision-body-size: calc(0.96rem * var(--type-scale));
         --decision-body-leading: 1.6;
-        --decision-label-size: 0.72rem;
+        --decision-label-size: calc(0.72rem * var(--type-scale));
+        --footer-size: calc(0.98rem * var(--type-scale));
         --decision-label-spacing: 0.18em;
 
         --decision-card-bg: #f3f4f8;
@@ -93,8 +105,8 @@
           --decision-card-padding: 24px;
           --footer-padding-top: var(--footer-space);
 
-          --lead-size: 1.12rem;
-          --decision-title-size: 1.1rem;
+          --lead-size: calc(1.12rem * var(--type-scale));
+          --decision-title-size: calc(1.1rem * var(--type-scale));
         }
       }
 
@@ -135,15 +147,7 @@
         min-height: 100%;
         background: var(--bg);
         color: var(--text);
-        font-family:
-          "Inter",
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          Roboto,
-          "Helvetica Neue",
-          Arial,
-          sans-serif;
+        font-family: var(--font-body);
         line-height: 1.5;
         overflow-x: clip;
       }
@@ -209,7 +213,7 @@
         }
 
         h1 {
-          font-size: clamp(1.9rem, 4.6vw, 2.7rem);
+          font-size: clamp(var(--h1-tablet-min), var(--h1-tablet-fluid), var(--h1-tablet-max));
         }
       }
 
@@ -242,17 +246,8 @@
 
       h1 {
         margin: 0;
-        font-family:
-          "Instrument Sans",
-          "Inter",
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          Roboto,
-          "Helvetica Neue",
-          Arial,
-          sans-serif;
-        font-size: clamp(2.05rem, 6.2vw, 3.1rem);
+        font-family: var(--font-display);
+        font-size: clamp(var(--h1-min), var(--h1-fluid), var(--h1-max));
         line-height: 1.06;
         letter-spacing: -0.045em;
         font-weight: 700;
@@ -295,16 +290,7 @@
 
       .eyebrow {
         margin: var(--eyebrow-margin-top) 0 var(--eyebrow-margin-bottom);
-        font-family:
-          "Instrument Sans",
-          "Inter",
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          Roboto,
-          "Helvetica Neue",
-          Arial,
-          sans-serif;
+        font-family: var(--font-display);
         font-size: var(--eyebrow-size);
         line-height: 1;
         letter-spacing: 0.26em;
@@ -426,16 +412,7 @@
 
       .decision-card-title {
         margin: 0;
-        font-family:
-          "Instrument Sans",
-          "Inter",
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          Roboto,
-          "Helvetica Neue",
-          Arial,
-          sans-serif;
+        font-family: var(--font-display);
         font-size: var(--decision-title-size);
         line-height: 1.22;
         letter-spacing: -0.018em;
@@ -451,16 +428,7 @@
 
       .decision-label {
         margin: 0;
-        font-family:
-          "Instrument Sans",
-          "Inter",
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          Roboto,
-          "Helvetica Neue",
-          Arial,
-          sans-serif;
+        font-family: var(--font-display);
         font-size: var(--decision-label-size);
         line-height: 1;
         letter-spacing: 0.16em;
@@ -485,7 +453,7 @@
 
       .footer-line {
         margin: 0;
-        font-size: 0.98rem;
+        font-size: var(--footer-size);
         line-height: 1.6;
         color: var(--accent);
       }

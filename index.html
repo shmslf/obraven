@@ -25,7 +25,7 @@
       :root {
         --bg: #ffffff;
         --text: #111111;
-        --accent: #7c89a4;
+        --accent: #6F7D97;
         --gold: #C6942F;
         --max-width: 1560px;
 
@@ -34,12 +34,12 @@
         --type-scale: 0.94;
 
         --page-padding-inline: 28px;
-        --page-padding-top: 40px;
+        --page-padding-top: 32px;
         --footer-space: 72px;
         --page-padding-bottom: var(--footer-space);
 
-        --hero-padding-top: 12px;
-        --hero-padding-bottom: 32px;
+        --hero-padding-top: 8px;
+        --hero-padding-bottom: 24px;
 
         --content-row-gap: 52px;
         --content-column-gap: 48px;
@@ -84,7 +84,7 @@
 
         --transition-fast: 0.1s ease;
         --focus-ring: 2px solid rgba(124, 137, 164, 0.45);
-        --photo-radius: 10px;
+        --photo-radius: 8px;
       }
 
       @media (min-width: 760px) {
@@ -185,12 +185,12 @@
       }
 
       .logo {
-        width: 280px;
-		max-width: min(74vw, 280px);
+        width: 282px;
+        max-width: min(76vw, 282px);
         height: auto;
         margin-inline: auto;
-		padding-top: 25px;
-		padding-bottom: 35px;
+        padding-top: 16px;
+        padding-bottom: 28px;
       }
 
       .content-grid {
@@ -250,7 +250,7 @@
         font-family: var(--font-display);
         font-size: clamp(var(--h1-min), var(--h1-fluid), var(--h1-max));
         line-height: 1.06;
-        letter-spacing: -0.045em;
+        letter-spacing: -0.028em;
         font-weight: 700;
         text-wrap: balance;
       }
@@ -332,9 +332,9 @@
         content: "•";
         position: absolute;
         left: 0;
-        top: 0;
+        top: 0.05em;
         color: var(--gold);
-        font-size: 1.05em;
+        font-size: 0.88em;
         line-height: 1.72;
       }
 

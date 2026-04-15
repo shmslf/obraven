@@ -87,13 +87,6 @@
         --photo-radius: 10px;
       }
 
-
-      @media (max-width: 759px) {
-        .logo {
-          width: min(355px, 57vw);
-        }
-      }
-
       @media (min-width: 760px) {
         :root {
           --page-padding-inline: 48px;
@@ -192,7 +185,8 @@
       }
 
       .logo {
-        width: min(300px, 48vw);
+        width: 300px;
+        max-width: min(78vw, 300px);
         height: auto;
         margin-inline: auto;
 		padding-top: 30px;

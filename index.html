@@ -35,7 +35,7 @@
 
         --page-padding-inline: 28px;
         --page-padding-top: 40px;
-        --footer-space: 72px;
+        --footer-space: 76px;
         --page-padding-bottom: var(--footer-space);
 
         --hero-padding-top: 12px;
@@ -91,7 +91,7 @@
         :root {
           --page-padding-inline: 48px;
           --page-padding-top: 44px;
-          --footer-space: 72px;
+          --footer-space: 76px;
           --page-padding-bottom: var(--footer-space);
 
           --hero-padding-top: 16px;
@@ -114,7 +114,7 @@
         :root {
           --page-padding-inline: 64px;
           --page-padding-top: 48px;
-          --footer-space: 72px;
+          --footer-space: 76px;
           --page-padding-bottom: var(--footer-space);
 
           --hero-padding-top: 18px;
@@ -327,7 +327,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--section-head-gap);
-        padding-top: 12px;
+        padding-top: 8px;
       }
 
       .founder-photo {
@@ -385,7 +385,7 @@
       .decision-section {
         position: relative;
         margin-top: var(--decision-section-top);
-        padding: 0 0 38px;
+        padding: 34px 0 38px;
         display: flex;
         flex-direction: column;
         gap: var(--decision-grid-gap);
@@ -404,33 +404,16 @@
         background: #f6f7fa;
       }
 
-      .decision-sticky-bar {
-        position: sticky;
-        top: 0;
-        z-index: 6;
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-        padding: 18px 0 16px;
-        background: #f6f7fa;
-      }
-
-      .decision-sticky-bar-inner {
-        width: min(100%, var(--max-width));
-        margin: 0 auto;
-        padding: 0 var(--page-padding-inline);
-      }
-
-      .decision-sticky-title {
-        margin: 0;
-      }
-
       .decision-header {
         display: flex;
         flex-direction: column;
         gap: var(--section-head-gap);
         width: 100%;
         max-width: none;
+      }
+
+      .decision-header .eyebrow {
+        margin-bottom: 0;
       }
 
       .decision-intro {
@@ -446,11 +429,7 @@
 
       @media (min-width: 760px) {
         .decision-section {
-          padding: 0 0 46px;
-        }
-
-        .decision-sticky-bar {
-          padding: 22px 0 18px;
+          padding: 40px 0 46px;
         }
 
         .decision-grid {
@@ -460,11 +439,7 @@
 
       @media (min-width: 1280px) {
         .decision-section {
-          padding: 0 0 54px;
-        }
-
-        .decision-sticky-bar {
-          padding: 26px 0 20px;
+          padding: 46px 0 54px;
         }
 
         .decision-grid {
@@ -518,34 +493,136 @@
         text-wrap: pretty;
       }
 
+
+      .contact-section {
+        padding: 84px 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-heading,
+      .contact-text {
+        width: 100%;
+      }
+
+      .contact-actions {
+        width: min(100%, 390px);
+      }
+
+      .contact-heading {
+        margin-bottom: 16px;
+      }
+
+      .contact-text {
+        margin: 0;
+        max-width: none;
+      }
+
+      .contact-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 52px;
+        margin-top: 20px;
+      }
+
+      .contact-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid rgba(111, 125, 151, 0.18);
+        border-radius: 999px;
+        background: #ffffff;
+        font-size: calc(0.86rem * var(--type-scale));
+        line-height: 1.2;
+        font-weight: 600;
+        color: var(--text);
+        transition:
+          border-color var(--transition-fast),
+          color var(--transition-fast),
+          background-color var(--transition-fast),
+          transform var(--transition-fast);
+      }
+
+      .contact-button:hover,
+      .contact-button:focus-visible {
+        border-color: rgba(198, 148, 47, 0.42);
+        color: var(--gold);
+        outline: none;
+        transform: translateY(-1px);
+      }
+
+      .contact-button-primary {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: #ffffff;
+      }
+
+      .contact-button-primary:hover,
+      .contact-button-primary:focus-visible {
+        border-color: var(--gold);
+        background: var(--gold);
+        color: #ffffff;
+      }
+
+      @media (min-width: 760px) {
+        .contact-section {
+          padding: 84px 0 0px;
+          align-items: center;
+        }
+
+        .contact-heading,
+        .contact-text,
+        .contact-actions {
+          width: min(100%, 404px);
+        }
+
+        .contact-actions {
+          gap: 52px;
+          margin-top: 18px;
+        }
+
+        .contact-button {
+          min-height: 44px;
+          font-size: calc(0.88rem * var(--type-scale));
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .contact-section {
+          padding: 84px 0 0px;
+          align-items: center;
+        }
+
+        .contact-heading,
+        .contact-text,
+        .contact-actions {
+          width: min(100%, 404px);
+		  gap: 52px;
+        }
+
+        .contact-actions {
+          margin-top: 18px;
+		  gap: 52px;
+        }
+      }
+
       .footer {
-        margin-top: auto;
+        margin-top: 0;
         padding-top: var(--footer-padding-top);
-        text-align: center;
+        border-top: 0px solid rgba(111, 125, 151, 0.16);
+        text-align: left;
       }
 
       .footer-inline {
-        list-style: none;
         margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 8px;
         color: var(--accent);
-        font-size: var(--footer-size);
-        line-height: 1.7;
-      }
-
-      .footer-inline-item {
-        display: inline-flex;
-        align-items: center;
-      }
-
-      .footer-inline-item + .footer-inline-item::before {
-        content: "·";
-        margin: 0 12px;
-        color: var(--accent);
+        font-size: calc(1rem * var(--type-scale));
+        line-height: 1.8;
+        text-wrap: pretty;
       }
 
       .footer-inline a,
@@ -563,6 +640,30 @@
         color: var(--gold);
       }
 
+      .footer-privacy-note {
+        margin: 10px 0 0;
+        font-size: calc(0.82rem * var(--type-scale));
+        line-height: 1.65;
+        color: var(--accent);
+        text-wrap: pretty;
+      }
+
+      .footer-privacy-note a,
+      .footer-privacy-note a:visited {
+        color: var(--accent);
+        text-decoration-line: underline;
+        text-decoration-color: rgba(111, 125, 151, 0.38);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.2em;
+      }
+
+      .footer-privacy-note a:hover,
+      .footer-privacy-note a:focus-visible {
+        color: var(--gold);
+        text-decoration-color: rgba(198, 148, 47, 0.45);
+        outline: none;
+      }
+
       @media (prefers-reduced-motion: no-preference) {
         .hero,
         .intro-col,
@@ -570,6 +671,7 @@
         .offer-col,
         .decision-header,
         .decision-grid,
+        .contact-section,
         .footer {
           opacity: 0;
           transform: translateY(8px);
@@ -601,8 +703,12 @@
           animation-delay: 0.27s;
         }
 
+        .contact-section {
+          animation-delay: 0.31s;
+        }
+
         .footer {
-          animation-delay: 0.34s;
+          animation-delay: 0.36s;
         }
       }
 
@@ -677,13 +783,8 @@
       </section>
 
       <section class="decision-section" aria-labelledby="decision-heading">
-        <div class="decision-sticky-bar">
-          <div class="decision-sticky-bar-inner">
-            <h2 class="eyebrow decision-sticky-title" id="decision-heading">Typical decision situations</h2>
-          </div>
-        </div>
-
         <div class="decision-header">
+          <h2 class="eyebrow" id="decision-heading">Typical decision situations</h2>
           <p class="section-text decision-intro">
             Not every technical risk is visible from a single report, supplier scope, or discipline. Much of the value lies in spotting where resource campaign design, data quality, assumptions, procurement choices, or specialist inputs are not aligned with the end result – a proportionate, financeable, decision-fit project.
           </p>
@@ -788,11 +889,24 @@
         </div>
       </section>
 
+
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <h2 class="eyebrow contact-heading" id="contact-heading">Get in touch</h2>
+        <p class="section-text contact-text">
+          If you have a project, question, or decision you’d like to talk through, let’s chat and see how OBRAVEN can support.
+        </p>
+
+        <div class="contact-actions" aria-label="Contact options">
+          <a
+            class="contact-button contact-button-primary"
+            href="https://calendly.com/shrsmnk/30min?back=1" target="_blank" rel="noopener noreferrer">Book a call</a>
+          <a class="contact-button" href="mailto:hello@obraven.com">Write an email</a>
+        </div>
+      </section>
+
       <footer class="footer">
-        <ul class="footer-inline" aria-label="Company and legal information">
-          <li class="footer-inline-item"><span class="copyright">©</span>&nbsp;2026 OBRAVEN</li>
-          <li class="footer-inline-item"><a href="mailto:hello@obraven.com">hello@obraven.com</a></li>
-        </ul>
+        <p class="footer-inline" aria-label="Company and legal information"><span class="copyright">©</span>&nbsp;2026 OBRAVEN&nbsp;&nbsp;·&nbsp;&nbsp;Ireland&nbsp;&nbsp;·&nbsp;&nbsp;Independent renewable energy advisory for complex projects and major decisions</p>
+        <p class="footer-privacy-note">If you contact OBRAVEN by email or Calendly, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. This website does not use non-essential cookies or analytics. Privacy queries: <a href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
       </footer>
     </main>
   </body>

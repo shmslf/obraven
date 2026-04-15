@@ -17,6 +17,10 @@
     <meta property="og:url" content="https://www.obraven.com" />
     <meta name="theme-color" content="#ffffff" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
     <style>
       :root {
         --bg: #ffffff;
@@ -42,9 +46,9 @@
         --footer-padding-top: var(--footer-space);
 
         --body-size: 1.05rem;
-        --body-leading: 1.82;
+        --body-leading: 1.74;
         --lead-size: 1.05rem;
-        --lead-leading: 1.68;
+        --lead-leading: 1.62;
 
         --eyebrow-size: 0.78rem;
         --eyebrow-spacing: 0.24em;
@@ -132,7 +136,7 @@
         background: var(--bg);
         color: var(--text);
         font-family:
-          Inter,
+          "Inter",
           -apple-system,
           BlinkMacSystemFont,
           "Segoe UI",
@@ -238,9 +242,19 @@
 
       h1 {
         margin: 0;
+        font-family:
+          "Instrument Sans",
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
         font-size: clamp(2.05rem, 6.2vw, 3.1rem);
-        line-height: 1.08;
-        letter-spacing: -0.05em;
+        line-height: 1.06;
+        letter-spacing: -0.045em;
         font-weight: 700;
         text-wrap: balance;
       }
@@ -249,8 +263,8 @@
         margin: 0;
         max-width: 100%;
         font-size: var(--lead-size);
-        line-height: var(--lead-leading);
-        letter-spacing: 0.045em;
+        line-height: 1.62;
+        letter-spacing: 0.006em;
         text-wrap: pretty;
       }
 
@@ -281,9 +295,19 @@
 
       .eyebrow {
         margin: var(--eyebrow-margin-top) 0 var(--eyebrow-margin-bottom);
+        font-family:
+          "Instrument Sans",
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
         font-size: var(--eyebrow-size);
         line-height: 1;
-        letter-spacing: var(--eyebrow-spacing);
+        letter-spacing: 0.26em;
         text-transform: uppercase;
         font-weight: 700;
         color: var(--text);
@@ -402,9 +426,19 @@
 
       .decision-card-title {
         margin: 0;
+        font-family:
+          "Instrument Sans",
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
         font-size: var(--decision-title-size);
-        line-height: var(--decision-title-leading);
-        letter-spacing: -0.02em;
+        line-height: 1.22;
+        letter-spacing: -0.018em;
         font-weight: 600;
         text-wrap: balance;
       }
@@ -417,9 +451,19 @@
 
       .decision-label {
         margin: 0;
+        font-family:
+          "Instrument Sans",
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
         font-size: var(--decision-label-size);
         line-height: 1;
-        letter-spacing: var(--decision-label-spacing);
+        letter-spacing: 0.16em;
         text-transform: uppercase;
         font-weight: 700;
         color: var(--accent);

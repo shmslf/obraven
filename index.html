@@ -20,7 +20,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <style>
       /*
@@ -189,8 +189,8 @@
       }
 
       .logo {
-        width: 280px;
-        max-width: min(74vw, 280px);
+        width: 295px;
+        max-width: min(74vw, 295px);
         height: auto;
         margin-inline: auto;
         padding-top: 25px;
@@ -241,11 +241,11 @@
 
       h1 {
         margin: 0;
-        font-family: var(--font-display);
+        font-family: "Manrope", var(--font-body);
         font-size: clamp(var(--h1-min), var(--h1-fluid), var(--h1-max));
         line-height: 1.06;
-        letter-spacing: -0.02em;
-        word-spacing: 0.01em;
+        letter-spacing: 0;
+        word-spacing: normal;
         font-weight: 700;
         text-wrap: balance;
       }
@@ -549,11 +549,6 @@
         text-wrap: pretty;
       }
 
-      .footer-inline a,
-      .footer-inline a:visited { color: var(--accent); }
-
-      .footer-inline a:hover,
-      .footer-inline a:focus-visible { color: var(--gold); outline: none; }
 
       .copyright { color: var(--gold); }
 
@@ -565,21 +560,19 @@
         text-wrap: pretty;
       }
 
-      .footer-privacy-note a,
-      .footer-privacy-note a:visited {
+      .footer-email-link,
+      .footer-email-link:visited {
         color: var(--accent);
-        text-decoration-line: underline;
-        text-decoration-color: rgba(111, 125, 151, 0.38);
-        text-decoration-thickness: 0.08em;
-        text-underline-offset: 0.2em;
+        text-decoration: none;
+        transition: color var(--ease);
       }
 
-      .footer-privacy-note a:hover,
-      .footer-privacy-note a:focus-visible {
+      .footer-email-link:hover,
+      .footer-email-link:focus-visible {
         color: var(--gold);
-        text-decoration-color: rgba(198, 148, 47, 0.45);
         outline: none;
       }
+
 
       /* ── entrance animation ─────────────────────────────── */
       @keyframes fade-up {
@@ -786,7 +779,7 @@
           If you have a wind measurement, bankability, or technical-commercial decision that would benefit from independent review – let's talk.
         </p>
 
-        <div class="contact-actions" aria-label="Contact options">
+        <div class="contact-actions" role="group" aria-label="Contact options">
           <a
             class="contact-button contact-button-primary"
             href="https://calendly.com/shrsmnk/30min?back=1" target="_blank" rel="noopener noreferrer">Book a call</a>
@@ -795,8 +788,8 @@
       </section>
 
       <footer class="footer">
-        <p class="footer-inline" aria-label="Company and legal information"><span class="copyright">&copy;</span>&nbsp;2026 OBRAVEN&nbsp;&nbsp;&middot;&nbsp;&nbsp;Co. Wicklow, Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;Independent wind measurement and bankability advisory</p>
-        <p class="footer-privacy-note">If you contact OBRAVEN by email or book a call, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. This website does not use non-essential cookies or analytics. Privacy queries: <a href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
+        <p class="footer-inline"><span class="copyright">&copy;</span>&nbsp;2026 OBRAVEN&nbsp;&nbsp;&middot;&nbsp;&nbsp;Co. Wicklow, Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;Independent wind measurement and bankability advisory</p>
+        <p class="footer-privacy-note">If you contact OBRAVEN by email or book a call, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. This website does not use non-essential cookies or analytics. Privacy queries: <a class="footer-email-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
       </footer>
     </main>
   </body>

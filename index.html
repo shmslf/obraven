@@ -103,15 +103,15 @@
 
         /* ── typography ────────────────────────────────── */
         --h1-min: calc(2.05rem * var(--ts));
-        --h1-fluid: calc(6.2vw * var(--ts));
-        --h1-max: calc(3.1rem * var(--ts));
+        --h1-fluid: calc(5.4vw * var(--ts));
+        --h1-max: calc(2.75rem * var(--ts));
         --h1-tab-min: calc(1.9rem * var(--ts));
         --h1-tab-fluid: calc(4.6vw * var(--ts));
-        --h1-tab-max: calc(2.7rem * var(--ts));
+        --h1-tab-max: calc(2.45rem * var(--ts));
 
         --body-size: calc(1.05rem * var(--ts));
         --body-lh: 1.74;
-        --lead-size: calc(1.05rem * var(--ts));
+        --hero-lead-size: var(--body-size);
         --eyebrow-size: calc(0.84rem * var(--ts));
         --dt-size: calc(1.08rem * var(--ts));
         --db-size: calc(0.96rem * var(--ts));
@@ -137,7 +137,7 @@
           --sp-section: 80px;
           --decision-gap: 22px;
           --decision-pad: 24px;
-          --lead-size: calc(1.12rem * var(--ts));
+          --hero-lead-size: var(--body-size);
           --dt-size: calc(1.10rem * var(--ts));
         }
       }
@@ -283,7 +283,7 @@
         margin: 0;
         max-width: 58ch;
         color: var(--navy);
-        font-size: var(--lead-size);
+        font-size: var(--hero-lead-size);
         line-height: 1.62;
         letter-spacing: 0.006em;
         font-weight: 500;

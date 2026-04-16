@@ -30,7 +30,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
     <style>
       /*
@@ -112,10 +112,10 @@
         --body-size: calc(1.05rem * var(--ts));
         --body-lh: 1.74;
         --lead-size: calc(1.05rem * var(--ts));
-        --eyebrow-size: calc(0.78rem * var(--ts));
+        --eyebrow-size: calc(0.84rem * var(--ts));
         --dt-size: calc(1.08rem * var(--ts));
         --db-size: calc(0.96rem * var(--ts));
-        --dl-size: calc(0.72rem * var(--ts));
+        --dl-size: calc(0.79rem * var(--ts));
 
         /* ── misc ──────────────────────────────────────── */
         --link-thickness: 0.1em;
@@ -138,7 +138,7 @@
           --decision-gap: 22px;
           --decision-pad: 24px;
           --lead-size: calc(1.12rem * var(--ts));
-          --dt-size: calc(1.1rem * var(--ts));
+          --dt-size: calc(1.10rem * var(--ts));
         }
       }
 
@@ -279,7 +279,8 @@
       .lead {
         margin: 0;
         max-width: 58ch;
-        font-size: var(--lead-size);
+        color: var(--navy);
+		font-size: var(--lead-size);
         line-height: 1.62;
         letter-spacing: 0.006em;
         font-weight: 500;
@@ -304,7 +305,7 @@
         font-family: var(--font-display);
         font-size: var(--eyebrow-size);
         line-height: 1;
-        letter-spacing: 0.26em;
+        letter-spacing: 0.22em;
         text-transform: uppercase;
         font-weight: 700;
         color: var(--navy);
@@ -433,7 +434,7 @@
       .decision-card {
         display: flex;
         flex-direction: column;
-        gap: var(--sp-element);
+        gap: 14px;
         height: 100%;
         padding: var(--decision-pad);
         border: 1px solid var(--rule);
@@ -459,9 +460,9 @@
         margin: 0;
         font-family: var(--font-display);
         font-size: var(--dt-size);
-        line-height: 1.22;
-        letter-spacing: -0.018em;
-        font-weight: 600;
+        line-height: 1.24;
+        letter-spacing: -0.015em;
+        font-weight: 700;
         color: var(--navy);
         text-wrap: balance;
       }
@@ -469,17 +470,17 @@
       .decision-card-group {
         display: flex;
         flex-direction: column;
-        gap: var(--sp-micro);
+        gap: 8px;
       }
 
       .decision-label {
         margin: 0;
         font-family: var(--font-display);
         font-size: var(--dl-size);
-        line-height: 1;
-        letter-spacing: 0.16em;
+        line-height: 1.12;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 800;
         color: var(--slate);
       }
 
@@ -531,7 +532,7 @@
         line-height: 1.2;
         font-weight: 600;
         color: var(--navy);
-        transition: border-color var(--ease), color var(--ease), background-color var(--ease), transform var(--ease);
+        transition: border-color var(--ease), color var(--ease), background-color var(--ease), transform var(--ease), box-shadow var(--ease);
       }
 
       .contact-button:focus-visible {
@@ -546,6 +547,7 @@
           color: var(--gold);
           background: var(--paper);
           transform: translateY(-1px);
+          box-shadow: var(--card-hover-shadow);
         }
       }
 
@@ -708,9 +710,10 @@
           <section aria-labelledby="engagement-heading">
             <h2 class="eyebrow" id="engagement-heading">Engagement model</h2>
             <ul class="capability-list">
-              <li>Defined-scope project work on wind resource measurement strategy, campaign design, energy yield assumption review, or bankability challenge</li>
-              <li>Independent owner-side or investor-side review of third-party resource assessment, energy yield, and related technical outputs</li>
-              <li>Subcontract or collaboration alongside advisory firms, developers, and diligence teams – senior engagement, not delegated</li>
+              <li>Defined-scope project advisory</li>
+              <li>Independent owner-side or investor-side review</li>
+              <li>Specialist subcontract support to advisory firms and diligence teams</li>
+			  <li>Selective fractional support for defined periods – limited, senior, and non-embedded</li>
             </ul>
           </section>
         </div>

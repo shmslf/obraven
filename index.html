@@ -48,11 +48,29 @@
 
       /* ── tokens ────────────────────────────────────────── */
       :root {
-        --bg: #ffffff;
-        --text: #111111;
-        --accent: #6F7D97;
-        --gold: #C6942F;
-        --rule: rgba(111, 125, 151, 0.12);
+        --paper: #FFFFFF;
+        --mist: #F5F6F7;
+        --ink: #111315;
+        --navy: #1E3A5F;
+        --slate: #7A8CA3;
+        --gold: #C7923C;
+
+        --paper-rgb: 255 255 255;
+        --mist-rgb: 245 246 247;
+        --ink-rgb: 17 19 21;
+        --navy-rgb: 30 58 95;
+        --slate-rgb: 122 140 163;
+        --gold-rgb: 199 146 60;
+
+        --bg: var(--paper);
+        --text: var(--ink);
+        --rule: rgb(var(--slate-rgb) / 0.24);
+        --selection-bg: rgb(var(--slate-rgb) / 0.24);
+        --focus-ring: 2px solid rgb(var(--navy-rgb) / 0.28);
+        --card-hover-shadow: 0 2px 12px rgb(0 0 0 / 0.05);
+        --button-focus-shadow: 0 0 0 4px rgb(var(--slate-rgb) / 0.18);
+        --button-primary-hover-shadow: 0 4px 14px rgb(var(--navy-rgb) / 0.14);
+
         --max-width: 1560px;
         --radius: 10px;
 
@@ -104,7 +122,6 @@
         --link-offset: 0.4em;
         --link-offset-hover: 0.2em;
         --ease: 0.15s ease;
-        --focus-ring: 2px solid rgba(124, 137, 164, 0.45);
       }
 
       /* ── tablet ─────────────────────────────────────────── */
@@ -162,7 +179,7 @@
       }
 
       ::selection {
-        background: rgba(111, 125, 151, 0.22);
+        background: var(--selection-bg);
         color: var(--text);
       }
 
@@ -213,7 +230,7 @@
           "intro"
           "founder"
           "offer";
-        row-gap: var(--content-row-gap);        /* tier 4 */
+        row-gap: var(--content-row-gap);
         column-gap: var(--content-col-gap);
         align-items: start;
       }
@@ -240,7 +257,7 @@
         grid-area: intro;
         display: flex;
         flex-direction: column;
-        gap: 24px;                              /* h1 → lead: comfortable but tighter than section gaps */
+        gap: 24px;
         min-width: 0;
       }
 
@@ -255,6 +272,7 @@
         letter-spacing: 0;
         word-spacing: normal;
         font-weight: 800;
+        color: var(--slate);
         text-wrap: balance;
       }
 
@@ -281,10 +299,6 @@
         text-wrap: pretty;
       }
 
-      /*
-        EYEBROW — tier 2 gap (--sp-head: 16px) applied consistently.
-        Every eyebrow has exactly 16px below it before the next element.
-      */
       .eyebrow {
         margin: 0 0 var(--sp-head);
         font-family: var(--font-display);
@@ -293,7 +307,7 @@
         letter-spacing: 0.26em;
         text-transform: uppercase;
         font-weight: 700;
-        color: var(--accent);
+        color: var(--navy);
       }
 
       /* ── founder column ─────────────────────────────────── */
@@ -304,16 +318,6 @@
         min-width: 0;
       }
 
-      /*
-        Founder stack: photo and bio are siblings within the same group,
-        so they use tier 1 (--sp-element: 12px) — tighter than the
-        eyebrow → photo gap (tier 2: 16px) above them.
-
-        NO padding-top here — the eyebrow margin-bottom (16px)
-        handles the gap from FOUNDER → photo. Adding padding-top
-        was what made this column's spacing inconsistent with
-        CORE CAPABILITIES.
-      */
       .founder-stack {
         display: flex;
         flex-direction: column;
@@ -324,22 +328,22 @@
         width: min(100%, 210px);
         height: auto;
         border-radius: var(--radius);
-        background: #f5f5f5;
+        background: var(--mist);
       }
 
       .text-link {
         color: inherit;
         text-decoration-line: underline;
-        text-decoration-color: var(--accent);
+        text-decoration-color: var(--slate);
         text-decoration-thickness: var(--link-thickness);
         text-underline-offset: var(--link-offset);
         text-decoration-skip-ink: auto;
-        transition: color var(--ease), text-decoration-color var(--ease), text-underline-offset var(--ease);
+        transition: color var(--ease), text-underline-offset var(--ease);
       }
 
       .text-link:focus-visible {
         color: var(--gold);
-        text-decoration-color: var(--accent);
+        text-decoration-color: var(--slate);
         text-underline-offset: var(--link-offset-hover);
       }
 
@@ -348,7 +352,7 @@
         grid-area: offer;
         display: flex;
         flex-direction: column;
-        gap: var(--sp-sub);                     /* tier 3 — between sub-sections */
+        gap: var(--sp-sub);
         min-width: 0;
       }
 
@@ -358,7 +362,7 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 0.68em;                            /* ~tier 1 — between bullets */
+        gap: 0.68em;
       }
 
       .capability-list li {
@@ -379,7 +383,7 @@
       /* ── decision section ───────────────────────────────── */
       .decision-section {
         position: relative;
-        margin-top: var(--sp-section);          /* tier 4 */
+        margin-top: var(--sp-section);
         padding: 34px 0 38px;
         display: flex;
         flex-direction: column;
@@ -395,16 +399,16 @@
         left: 50%;
         width: 100vw;
         transform: translateX(-50%);
-        background: #f6f7fa;
+        background: var(--mist);
       }
 
       .decision-header {
         display: flex;
         flex-direction: column;
-        gap: var(--sp-head);                    /* tier 2 — eyebrow → intro text */
+        gap: var(--sp-head);
       }
 
-      .decision-header .eyebrow { margin-bottom: 0; }  /* gap handled by flex parent */
+      .decision-header .eyebrow { margin-bottom: 0; }
       .decision-intro {
         margin: 0;
       }
@@ -429,24 +433,24 @@
       .decision-card {
         display: flex;
         flex-direction: column;
-        gap: var(--sp-element);                 /* tier 1 — between card sections */
+        gap: var(--sp-element);
         height: 100%;
         padding: var(--decision-pad);
         border: 1px solid var(--rule);
         border-radius: var(--radius);
-        background: #ffffff;
+        background: var(--paper);
         transition: box-shadow 0.2s ease, transform 0.2s ease;
       }
 
       @media (hover: hover) and (pointer: fine) {
         .decision-card:hover {
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: var(--card-hover-shadow);
           transform: translateY(-1px);
         }
 
         .text-link:hover {
           color: var(--gold);
-          text-decoration-color: var(--accent);
+          text-decoration-color: var(--slate);
           text-underline-offset: var(--link-offset-hover);
         }
       }
@@ -458,13 +462,14 @@
         line-height: 1.22;
         letter-spacing: -0.018em;
         font-weight: 600;
+        color: var(--navy);
         text-wrap: balance;
       }
 
       .decision-card-group {
         display: flex;
         flex-direction: column;
-        gap: var(--sp-micro);                   /* tier 0 — label → body */
+        gap: var(--sp-micro);
       }
 
       .decision-label {
@@ -475,7 +480,7 @@
         letter-spacing: 0.16em;
         text-transform: uppercase;
         font-weight: 700;
-        color: var(--accent);
+        color: var(--slate);
       }
 
       .decision-card-text {
@@ -489,14 +494,14 @@
 
       /* ── contact ────────────────────────────────────────── */
       .contact-section {
-        padding-top: var(--sp-section);         /* tier 4 */
+        padding-top: var(--sp-section);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
       }
 
       .contact-heading {
-        margin-bottom: var(--sp-head);          /* tier 2 — same as every other eyebrow */
+        margin-bottom: var(--sp-head);
       }
 
       .contact-text {
@@ -509,7 +514,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 14px;
         width: min(100%, 390px);
-        margin-top: var(--sp-head);             /* tier 2 — text → buttons */
+        margin-top: var(--sp-head);
       }
 
       .contact-button {
@@ -519,47 +524,49 @@
         width: 100%;
         min-height: 42px;
         padding: 0 16px;
-        border: 1px solid rgba(111, 125, 151, 0.18);
+        border: 1px solid var(--navy);
         border-radius: 999px;
-        background: #ffffff;
+        background: var(--paper);
         font-size: calc(0.86rem * var(--ts));
         line-height: 1.2;
         font-weight: 600;
-        color: var(--text);
+        color: var(--navy);
         transition: border-color var(--ease), color var(--ease), background-color var(--ease), transform var(--ease);
       }
 
       .contact-button:focus-visible {
-        border-color: rgba(198, 148, 47, 0.42);
+        border-color: var(--gold);
         color: var(--gold);
-        box-shadow: 0 0 0 4px rgba(111, 125, 151, 0.14);
+        box-shadow: var(--button-focus-shadow);
       }
 
       @media (hover: hover) and (pointer: fine) {
         .contact-button:hover {
-          border-color: rgba(198, 148, 47, 0.42);
+          border-color: var(--gold);
           color: var(--gold);
+          background: var(--paper);
           transform: translateY(-1px);
         }
       }
 
       .contact-button-primary {
-        border-color: var(--accent);
-        background: var(--accent);
-        color: #ffffff;
+        border-color: var(--navy);
+        background: var(--navy);
+        color: var(--paper);
       }
 
       .contact-button-primary:focus-visible {
         border-color: var(--gold);
         background: var(--gold);
-        color: #ffffff;
+        color: var(--paper);
       }
 
       @media (hover: hover) and (pointer: fine) {
         .contact-button-primary:hover {
           border-color: var(--gold);
           background: var(--gold);
-          color: #ffffff;
+          color: var(--paper);
+          box-shadow: var(--button-primary-hover-shadow);
         }
       }
 
@@ -573,48 +580,48 @@
       /* ── footer ─────────────────────────────────────────── */
       .footer {
         margin-top: auto;
-        padding-top: var(--sp-section);         /* tier 4 */
+        padding-top: var(--sp-section);
         text-align: left;
       }
 
       .footer-inline {
         margin: 0;
-        color: var(--accent);
+        color: var(--slate);
         font-size: calc(1rem * var(--ts));
         line-height: 1.8;
         overflow-wrap: anywhere;
         text-wrap: pretty;
       }
 
-
       .copyright { color: var(--gold); }
 
       .footer-privacy-note {
-        margin: var(--sp-element) 0 0;          /* tier 1 */
+        margin: var(--sp-element) 0 0;
         font-size: calc(0.82rem * var(--ts));
         line-height: 1.65;
-        color: var(--accent);
+        color: var(--slate);
         overflow-wrap: anywhere;
         text-wrap: pretty;
       }
 
       .footer-email-link,
       .footer-email-link:visited {
-        color: var(--accent);
+        color: inherit;
         text-decoration: none;
         transition: color var(--ease);
       }
 
       .footer-email-link:focus-visible {
         color: var(--gold);
+        text-decoration: none;
       }
 
       @media (hover: hover) and (pointer: fine) {
         .footer-email-link:hover {
           color: var(--gold);
+          text-decoration: none;
         }
       }
-
 
       /* ── entrance animation ─────────────────────────────── */
       @keyframes fade-up {

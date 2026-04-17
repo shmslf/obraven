@@ -258,9 +258,18 @@
       }
 
       @media (min-width: 1280px) {
+        .hero {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          column-gap: var(--content-col-gap);
+          text-align: left;
+        }
+
         .logo {
+          grid-column: 2;
+          margin-inline: 0;
           width: 270px;
-          max-width: min(82vw, 322px);
+          max-width: min(100%, 322px);
           padding-top: 24px;
           padding-bottom: 36px;
         }
@@ -375,7 +384,7 @@
       }
 
       .founder-photo {
-        width: min(100%, 210px);
+        width: min(100%, 229px);
         height: auto;
         border-radius: var(--radius);
         background: var(--mist);

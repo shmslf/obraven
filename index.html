@@ -139,6 +139,9 @@
         --ease: 0.2s cubic-bezier(0.2, 0.65, 0.2, 1);
         --hover-lift: -1px;
         --sp-card: 14px;
+
+        /* ── mobile stacked-flow rhythm ───────────────── */
+        --mobile-major-gap: var(--sp-section);
       }
 
       /* ── tablet ─────────────────────────────────────────── */
@@ -401,6 +404,29 @@
         flex-direction: column;
         gap: var(--sp-sub);
         min-width: 0;
+      }
+
+      @media (max-width: 759px) {
+        .content-grid {
+          row-gap: var(--mobile-major-gap);
+        }
+
+        .offer-col {
+          gap: var(--mobile-major-gap);
+        }
+
+        .decision-section {
+          margin-top: var(--mobile-major-gap);
+        }
+
+        .contact-section {
+          padding-top: var(--mobile-major-gap);
+        }
+
+        .footer {
+          margin-top: 0;
+          padding-top: var(--mobile-major-gap);
+        }
       }
 
 

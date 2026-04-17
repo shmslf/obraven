@@ -126,12 +126,17 @@
         --dt-size: calc(1.08rem * var(--ts));
         --db-size: calc(0.96rem * var(--ts));
         --dl-size: calc(0.79rem * var(--ts));
+        --button-size: calc(0.86rem * var(--ts));
+        --footer-size: calc(1rem * var(--ts));
+        --footer-small-size: calc(0.82rem * var(--ts));
 
         /* ── misc ──────────────────────────────────────── */
         --link-thickness: 0.1em;
         --link-offset: 0.4em;
         --link-offset-hover: 0.2em;
-        --ease: 0.15s ease;
+        --ease: 0.2s cubic-bezier(0.2, 0.65, 0.2, 1);
+        --hover-lift: -1px;
+        --sp-card: 14px;
       }
 
       /* ── tablet ─────────────────────────────────────────── */
@@ -149,6 +154,7 @@
           --decision-pad: 24px;
           --hero-lead-size: var(--body-size);
           --dt-size: calc(1.10rem * var(--ts));
+          --button-size: calc(0.88rem * var(--ts));
         }
       }
 
@@ -465,13 +471,13 @@
       .decision-card {
         display: flex;
         flex-direction: column;
-        gap: 14px;
+        gap: var(--sp-card);
         height: 100%;
         padding: var(--decision-pad);
         border: 1px solid var(--rule);
         border-radius: var(--radius);
         background: var(--paper);
-        transition: box-shadow 0.2s ease, transform 0.2s ease;
+        transition: box-shadow var(--ease), transform var(--ease);
       }
 
 
@@ -532,7 +538,7 @@
       .contact-actions {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
+        gap: var(--sp-card);
         width: min(100%, 390px);
         margin-top: var(--sp-head);
       }
@@ -543,11 +549,11 @@
         justify-content: center;
         width: 100%;
         min-height: 42px;
-        padding: 0 16px;
+        padding: 0 var(--sp-head);
         border: 1px solid var(--navy);
         border-radius: 999px;
         background: var(--paper);
-        font-size: calc(0.86rem * var(--ts));
+        font-size: var(--button-size);
         line-height: 1.2;
         font-weight: 600;
         color: var(--navy);
@@ -578,7 +584,7 @@
         .contact-section { align-items: center; }
         .contact-text { text-align: center; }
         .contact-actions { width: min(100%, 404px); }
-        .contact-button { min-height: 44px; font-size: calc(0.88rem * var(--ts)); }
+        .contact-button { min-height: 44px; }
       }
 
       /* ── footer ─────────────────────────────────────────── */
@@ -591,7 +597,7 @@
       .footer-inline {
         margin: 0;
         color: var(--slate);
-        font-size: calc(1rem * var(--ts));
+        font-size: var(--footer-size);
         line-height: 1.8;
         overflow-wrap: break-word;
         text-wrap: pretty;
@@ -601,7 +607,7 @@
 
       .footer-privacy-note {
         margin: var(--sp-element) 0 0;
-        font-size: calc(0.82rem * var(--ts));
+        font-size: var(--footer-small-size);
         line-height: 1.65;
         color: var(--slate);
         overflow-wrap: break-word;
@@ -624,7 +630,7 @@
       @media (hover: hover) and (pointer: fine) {
         .decision-card:hover {
           box-shadow: var(--card-hover-shadow);
-          transform: translateY(-1px);
+          transform: translateY(var(--hover-lift));
         }
 
         .text-link:hover {
@@ -637,7 +643,7 @@
           border-color: var(--gold);
           color: var(--gold);
           background: var(--paper);
-          transform: translateY(-1px);
+          transform: translateY(var(--hover-lift));
           box-shadow: var(--card-hover-shadow);
         }
 

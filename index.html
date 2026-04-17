@@ -10,7 +10,7 @@
     <title>OBRAVEN | Wind Measurement & Bankability Advisory</title>
     <meta
       name="description"
-      content="OBRAVEN provides independent measurement strategy, assumption challenge, and bankability judgement for wind energy projects. Founded by Stan Herasymenko – 17+ years across DNV and Mainstream Renewable Power." />
+      content="Independent measurement strategy, assumption challenge, and bankability judgement for wind energy projects. Founded by Stan Herasymenko — 17+ years across DNV and Mainstream Renewable Power. Senior-level. Founder-led." />
 
     <meta property="og:title" content="OBRAVEN | Wind Measurement & Bankability Advisory" />
     <meta
@@ -315,7 +315,7 @@
         line-height: 1.62;
         letter-spacing: 0.006em;
         font-weight: 500;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
         text-wrap: pretty;
       }
 
@@ -327,7 +327,7 @@
         line-height: var(--body-lh);
         font-weight: 400;
         color: var(--text);
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
         text-wrap: pretty;
       }
 
@@ -474,18 +474,6 @@
         transition: box-shadow 0.2s ease, transform 0.2s ease;
       }
 
-      @media (hover: hover) and (pointer: fine) {
-        .decision-card:hover {
-          box-shadow: var(--card-hover-shadow);
-          transform: translateY(-1px);
-        }
-
-        .text-link:hover {
-          color: var(--gold);
-          text-decoration-color: var(--slate);
-          text-underline-offset: var(--link-offset-hover);
-        }
-      }
 
       .decision-card-title {
         margin: 0;
@@ -520,7 +508,7 @@
         font-size: var(--db-size);
         line-height: 1.6;
         color: var(--text);
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
         text-wrap: pretty;
       }
 
@@ -563,7 +551,7 @@
         line-height: 1.2;
         font-weight: 600;
         color: var(--navy);
-        transition: border-color var(--ease), color var(--ease), background-color var(--ease), transform var(--ease), box-shadow var(--ease);
+        transition: border-color var(--ease), color var(--ease), background var(--ease), transform var(--ease), box-shadow var(--ease);
       }
 
       .contact-button:focus-visible {
@@ -572,15 +560,6 @@
         box-shadow: var(--button-focus-shadow);
       }
 
-      @media (hover: hover) and (pointer: fine) {
-        .contact-button:hover {
-          border-color: var(--gold);
-          color: var(--gold);
-          background: var(--paper);
-          transform: translateY(-1px);
-          box-shadow: var(--card-hover-shadow);
-        }
-      }
 
       .contact-button-primary {
         border-color: var(--navy);
@@ -594,14 +573,6 @@
         color: var(--paper);
       }
 
-      @media (hover: hover) and (pointer: fine) {
-        .contact-button-primary:hover {
-          border-color: var(--gold);
-          background: var(--gold);
-          color: var(--paper);
-          box-shadow: var(--button-primary-hover-shadow);
-        }
-      }
 
       @media (min-width: 760px) {
         .contact-section { align-items: center; }
@@ -622,7 +593,7 @@
         color: var(--slate);
         font-size: calc(1rem * var(--ts));
         line-height: 1.8;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
         text-wrap: pretty;
       }
 
@@ -633,7 +604,7 @@
         font-size: calc(0.82rem * var(--ts));
         line-height: 1.65;
         color: var(--slate);
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
         text-wrap: pretty;
       }
 
@@ -649,7 +620,34 @@
         text-decoration: none;
       }
 
+
       @media (hover: hover) and (pointer: fine) {
+        .decision-card:hover {
+          box-shadow: var(--card-hover-shadow);
+          transform: translateY(-1px);
+        }
+
+        .text-link:hover {
+          color: var(--gold);
+          text-decoration-color: var(--slate);
+          text-underline-offset: var(--link-offset-hover);
+        }
+
+        .contact-button:hover {
+          border-color: var(--gold);
+          color: var(--gold);
+          background: var(--paper);
+          transform: translateY(-1px);
+          box-shadow: var(--card-hover-shadow);
+        }
+
+        .contact-button-primary:hover {
+          border-color: var(--gold);
+          background: var(--gold);
+          color: var(--paper);
+          box-shadow: var(--button-primary-hover-shadow);
+        }
+
         .footer-email-link:hover {
           color: var(--gold);
           text-decoration: none;
@@ -669,7 +667,6 @@
           opacity: 0;
           transform: translateY(8px);
           animation: fade-up 0.7s cubic-bezier(0.2, 0.65, 0.2, 1) forwards;
-          will-change: opacity, transform;
         }
         .hero             { animation-delay: 0.03s; }
         .intro-col        { animation-delay: 0.08s; }
@@ -682,8 +679,9 @@
       }
 
       @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+
         *, *::before, *::after {
-          scroll-behavior: auto !important;
           transition: none !important;
           animation: none !important;
         }

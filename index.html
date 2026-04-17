@@ -217,12 +217,30 @@
       }
 
       .logo {
-        width: 320px;
-        max-width: min(80vw, 320px);
+        width: 252px;
+        max-width: min(70vw, 252px);
         height: auto;
         margin-inline: auto;
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 16px;
+      }
+
+      @media (min-width: 760px) {
+        .logo {
+          width: 292px;
+          max-width: min(68vw, 292px);
+          padding-top: 16px;
+          padding-bottom: 22px;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .logo {
+          width: 320px;
+          max-width: min(80vw, 320px);
+          padding-top: 20px;
+          padding-bottom: 30px;
+        }
       }
 
       /* ── content grid ───────────────────────────────────── */

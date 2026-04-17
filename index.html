@@ -121,8 +121,10 @@
 
         --body-size: calc(1.05rem * var(--ts));
         --body-lh: 1.74;
-        --hero-lead-size: var(--body-size);
-        --eyebrow-size: calc(0.84rem * var(--ts));
+        --hero-lead-size: calc(1.09rem * var(--ts));
+        --eyebrow-size: calc(0.89rem * var(--ts));
+        --capability-size: calc(1.00rem * var(--ts));
+        --side-rail-pad: 0px;
         --dt-size: calc(1.08rem * var(--ts));
         --db-size: calc(0.96rem * var(--ts));
         --dl-size: calc(0.79rem * var(--ts));
@@ -147,12 +149,13 @@
           --page-pb: 72px;
           --hero-pt: 16px;
           --hero-pb: 32px;
-          --content-col-gap: 76px;
+          --content-col-gap: 82px;
           --sp-sub: 56px;
           --sp-section: 80px;
           --decision-gap: 22px;
           --decision-pad: 24px;
-          --hero-lead-size: var(--body-size);
+          --hero-lead-size: calc(1.10rem * var(--ts));
+          --side-rail-pad: 20px;
           --dt-size: calc(1.10rem * var(--ts));
           --button-size: calc(0.88rem * var(--ts));
         }
@@ -167,11 +170,12 @@
           --hero-pt: 18px;
           --hero-pb: 46px;
           --content-row-gap: 0;
-          --content-col-gap: 112px;
+          --content-col-gap: 124px;
           --sp-sub: 64px;
           --sp-section: 88px;
           --decision-gap: 26px;
           --decision-pad: 28px;
+          --side-rail-pad: 26px;
         }
       }
 
@@ -315,12 +319,12 @@
 
       .lead {
         margin: 0;
-        max-width: 58ch;
+        max-width: 54ch;
         color: var(--navy);
         font-size: var(--hero-lead-size);
-        line-height: 1.62;
+        line-height: 1.58;
         letter-spacing: 0.006em;
-        font-weight: 500;
+        font-weight: 560;
         overflow-wrap: break-word;
         text-wrap: pretty;
       }
@@ -342,10 +346,15 @@
         font-family: var(--font-display);
         font-size: var(--eyebrow-size);
         line-height: 1;
-        letter-spacing: 0.20em;
+        letter-spacing: 0.18em;
         text-transform: uppercase;
         font-weight: 800;
         color: var(--navy);
+      }
+
+      .offer-col section,
+      .founder-stack {
+        max-width: 34rem;
       }
 
       /* ── founder column ─────────────────────────────────── */
@@ -359,7 +368,7 @@
       .founder-stack {
         display: flex;
         flex-direction: column;
-        gap: var(--sp-element);
+        gap: 14px;
       }
 
       .founder-photo {
@@ -394,6 +403,7 @@
         min-width: 0;
       }
 
+
       .capability-list {
         list-style: none;
         margin: 0;
@@ -406,6 +416,8 @@
       .capability-list li {
         position: relative;
         padding-left: 1.15rem;
+        font-size: var(--capability-size);
+        line-height: 1.68;
       }
 
       .capability-list li::before {
@@ -711,7 +723,7 @@
         <section class="intro-col" aria-labelledby="intro-heading">
           <h1 id="intro-heading">Sharper judgement where wind resource evidence meets bankability.</h1>
           <p class="lead">
-            OBRAVEN helps developers, investors, and advisory partners make better decisions about wind resource measurement, energy yield assumptions, and whether the evidence behind the revenue case will stand up when bankability matters.
+            OBRAVEN helps developers, investors, and advisory partners make better decisions on wind measurement, energy yield assumptions, and whether the revenue case will stand up when bankability matters.
           </p>
         </section>
 
@@ -876,7 +888,7 @@
       </section>
 
       <footer class="footer">
-        <p class="footer-inline"><span class="copyright">&copy;</span>&nbsp;2026 OBRAVEN&nbsp;&nbsp;&middot;&nbsp;&nbsp;Co. Wicklow, Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;Independent wind measurement and bankability advisory.</p>
+        <p class="footer-inline"><span class="copyright">&copy;</span>&nbsp;2026 OBRAVEN&nbsp;&nbsp;&middot;&nbsp;&nbsp;Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;Independent wind measurement and bankability advisory.</p>
         <p class="footer-privacy-note">If you contact OBRAVEN by email or book a call, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. This website does not use non-essential cookies or analytics. Privacy queries: <a class="footer-email-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
       </footer>
     </main>

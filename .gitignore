@@ -1,0 +1,7 @@
+_archive/
+_staging/
+*.zip
+~$*.docx
+~$*.xlsx
+Thumbs.db
+desktop.ini

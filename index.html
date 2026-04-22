@@ -187,9 +187,10 @@
       /* ── reset ──────────────────────────────────────────── */
       *, *::before, *::after { box-sizing: border-box; }
 
+      /* ── scrollbar ───────────────────────────────────────── */
       html {
-        color-scheme: light;
-        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: var(--slate) var(--paper);
       }
 
       body {

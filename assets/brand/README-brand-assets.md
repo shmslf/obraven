@@ -11,9 +11,9 @@ This folder holds public-safe brand assets needed by the OBRAVEN website and Mic
 
 ```text
 OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg
-obraven-social-card-1200x630.png
-OBRAVEN-M365-Header-DarkNav-TransparentWhite-Final-800x192-v1.3-2026-04-26.png
-OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-Final-800x192-v1.3-2026-04-26.png
+OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png
+OBRAVEN-M365-Header-DarkNav-TransparentWhite-Final-800x192-v1.1-2026-04-26.png
+OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-Final-800x192-v1.1-2026-04-26.png
 ```
 
 ## Website logo
@@ -29,7 +29,7 @@ Used in `index.html`:
 Used in Open Graph and Twitter metadata:
 
 ```text
-https://www.obraven.com/assets/brand/obraven-social-card-1200x630.png
+https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png
 ```
 
 Generated from the current OBRAVEN SVG logo.

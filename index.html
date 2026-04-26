@@ -40,10 +40,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
-
     <style>
       /*
         SPACING SYSTEM
@@ -57,6 +53,74 @@
         Tier 3  sub       48–64 px between sub-sections (capabilities → engagement)
         Tier 4  section   72–96 px between major page regions
       */
+
+      /* ── local fonts ──────────────────────────────────────────
+         Self-hosted WOFF2 fonts. Add the files under /assets/fonts/.
+         This removes browser requests to Google Fonts and keeps typography local to obraven.com.
+      */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("assets/fonts/inter/inter-latin-400-normal.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url("assets/fonts/inter/inter-latin-500-normal.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url("assets/fonts/inter/inter-latin-600-normal.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("assets/fonts/inter/inter-latin-700-normal.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url("assets/fonts/manrope/manrope-latin-500-normal.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url("assets/fonts/manrope/manrope-latin-600-normal.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("assets/fonts/manrope/manrope-latin-700-normal.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url("assets/fonts/manrope/manrope-latin-800-normal.woff2") format("woff2");
+      }
 
       /* ── tokens ────────────────────────────────────────── */
       :root {
@@ -938,7 +1002,7 @@
 
       <footer class="footer">
         <p class="footer-inline"><span class="copyright">&copy;</span>&nbsp;2026 OBRAVEN Limited&nbsp;&nbsp;&middot;&nbsp;&nbsp;Registered in Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;CRO No. 814152&nbsp;&nbsp;&middot;&nbsp;&nbsp;Independent wind measurement, bankability & owner-side advisory.</p>
-        <p class="footer-privacy-note">We do not use contact forms, analytics, or non-essential cookies on this website. If you contact OBRAVEN by email, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. Privacy queries: <a class="footer-email-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
+        <p class="footer-privacy-note">We do not use contact forms, analytics, externally hosted fonts, or non-essential cookies on this website. If you contact OBRAVEN by email, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. Privacy queries: <a class="footer-email-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
       </footer>
     </main>
   </body>

@@ -1,7 +1,32 @@
+# Local working areas
 _archive/
 _staging/
+_temp/
+temp/
+
+# Packaged exports
 *.zip
-~$*.docx
-~$*.xlsx
+
+# Windows/macOS clutter
 Thumbs.db
 desktop.ini
+.DS_Store
+
+# Office temporary files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Editor/cache files
+*.bak
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Keep credentials and private evidence out of the public repo
+*.env
+.env
+secrets.*
+evidence/
+screenshots/

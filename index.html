@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="color-scheme" content="light" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="index,follow" />
 
     <title>OBRAVEN | Wind Measurement, Bankability & Owner-Side Advisory</title>
@@ -20,18 +21,19 @@
     <meta property="og:site_name" content="OBRAVEN" />
     <meta property="og:locale" content="en_IE" />
     <meta property="og:url" content="https://www.obraven.com/" />
-    <meta property="og:image" content="https://www.obraven.com/assets/brand/obraven-logo-tagline.png" />
-    <meta property="og:image:secure_url" content="https://www.obraven.com/assets/brand/obraven-logo-tagline.png" />
+    <meta property="og:image" content="https://www.obraven.com/assets/brand/obraven-social-card-1200x630.png" />
+    <meta property="og:image:secure_url" content="https://www.obraven.com/assets/brand/obraven-social-card-1200x630.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1748" />
-    <meta property="og:image:height" content="682" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="OBRAVEN logo with the tagline See further. Decide better." />
+    <meta name="twitter:image:alt" content="OBRAVEN logo with the tagline See further. Decide better." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="OBRAVEN | Wind Measurement, Bankability & Owner-Side Advisory" />
     <meta
       name="twitter:description"
       content="Independent wind measurement strategy, bankability challenge, and owner-side technical-commercial judgement for utility-scale projects. Founder-led, senior-level, decision-focused." />
-    <meta name="twitter:image" content="https://www.obraven.com/assets/brand/obraven-logo-tagline.png" />
+    <meta name="twitter:image" content="https://www.obraven.com/assets/brand/obraven-social-card-1200x630.png" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://www.obraven.com/" />
     <link rel="icon" href="favicon.ico" sizes="any" />
@@ -39,6 +41,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+
+    <!--
+      OBRAVEN public site maintenance notes
+      - Static one-page website, hosted from GitHub and fronted by Cloudflare.
+      - No analytics, no contact form, no externally hosted fonts, and no non-essential cookies.
+      - Public booking CTA uses /book, an OBRAVEN-owned Cloudflare redirect to Microsoft Bookings.
+      - Keep public repository content free of client material, private paths, credentials, and internal notes.
+    -->
 
     <style>
       /*
@@ -121,6 +132,7 @@
         font-display: swap;
         src: url("assets/fonts/manrope/manrope-latin-800-normal.woff2") format("woff2");
       }
+
 
       /* ── tokens ────────────────────────────────────────── */
       :root {
@@ -264,10 +276,12 @@
         color: var(--text);
         font-family: var(--font-body);
         line-height: 1.5;
+        overflow-x: hidden;
         overflow-x: clip;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        font-synthesis: none;
         border-top: 2.5px solid var(--gold);
       }
 
@@ -293,6 +307,7 @@
       /* ── page shell ─────────────────────────────────────── */
       .page {
         max-width: var(--max-width);
+        min-height: 100vh;
         min-height: 100dvh;
         margin: 0 auto;
         padding: var(--page-pt) var(--page-px) var(--page-pb);
@@ -448,7 +463,7 @@
         display: flex;
         flex-direction: column;
         gap: 14px;
-		padding-top: 6px;
+        padding-top: 6px;
       }
 
       .founder-photo {
@@ -814,10 +829,33 @@
         }
       }
     </style>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "OBRAVEN Limited",
+      "alternateName": "OBRAVEN",
+      "url": "https://www.obraven.com/",
+      "logo": "https://www.obraven.com/assets/brand/obraven-social-card-1200x630.png",
+      "email": "hello@obraven.com",
+      "founder": {
+            "@type": "Person",
+            "name": "Stan Herasymenko",
+            "jobTitle": "Founder & Director"
+      },
+      "areaServed": "Global",
+      "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IE"
+      },
+      "description": "Independent wind measurement strategy, bankability challenge, and owner-side technical-commercial judgement for utility-scale renewable energy projects."
+}
+    </script>
   </head>
   <body>
     <main class="page">
       <header class="hero" aria-label="OBRAVEN">
+        <!-- Primary website logo. File lives under assets/brand/. Keep src path aligned with repository structure. -->
         <img
           class="logo"
           src="assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg"
@@ -839,6 +877,7 @@
         <section class="founder-col" aria-labelledby="founder-heading">
           <h2 class="eyebrow" id="founder-heading">Founder</h2>
           <div class="founder-stack">
+            <!-- Founder image. File lives under assets/images/. Keep src path aligned with repository structure. -->
             <img
               class="founder-photo"
               src="assets/images/obraven-founder-photo.jpg"
@@ -993,16 +1032,17 @@
         </p>
 
         <div class="contact-actions" role="group" aria-label="Contact options">
+          <!-- Public booking path is intentionally brand-owned. Cloudflare redirects /book to Microsoft Bookings. -->
           <a
             class="contact-button contact-button-primary"
-            href="https://www.obraven.com/book" target="_blank" rel="noopener noreferrer">Book a call</a>
-          <a class="contact-button" href="mailto:hello@obraven.com">Email</a>
+            href="https://www.obraven.com/book" target="_blank" rel="noopener noreferrer" aria-label="Book a 30-minute introductory call with OBRAVEN">Book a call</a>
+          <a class="contact-button" href="mailto:hello@obraven.com" aria-label="Email OBRAVEN at hello@obraven.com">Email</a>
         </div>
       </section>
 
       <footer class="footer">
         <p class="footer-inline"><span class="copyright">&copy;</span>&nbsp;2026 OBRAVEN Limited&nbsp;&nbsp;&middot;&nbsp;&nbsp;Registered in Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;CRO No. 814152&nbsp;&nbsp;&middot;&nbsp;&nbsp;Independent wind measurement, bankability & owner-side advisory.</p>
-        <p class="footer-privacy-note">We do not use contact forms, analytics, externally hosted fonts, or non-essential cookies on this website. If you contact OBRAVEN by email, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. Privacy queries: <a class="footer-email-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
+        <p class="footer-privacy-note">We do not use contact forms, analytics, or non-essential cookies on this website. If you contact OBRAVEN by email, your details will be used only to respond to your enquiry, manage related communications, and maintain relevant business records. Privacy queries: <a class="footer-email-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
       </footer>
     </main>
   </body>

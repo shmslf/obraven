@@ -1,5 +1,22 @@
+# Text files – keep line endings stable across Windows/GitHub Pages.
 *.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
 *.md text eol=lf
 *.txt text eol=lf
+*.svg text eol=lf
+
+# Binary website assets.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.webp binary
+*.woff2 binary
+
+# Office/admin files should not normally live in the public website repo.
 *.docx binary
 *.xlsx binary
+*.pptx binary
+*.pdf binary

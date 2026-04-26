@@ -1,0 +1,52 @@
+{
+  "package": "OBRAVEN-website-governance-update-2026-04-26",
+  "created": "2026-04-26",
+  "status": "proposed",
+  "purpose": "Website code, public README, asset documentation, and Obsidian operating-note updates.",
+  "public_site": "https://www.obraven.com/",
+  "public_booking_link": "https://www.obraven.com/book",
+  "folder_model": {
+    "root": "index.html, README.md, favicons, Git control files",
+    "assets/brand": "Website logo, social card, Microsoft 365 theme header assets",
+    "assets/images": "Founder and website imagery",
+    "assets/fonts": "Self-hosted WOFF2 fonts",
+    "assets/documents": "Public-safe maintenance notes and asset registers"
+  },
+  "assets_in_this_export": [
+    {
+      "path": "assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg",
+      "size_bytes": 15201,
+      "sha256": "bdb03749896632111b56d220dfdd07f52625ed63464300d1f7785ad87cfadc3b"
+    },
+    {
+      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-Final-800x192-v1.3-2026-04-26.png",
+      "size_bytes": 7441,
+      "sha256": "bda2aaa24be7384a1370702a9cd5acd5a99e9641d9c29bbb8467454230fccb11"
+    },
+    {
+      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-Final-800x192-v1.3-2026-04-26.png",
+      "size_bytes": 7797,
+      "sha256": "d10cb47816e351a6bcecc5684e29f2fffb92debe6f7fa223b6d4f5b29f167a2a"
+    },
+    {
+      "path": "assets/brand/obraven-social-card-1200x630.png",
+      "size_bytes": 30131,
+      "sha256": "0f103642715a27739541b94f532b3b96ef5516c10346aa84fa181e13b0cced70"
+    }
+  ],
+  "expected_font_files_not_included": [
+    "assets/fonts/inter/inter-latin-400-normal.woff2",
+    "assets/fonts/inter/inter-latin-500-normal.woff2",
+    "assets/fonts/inter/inter-latin-600-normal.woff2",
+    "assets/fonts/inter/inter-latin-700-normal.woff2",
+    "assets/fonts/manrope/manrope-latin-500-normal.woff2",
+    "assets/fonts/manrope/manrope-latin-600-normal.woff2",
+    "assets/fonts/manrope/manrope-latin-700-normal.woff2",
+    "assets/fonts/manrope/manrope-latin-800-normal.woff2"
+  ],
+  "notes": [
+    "Do not commit private OneDrive paths, client material, screenshots, credentials or OS-only notes to the public repository.",
+    "The social preview image was generated from the current OBRAVEN SVG logo as a 1200 x 630 PNG.",
+    "The Microsoft 365 header assets remain useful public assets because Microsoft 365 theme URLs need anonymous HTTPS access."
+  ]
+}

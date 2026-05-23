@@ -10,13 +10,14 @@ This repository contains the static public website for **OBRAVEN Limited**, an I
 
 The site is deliberately simple:
 
-- one static HTML page
+- static HTML pages
 - local image and font assets
 - no analytics
 - no contact form
 - no externally hosted fonts
 - no non-essential cookies
 - public booking routed through `https://www.obraven.com/book`
+- privacy, cookies and website notice handled on `privacy-legal.html`
 
 ## Public positioning
 
@@ -34,6 +35,7 @@ The public site should stay focused on:
 ```text
 /
 ├─ index.html
+├─ privacy-legal.html
 ├─ README.md
 ├─ .gitattributes
 ├─ .gitignore
@@ -67,11 +69,15 @@ https://www.obraven.com/book
 
 This is a brand-owned Cloudflare 301 redirect to Microsoft Bookings. Do not use the raw Microsoft Bookings URL in public copy unless troubleshooting.
 
-## Privacy and third-party dependency stance
+## Privacy, cookies and legal notice
 
 The website avoids non-essential third-party dependencies. Fonts are self-hosted as WOFF2 files under `assets/fonts/`. This keeps typography local to `obraven.com` and avoids runtime browser requests to external font providers.
 
+The footer carries the company’s public statutory details and links to `privacy-legal.html`.
+
 The booking journey leaves the static website and enters Microsoft Bookings. Do not describe the full booking journey as cookie-free.
+
+Do not add maps, location widgets, address schema, Google Business Profile links, or other location-amplifying features to the public site without a deliberate decision.
 
 ## Maintenance rules
 
@@ -81,13 +87,18 @@ Before publishing changes:
 2. Do not add analytics, trackers, embedded widgets or third-party scripts casually.
 3. Do not commit client material, credentials, internal operating notes, screenshots, invoices or private OneDrive paths.
 4. Keep public copy aligned with the OBRAVEN positioning: specialist, decision-focused, bankability-aware, owner-side.
-5. Test the four `/book` variants after any Cloudflare or DNS change:
+5. Keep the footer consistent across `index.html` and `privacy-legal.html`.
+6. Keep the `Privacy & legal` footer item active, not linked, on `privacy-legal.html`.
+7. Keep the logo on `privacy-legal.html` linked back to `index.html`.
+8. Keep the website notice as a plain section, not a prominent warning or sales block.
+9. Test the four `/book` variants after any Cloudflare or DNS change:
    - `https://obraven.com/book`
    - `https://obraven.com/book/`
    - `https://www.obraven.com/book`
    - `https://www.obraven.com/book/`
-6. Test the live site in desktop Edge/Chrome and Android.
-7. Check that the browser Network panel shows no calls to Google Fonts, Calendly, analytics or other avoidable third parties.
+10. Test the live site in desktop Edge/Chrome and Android.
+11. Check that the browser Network panel shows no calls to Google Fonts, Calendly, analytics or other avoidable third parties.
+12. Check that no new non-essential cookies are set by the static site itself.
 
 ## Rights
 

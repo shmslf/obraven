@@ -39,7 +39,7 @@
 
     <!--
       OBRAVEN public site maintenance notes
-      - Static one-page website, hosted from GitHub and fronted by Cloudflare.
+      - Static website pages, hosted from GitHub and fronted by Cloudflare.
       - No analytics, no contact form, no externally hosted fonts, and no non-essential cookies.
       - Public booking CTA uses /book, an OBRAVEN-owned Cloudflare redirect to Microsoft Bookings.
       - Keep public repository content free of client material, private paths, credentials, and internal notes.
@@ -790,7 +790,6 @@
         }
       }
 
-
       /* ── privacy/legal page layout ───────────────────────── */
       .privacy-legal-intro {
         display: flex;
@@ -800,31 +799,28 @@
         margin-bottom: var(--sp-section);
       }
 
-      .privacy-legal-columns {
-        column-count: 1;
+      .privacy-legal-grid {
+        display: grid;
+        grid-template-columns: 1fr;
         column-gap: var(--content-col-gap);
+        row-gap: var(--sp-sub);
+        align-items: start;
       }
 
       .privacy-legal-section {
-        display: block;
-        break-inside: avoid;
-        page-break-inside: avoid;
-        margin: 0 0 var(--sp-sub);
+        min-width: 0;
       }
 
       .privacy-legal-section .eyebrow {
         margin-bottom: var(--sp-head);
       }
 
-      .privacy-legal-section:last-child {
-        margin-bottom: 0;
-      }
-
       @media (min-width: 760px) {
-        .privacy-legal-columns {
-          column-count: 2;
+        .privacy-legal-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
+
 
       /* ── entrance animation ─────────────────────────────── */
       @keyframes fade-up {
@@ -862,23 +858,21 @@
     <script type="application/ld+json">
 {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "OBRAVEN Limited",
-      "alternateName": "OBRAVEN",
+      "@type": "WebPage",
+      "name": "Privacy & Legal | OBRAVEN",
       "url": "https://www.obraven.com/privacy-legal.html",
-      "logo": "https://www.obraven.com/assets/brand/obraven-social-card-1200x630.png",
-      "email": "hello@obraven.com",
-      "founder": {
-            "@type": "Person",
-            "name": "Stan Herasymenko",
-            "jobTitle": "Founder & Director"
+      "description": "Privacy, cookies and legal notice for OBRAVEN Limited.",
+      "isPartOf": {
+            "@type": "WebSite",
+            "name": "OBRAVEN",
+            "url": "https://www.obraven.com/"
       },
-      "areaServed": "Global",
-      "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "IE"
-      },
-      "description": "Privacy, cookies and legal notice for OBRAVEN Limited."
+      "publisher": {
+            "@type": "Organization",
+            "name": "OBRAVEN Limited",
+            "url": "https://www.obraven.com/",
+            "email": "hello@obraven.com"
+      }
 }
     </script>
   </head>
@@ -904,7 +898,7 @@
           <p class="section-text">Last updated: 23 May 2026</p>
         </section>
 
-        <div class="privacy-legal-columns">
+        <div class="privacy-legal-grid">
 
           <section class="privacy-legal-section" aria-labelledby="controller-heading">
             <h2 class="eyebrow" id="controller-heading">Controller</h2>
@@ -924,7 +918,17 @@
 
           <section class="privacy-legal-section" aria-labelledby="basis-heading">
             <h2 class="eyebrow" id="basis-heading">Legal basis</h2>
-            <p class="section-text">Depending on the context, we rely on legitimate interests, steps before entering a contract, contract performance, and legal obligations. Where a different legal basis is needed, we will handle that separately.</p>
+            <p class="section-text">Depending on the context, we rely on legitimate interests, steps before entering a contract, contract performance, legal obligations, or another legal basis where required.</p>
+          </section>
+
+          <section class="privacy-legal-section" aria-labelledby="rights-heading">
+            <h2 class="eyebrow" id="rights-heading">Your rights</h2>
+            <p class="section-text">You may ask to access, correct, delete, restrict, object to, or receive a portable copy of your personal data where applicable, subject to legal limits. We will respond without undue delay and normally within one month; if more time is legally allowed because a request is complex, we will tell you. You may also complain to the <a class="text-link" href="https://www.dataprotection.ie/" target="_blank" rel="noopener noreferrer">Irish Data Protection Commission</a>.</p>
+          </section>
+
+          <section class="privacy-legal-section" aria-labelledby="retention-heading">
+            <h2 class="eyebrow" id="retention-heading">Retention</h2>
+            <p class="section-text">Enquiry and early-stage correspondence is normally kept for up to 24 months after the last meaningful contact, unless a relationship continues or there is another business or legal reason to keep it. Business, contract, accounting and tax records are normally kept for at least six years where required under Irish law. Insurance, dispute and engagement records may be kept for longer where needed for limitation, insurance and risk-management purposes.</p>
           </section>
 
           <section class="privacy-legal-section" aria-labelledby="sharing-heading">
@@ -937,16 +941,6 @@
             <p class="section-text">Some service providers may process data outside the European Economic Area. Where this happens, appropriate safeguards are used where required under data protection law.</p>
           </section>
 
-          <section class="privacy-legal-section" aria-labelledby="retention-heading">
-            <h2 class="eyebrow" id="retention-heading">Retention</h2>
-            <p class="section-text">We keep business-contact information only for as long as needed for the reason it was collected, follow-up, relationship management, legal, accounting or insurance obligations, dispute handling, and business records.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="rights-heading">
-            <h2 class="eyebrow" id="rights-heading">Your rights</h2>
-            <p class="section-text">You may ask to access, correct, delete, restrict, or object to our use of your personal data, subject to legal limits. You may also complain to the <a class="text-link" href="https://www.dataprotection.ie/" target="_blank" rel="noopener noreferrer">Irish Data Protection Commission</a>.</p>
-          </section>
-
           <section class="privacy-legal-section" aria-labelledby="cookies-heading">
             <h2 class="eyebrow" id="cookies-heading">Cookies</h2>
             <p class="section-text">This website does not use analytics, advertising or marketing cookies, so no cookie banner is shown. The static site does not intentionally set cookies. Strictly necessary technical cookies or similar technologies may be used only where needed to operate, secure or deliver the website.</p>
@@ -957,9 +951,19 @@
             <p class="section-text">Calls are booked through Microsoft Bookings. When you use the booking link, you are taken to a Microsoft service to choose a time and provide booking details. Microsoft and LinkedIn may use their own cookies and privacy controls when you leave this website.</p>
           </section>
 
+          <section class="privacy-legal-section" aria-labelledby="client-engagements-heading">
+            <h2 class="eyebrow" id="client-engagements-heading">Client engagements</h2>
+            <p class="section-text">When OBRAVEN handles client personal data or project material as part of an engagement, that processing is governed by the engagement contract and, where needed, a separate data-processing agreement. This website notice does not override engagement terms.</p>
+          </section>
+
           <section class="privacy-legal-section" aria-labelledby="automated-heading">
             <h2 class="eyebrow" id="automated-heading">Automated decisions</h2>
             <p class="section-text">We do not use automated decision-making or profiling through this website.</p>
+          </section>
+
+          <section class="privacy-legal-section" aria-labelledby="changes-heading">
+            <h2 class="eyebrow" id="changes-heading">Changes to this notice</h2>
+            <p class="section-text">Material changes will be reflected on this page and the “Last updated” date will change accordingly.</p>
           </section>
 
           <section class="privacy-legal-section" aria-labelledby="notice-heading">

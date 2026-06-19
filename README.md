@@ -1,6 +1,6 @@
 # OBRAVEN
 
-Independent wind measurement, bankability and owner-side advisory for utility-scale renewable energy decisions.
+Independent wind measurement, bankability and owner-side advisory for utility-scale renewable energy projects.
 
 Live site: <https://www.obraven.com/>
 
@@ -21,11 +21,11 @@ The site is deliberately simple:
 
 ## Public positioning
 
-OBRAVEN helps developers, investors and advisory teams make sharper decisions where wind resource evidence, measurement strategy, energy yield assumptions and bankability meet.
+OBRAVEN helps developers, investors and advisory teams decide what to measure, what evidence to commission or challenge, what to trust, and whether the technical and revenue case is robust enough for investment and finance decisions.
 
 The public site should stay focused on:
 
-- wind resource measurement strategy and procurement support
+- wind resource measurement strategy and evidence-procurement support
 - independent challenge of energy yield assumptions, loss factors and bankability logic
 - owner-side technical-commercial judgement at high-stakes project decision points
 - founder-led senior review by Stan Herasymenko

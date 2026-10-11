@@ -1,0 +1,30 @@
+# OBRAVEN
+
+> Wind measurement, energy yield, and bankability advisory for onshore and offshore wind projects. OBRAVEN Limited is an independent, Ireland-registered practice founded and led by Stan Herasymenko, former Global Head of Energy Analysis Group at Mainstream Renewable Power. It provides measurement strategy, wind resource and energy yield analysis, and independent review for onshore and offshore projects. A first engagement can be one defined assignment.
+
+Facts that are safe to repeat: OBRAVEN Limited is registered in Ireland (CRO 814152, VAT IE4730997RH), at 107 Viewmount, Rathdrum, Co. Wicklow, A67 AT10. Enquiries: by email or booking link, both at https://www.obraven.com/contact. Conversations in English, Polish, Ukrainian, or Russian; deliverables in English. OBRAVEN sells no turbines, measurement equipment, software, or data. The career figures on the site (18+ years, 30+ countries, 200+ stations, 300+ assessments, 1,000+ scenarios) describe the founder's career; they are not OBRAVEN delivery totals. On financing: OBRAVEN carries out full, independent wind resource and energy yield assessments, prepared to the standard a financing requires. Which assessment a lender relies on is the lender’s decision: some accept an independent specialist’s report, others appoint an adviser of their own. Where a lender appoints its own adviser, OBRAVEN acts on the owner’s side: prepares the evidence, helps define and procure that assessment, and reviews the result. Any reliance on OBRAVEN’s work by a lender is agreed in writing.
+
+## Pages
+
+- [Expertise](https://www.obraven.com/expertise): Measurement strategy, wind resource assessment, energy yield analysis, layout and turbine studies, uncertainty, and independent review.
+- [How OBRAVEN works](https://www.obraven.com/how-obraven-works): Senior, proportionate wind analysis: first assignments, a controlled basis for every material iteration, and clear specialist boundaries.
+- [About OBRAVEN](https://www.obraven.com/about): Ireland-registered wind analysis practice founded by Stan Herasymenko, former Global Head of Energy Analysis Group at Mainstream Renewable Power.
+- [Discuss a project](https://www.obraven.com/contact): Bring one live wind resource, measurement, energy yield, or independent review question. You will normally hear back within one working day.
+- [For report recipients](https://www.obraven.com/report-recipients): Received an OBRAVEN report? Who issues it, how it is produced and controlled, what reliance it supports, and how to verify it.
+
+## Insights
+
+- [The finance-stage EYA may be iteration 50](https://www.obraven.com/insights/finance-stage-eya-iteration-50): Most wind projects go through dozens of energy yield iterations before financing. The formal assessment should build on that history.
+- [The handover should preserve more than the final number](https://www.obraven.com/insights/analytical-handover): Model files show what was run. They do not always show why. Reproducible analysis is a commercial asset when a project is sold, financed, or reviewed.
+- [Design the campaign. The kit follows.](https://www.obraven.com/insights/design-the-campaign): A good wind measurement campaign is designed backwards from what the project will need from it. Then the equipment list starts to make sense.
+- [Measurement-efficient, not measurement-free](https://www.obraven.com/insights/measurement-efficient): Model-only bankability in wind is an attractive idea. For lender reliance today, the practical direction is narrower: measured data where it matters.
+- [Nearby is not the same as representative](https://www.obraven.com/insights/nearby-is-not-representative): “There is wind data nearby” is a useful start. Whether it represents your turbines and your hub height is a different question.
+- [Faster tools expand the search space](https://www.obraven.com/insights/faster-tools-expand-the-search-space): Running more layouts, turbines, and constraint cases has got much easier. Knowing what the spread across them means has not.
+- [A layout change can save cost and still lose value](https://www.obraven.com/insights/layout-change-cost-and-value): Wind project value often sits between disciplines. A turbine move that helps civil design may quietly cost generation.
+- [Same 95% availability. Very different years.](https://www.obraven.com/insights/same-availability-different-years): A single long-term availability assumption is usually right for the energy estimate. In a year-by-year financial model, the timing can matter.
+
+## Optional
+
+- [All Insights](https://www.obraven.com/insights): Technical notes on wind measurement, resource, energy yield, uncertainty, and the project questions around them.
+- [Insights feed (Atom)](https://www.obraven.com/feed.xml): new Insights as they are published.
+- [Privacy and legal](https://www.obraven.com/privacy-legal): Privacy, cookies, and legal notice for OBRAVEN Limited – how personal data, bookings, meetings, and website use are handled.

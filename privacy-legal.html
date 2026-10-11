@@ -1,994 +1,115 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="color-scheme" content="light" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="robots" content="index,follow" />
-
-    <title>Privacy &amp; Legal | OBRAVEN</title>
-    <meta name="description" content="Privacy, cookies and legal notice for OBRAVEN Limited." />
-
-    <meta property="og:title" content="Privacy &amp; Legal | OBRAVEN" />
-    <meta property="og:description" content="Privacy, cookies and legal notice for OBRAVEN Limited." />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="OBRAVEN" />
-    <meta property="og:locale" content="en_IE" />
-    <meta property="og:url" content="https://www.obraven.com/privacy-legal.html" />
-    <meta property="og:image" content="https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png" />
-    <meta property="og:image:secure_url" content="https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="OBRAVEN logo with the tagline See further. Decide better." />
-    <meta name="twitter:image:alt" content="OBRAVEN logo with the tagline See further. Decide better." />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Privacy &amp; Legal | OBRAVEN" />
-    <meta name="twitter:description" content="Privacy, cookies and legal notice for OBRAVEN Limited." />
-    <meta name="twitter:image" content="https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="canonical" href="https://www.obraven.com/privacy-legal.html" />
-    <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-
-
-    <!--
-      OBRAVEN public site maintenance notes
-      - Static website pages, hosted from GitHub and fronted by Cloudflare.
-      - No contact forms, no advertising cookies, no marketing cookies, no analytics cookies, and no browser analytics scripts.
-      - Cloudflare may set security cookies where needed to protect the site.
-      - Public booking CTA uses /book, an OBRAVEN-owned Cloudflare redirect to Microsoft Bookings.
-      - Keep public repository content free of client material, private paths, credentials, and internal notes.
-    -->
-
-    <style>
-      /*
-        SPACING SYSTEM
-        ──────────────────────────────────────────────────────
-        Every vertical gap on the page belongs to one of five tiers.
-        Same tier = same size everywhere. No exceptions.
-
-        Tier 0  micro      6 px    within card groups (label → body)
-        Tier 1  element   12 px    siblings in same group (photo → text, bullet gap ≈ 0.68 em)
-        Tier 2  head      16 px    eyebrow → first child (every section header)
-        Tier 3  sub       48–64 px between sub-sections (capabilities → engagement)
-        Tier 4  section   72–96 px between major page regions
-      */
-
-      /* ── local fonts ──────────────────────────────────────────
-         Self-hosted WOFF2 fonts. Add the files under /assets/fonts/.
-         This removes browser requests to Google Fonts and keeps typography local to obraven.com.
-      */
-      @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url("assets/fonts/inter/inter-latin-400-normal.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url("assets/fonts/inter/inter-latin-500-normal.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url("assets/fonts/inter/inter-latin-600-normal.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url("assets/fonts/inter/inter-latin-700-normal.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url("assets/fonts/manrope/manrope-latin-500-normal.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url("assets/fonts/manrope/manrope-latin-600-normal.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url("assets/fonts/manrope/manrope-latin-700-normal.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 800;
-        font-display: swap;
-        src: url("assets/fonts/manrope/manrope-latin-800-normal.woff2") format("woff2");
-      }
-
-
-      /* ── tokens ────────────────────────────────────────── */
-      :root {
-        --paper: #FFFFFF;
-        --mist: #F5F6F7;
-        --ink: #111315;
-        --navy: #1E3A5F;
-        --slate: #7A8CA3;
-        --gold: #C7923C;
-
-        --paper-rgb: 255 255 255;
-        --mist-rgb: 245 246 247;
-        --ink-rgb: 17 19 21;
-        --navy-rgb: 30 58 95;
-        --slate-rgb: 122 140 163;
-        --gold-rgb: 199 146 60;
-
-        --bg: var(--paper);
-        --text: var(--ink);
-        --rule: rgb(var(--slate-rgb) / 0.24);
-        --selection-bg: rgb(var(--slate-rgb) / 0.24);
-        --focus-ring: 2px solid rgb(var(--navy-rgb) / 0.28);
-        --card-hover-shadow: 0 2px 12px rgb(0 0 0 / 0.05);
-        --button-focus-shadow: 0 0 0 4px rgb(var(--slate-rgb) / 0.18);
-        --button-primary-hover-shadow: 0 4px 14px rgb(var(--navy-rgb) / 0.14);
-
-        --max-width: 1560px;
-        --radius: 10px;
-
-        --font-display: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        --ts: 0.94;
-
-        /* ── spacing scale ─────────────────────────────── */
-        --sp-micro: 6px;          /* tier 0 */
-        --sp-element: 12px;       /* tier 1 */
-        --sp-head: 16px;          /* tier 2 – eyebrow → content */
-        --sp-sub: 48px;           /* tier 3 – between sub-sections */
-        --sp-section: 72px;       /* tier 4 – between major sections */
-
-        /* ── page chrome ───────────────────────────────── */
-        --page-px: 28px;
-        --page-pt: 40px;
-        --page-pb: 64px;
-
-        --hero-pt: 12px;
-        --hero-pb: 28px;
-
-        /* ── grid ──────────────────────────────────────── */
-        --content-row-gap: var(--sp-section);
-        --content-col-gap: 48px;
-
-        /* ── decisions ─────────────────────────────────── */
-        --decision-gap: 18px;
-        --decision-pad: 22px;
-
-        /* ── typography ────────────────────────────────── */
-        --h1-min: calc(2.05rem * var(--ts));
-        --h1-fluid: calc(5.4vw * var(--ts));
-        --h1-max: calc(2.75rem * var(--ts));
-        --h1-tab-min: calc(1.9rem * var(--ts));
-        --h1-tab-fluid: calc(4.6vw * var(--ts));
-        --h1-tab-max: calc(2.45rem * var(--ts));
-
-        --body-size: calc(1.05rem * var(--ts));
-        --body-lh: 1.74;
-        --hero-lead-size: calc(1.09rem * var(--ts));
-        --eyebrow-size: calc(0.89rem * var(--ts));
-        --capability-size: calc(1.00rem * var(--ts));
-        --side-rail-pad: 0px;
-        --dt-size: calc(1.08rem * var(--ts));
-        --db-size: calc(0.96rem * var(--ts));
-        --dl-size: calc(0.79rem * var(--ts));
-        --button-size: calc(0.86rem * var(--ts));
-        --footer-size: calc(1rem * var(--ts));
-        --footer-small-size: calc(0.82rem * var(--ts));
-
-        /* ── misc ──────────────────────────────────────── */
-        --link-thickness: 0.1em;
-        --link-offset: 0.4em;
-        --link-offset-hover: 0.2em;
-        --ease: 0.2s cubic-bezier(0.2, 0.65, 0.2, 1);
-        --hover-lift: -1px;
-        --sp-card: 14px;
-
-        /* ── mobile stacked-flow rhythm ───────────────── */
-        --mobile-major-gap: var(--sp-section);
-      }
-
-      /* ── tablet ─────────────────────────────────────────── */
-      @media (min-width: 760px) {
-        :root {
-          --page-px: 48px;
-          --page-pt: 44px;
-          --page-pb: 72px;
-          --hero-pt: 16px;
-          --hero-pb: 32px;
-          --content-col-gap: 82px;
-          --sp-sub: 56px;
-          --sp-section: 80px;
-          --decision-gap: 22px;
-          --decision-pad: 24px;
-          --hero-lead-size: calc(1.10rem * var(--ts));
-          --side-rail-pad: 20px;
-          --dt-size: calc(1.10rem * var(--ts));
-          --button-size: calc(0.88rem * var(--ts));
-        }
-      }
-
-      /* ── desktop ────────────────────────────────────────── */
-      @media (min-width: 1280px) {
-        :root {
-          --page-px: 64px;
-          --page-pt: 48px;
-          --page-pb: 76px;
-          --hero-pt: 18px;
-          --hero-pb: 46px;
-          --content-row-gap: 0;
-          --content-col-gap: 124px;
-          --sp-sub: 64px;
-          --sp-section: 88px;
-          --decision-gap: 26px;
-          --decision-pad: 28px;
-          --side-rail-pad: 26px;
-        }
-      }
-
-      /* ── reset ──────────────────────────────────────────── */
-      *, *::before, *::after { box-sizing: border-box; }
-
-      /* ── scrollbar ───────────────────────────────────────── */
-      html {
-        scrollbar-width: thin;
-        scrollbar-color: var(--slate) var(--paper);
-      }
-
-      body {
-        margin: 0;
-        min-height: 100%;
-        background: var(--bg);
-        color: var(--text);
-        font-family: var(--font-body);
-        line-height: 1.5;
-        overflow-x: hidden;
-        overflow-x: clip;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-synthesis: none;
-        border-top: 2.5px solid var(--gold);
-      }
-
-      ::selection {
-        background: var(--selection-bg);
-        color: var(--text);
-      }
-
-      img {
-        display: block;
-        max-inline-size: 100%;
-        block-size: auto;
-      }
-
-      a { color: inherit; text-decoration: none; }
-
-      a:focus-visible {
-        outline: var(--focus-ring);
-        outline-offset: 3px;
-        border-radius: 2px;
-      }
-
-      /* ── page shell ─────────────────────────────────────── */
-      .page {
-        max-width: var(--max-width);
-        min-height: 100vh;
-        min-height: 100dvh;
-        margin: 0 auto;
-        padding: var(--page-pt) var(--page-px) var(--page-pb);
-        display: flex;
-        flex-direction: column;
-      }
-
-      /* ── hero ───────────────────────────────────────────── */
-      .hero {
-        padding: var(--hero-pt) 0 var(--hero-pb);
-        text-align: center;
-      }
-
-      .logo {
-        width: 250px;
-        max-width: min(74vw, 286px);
-        height: auto;
-        margin-inline: auto;
-        padding-top: 26px;
-        padding-bottom: 36px;
-      }
-
-      @media (min-width: 760px) {
-        .logo {
-          width: 260px;
-          max-width: min(72vw, 332px);
-          padding-top: 30px;
-          padding-bottom: 40px;
-        }
-      }
-
-      @media (min-width: 1280px) {
-        .hero {
-          display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-          column-gap: var(--content-col-gap);
-          text-align: left;
-        }
-
-        .logo {
-          grid-column: 2;
-          margin-inline: 0;
-          width: 270px;
-          max-width: min(100%, 322px);
-          padding-top: 32px;
-          padding-bottom: 42px;
-        }
-      }
-
-      /* ── content grid ───────────────────────────────────── */
-      .content-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "intro"
-          "founder"
-          "offer";
-        row-gap: var(--content-row-gap);
-        column-gap: var(--content-col-gap);
-        align-items: start;
-      }
-
-      @media (min-width: 760px) and (max-width: 1279px) {
-        .content-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          grid-template-areas:
-            "intro intro"
-            "founder offer";
-        }
-        h1 { font-size: clamp(var(--h1-tab-min), var(--h1-tab-fluid), var(--h1-tab-max)); }
-      }
-
-      @media (min-width: 1280px) {
-        .content-grid {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-          grid-template-areas: "intro founder offer";
-        }
-      }
-
-      /* ── intro column ───────────────────────────────────── */
-      .intro-col {
-        grid-area: intro;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        min-width: 0;
-      }
-
-      @media (min-width: 760px)  { .intro-col { gap: 28px; } }
-      @media (min-width: 1280px) { .intro-col { align-self: center; } }
-
-      h1 {
-        margin: 0;
-        font-family: var(--font-display);
-        font-size: clamp(var(--h1-min), var(--h1-fluid), var(--h1-max));
-        line-height: 1.06;
-        letter-spacing: 0;
-        word-spacing: normal;
-        font-weight: 800;
-        color: var(--slate);
-        text-wrap: balance;
-      }
-
-      .lead {
-        margin: 0;
-        max-width: 54ch;
-        color: var(--navy);
-        font-size: var(--hero-lead-size);
-        line-height: 1.58;
-        letter-spacing: 0.006em;
-        font-weight: 560;
-        overflow-wrap: break-word;
-        text-wrap: pretty;
-      }
-
-      /* ── shared text ────────────────────────────────────── */
-      .section-text,
-      .capability-list li {
-        margin: 0;
-        font-size: var(--body-size);
-        line-height: var(--body-lh);
-        font-weight: 400;
-        color: var(--text);
-        overflow-wrap: break-word;
-        text-wrap: pretty;
-      }
-
-      .eyebrow {
-        margin: 0 0 var(--sp-head);
-        font-family: var(--font-display);
-        font-size: var(--eyebrow-size);
-        line-height: 1;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        font-weight: 800;
-        color: var(--navy);
-      }
-
-      .offer-col section,
-      .founder-stack {
-        max-width: 34rem;
-      }
-
-      /* ── founder column ─────────────────────────────────── */
-      .founder-col {
-        grid-area: founder;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-      }
-
-      .founder-stack {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        padding-top: 6px;
-      }
-
-      .founder-photo {
-        width: min(100%, 229px);
-        height: auto;
-        border-radius: var(--radius);
-        background: var(--mist);
-      }
-
-      .text-link {
-        color: inherit;
-        text-decoration-line: underline;
-        text-decoration-color: var(--slate);
-        text-decoration-thickness: var(--link-thickness);
-        text-underline-offset: var(--link-offset);
-        text-decoration-skip-ink: auto;
-        transition: color var(--ease), text-underline-offset var(--ease);
-      }
-
-      .text-link:focus-visible {
-        color: var(--gold);
-        text-decoration-color: var(--slate);
-        text-underline-offset: var(--link-offset-hover);
-      }
-
-      /* ── offer column ───────────────────────────────────── */
-      .offer-col {
-        grid-area: offer;
-        display: flex;
-        flex-direction: column;
-        gap: var(--sp-sub);
-        min-width: 0;
-      }
-
-      @media (max-width: 759px) {
-        .content-grid {
-          row-gap: var(--mobile-major-gap);
-        }
-
-        .offer-col {
-          gap: var(--mobile-major-gap);
-        }
-
-        .decision-section {
-          margin-top: var(--mobile-major-gap);
-        }
-
-        .contact-section {
-          padding-top: var(--mobile-major-gap);
-        }
-
-        .footer {
-          margin-top: 0;
-          padding-top: var(--mobile-major-gap);
-        }
-      }
-
-
-      .capability-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 0.68em;
-      }
-
-      .capability-list li {
-        position: relative;
-        padding-left: 1.15rem;
-        font-size: var(--capability-size);
-        line-height: 1.68;
-      }
-
-      .capability-list li::before {
-        content: "\2022";
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: var(--gold);
-        font-size: 1.05em;
-        line-height: 1.72;
-      }
-
-      /* ── decision section ───────────────────────────────── */
-      .decision-section {
-        position: relative;
-        margin-top: var(--sp-section);
-        padding: 34px 0 38px;
-        display: flex;
-        flex-direction: column;
-        gap: var(--decision-gap);
-        isolation: isolate;
-      }
-
-      .decision-section::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        inset: 0;
-        left: 50%;
-        width: 100vw;
-        transform: translateX(-50%);
-        background: var(--mist);
-      }
-
-      .decision-header {
-        display: flex;
-        flex-direction: column;
-        gap: var(--sp-head);
-      }
-
-      .decision-header .eyebrow { margin-bottom: 0; }
-      .decision-intro-stack {
-        display: flex;
-        flex-direction: column;
-        gap: var(--sp-element);
-      }
-
-      .decision-intro {
-        margin: 0;
-      }
-
-      .decision-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: var(--decision-gap);
-        align-items: stretch;
-      }
-
-      @media (min-width: 760px) {
-        .decision-section { padding: 40px 0 46px; }
-        .decision-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      }
-
-      @media (min-width: 1280px) {
-        .decision-section { padding: 46px 0 54px; }
-        .decision-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      }
-
-      .decision-card {
-        display: flex;
-        flex-direction: column;
-        gap: var(--sp-card);
-        height: 100%;
-        padding: var(--decision-pad);
-        border: 1px solid var(--rule);
-        border-radius: var(--radius);
-        background: var(--paper);
-        transition: box-shadow var(--ease), transform var(--ease);
-      }
-
-
-      .decision-card-title {
-        margin: 0;
-        font-family: var(--font-display);
-        font-size: var(--dt-size);
-        line-height: 1.24;
-        letter-spacing: -0.015em;
-        font-weight: 700;
-        color: var(--navy);
-        text-wrap: balance;
-      }
-
-      .decision-card-group {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .decision-label {
-        margin: 0;
-        font-family: var(--font-display);
-        font-size: var(--dl-size);
-        line-height: 1.12;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        font-weight: 800;
-        color: var(--slate);
-      }
-
-      .decision-card-text {
-        margin: 0;
-        font-size: var(--db-size);
-        line-height: 1.6;
-        color: var(--text);
-        overflow-wrap: break-word;
-        text-wrap: pretty;
-      }
-
-      /* ── contact ────────────────────────────────────────── */
-      .contact-section {
-        padding-top: var(--sp-section);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .contact-heading {
-        margin-bottom: var(--sp-head);
-      }
-
-      .contact-text {
-        margin: 0;
-        max-width: 62ch;
-      }
-
-      .contact-actions {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: var(--sp-card);
-        width: min(100%, 390px);
-        margin-top: var(--sp-head);
-      }
-
-      .contact-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        min-height: 42px;
-        padding: 0 var(--sp-head);
-        border: 1px solid var(--navy);
-        border-radius: 999px;
-        background: var(--paper);
-        font-size: var(--button-size);
-        line-height: 1.2;
-        font-weight: 600;
-        color: var(--navy);
-        transition: border-color var(--ease), color var(--ease), background var(--ease), transform var(--ease), box-shadow var(--ease);
-      }
-
-      .contact-button:focus-visible {
-        border-color: var(--gold);
-        color: var(--gold);
-        box-shadow: var(--button-focus-shadow);
-      }
-
-
-      .contact-button-primary {
-        border-color: var(--navy);
-        background: var(--navy);
-        color: var(--paper);
-      }
-
-      .contact-button-primary:focus-visible {
-        border-color: var(--gold);
-        background: var(--gold);
-        color: var(--paper);
-      }
-
-
-      @media (min-width: 760px) {
-        .contact-section { align-items: center; }
-        .contact-text { text-align: center; }
-        .contact-actions { width: min(100%, 404px); }
-        .contact-button { min-height: 44px; }
-      }
-
-      /* ── footer ─────────────────────────────────────────── */
-      .footer {
-        margin-top: auto;
-        padding-top: var(--sp-section);
-        text-align: left;
-      }
-
-      .footer-inline {
-        margin: 0;
-        color: var(--slate);
-        font-size: var(--footer-size);
-        line-height: 1.8;
-        overflow-wrap: break-word;
-        text-wrap: pretty;
-      }
-
-      .copyright { color: var(--gold); }
-
-      .footer-privacy-note {
-        margin: var(--sp-element) 0 0;
-        font-size: var(--footer-small-size);
-        line-height: 1.65;
-        color: var(--slate);
-        overflow-wrap: break-word;
-        text-wrap: pretty;
-      }
-
-      .footer-email-link,
-      .footer-email-link:visited {
-        color: inherit;
-        text-decoration: none;
-        transition: color var(--ease);
-      }
-
-      .footer-email-link:focus-visible {
-        color: var(--gold);
-        text-decoration: none;
-      }
-
-
-      @media (hover: hover) and (pointer: fine) {
-        .decision-card:hover {
-          box-shadow: var(--card-hover-shadow);
-          transform: translateY(var(--hover-lift));
-        }
-
-        .text-link:hover {
-          color: var(--gold);
-          text-decoration-color: var(--slate);
-          text-underline-offset: var(--link-offset-hover);
-        }
-
-        .contact-button:hover {
-          border-color: var(--gold);
-          color: var(--gold);
-          background: var(--paper);
-          transform: translateY(var(--hover-lift));
-          box-shadow: var(--card-hover-shadow);
-        }
-
-        .contact-button-primary:hover {
-          border-color: var(--gold);
-          background: var(--gold);
-          color: var(--paper);
-          box-shadow: var(--button-primary-hover-shadow);
-        }
-
-        .footer-email-link:hover {
-          color: var(--gold);
-          text-decoration: none;
-        }
-      }
-
-      /* ── privacy/legal page layout ───────────────────────── */
-      .privacy-legal-intro {
-        display: flex;
-        flex-direction: column;
-        gap: var(--sp-head);
-        min-width: 0;
-        margin-bottom: var(--sp-section);
-      }
-
-      .privacy-legal-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: var(--content-col-gap);
-        row-gap: var(--sp-sub);
-        align-items: start;
-      }
-
-      .privacy-legal-section {
-        min-width: 0;
-      }
-
-      .privacy-legal-section .eyebrow {
-        margin-bottom: var(--sp-head);
-      }
-
-      @media (min-width: 760px) {
-        .privacy-legal-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-
-
-      /* ── entrance animation ─────────────────────────────── */
-      @keyframes fade-up {
-        from { opacity: 0; transform: translateY(8px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-
-      @media (prefers-reduced-motion: no-preference) {
-        .hero, .intro-col, .founder-col, .offer-col,
-        .decision-header, .decision-grid,
-        .contact-section, .footer {
-          opacity: 0;
-          transform: translateY(8px);
-          animation: fade-up 0.7s cubic-bezier(0.2, 0.65, 0.2, 1) forwards;
-        }
-        .hero             { animation-delay: 0.03s; }
-        .intro-col        { animation-delay: 0.08s; }
-        .founder-col      { animation-delay: 0.14s; }
-        .offer-col        { animation-delay: 0.18s; }
-        .decision-header  { animation-delay: 0.22s; }
-        .decision-grid    { animation-delay: 0.27s; }
-        .contact-section  { animation-delay: 0.31s; }
-        .footer           { animation-delay: 0.36s; }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        html { scroll-behavior: auto; }
-
-        *, *::before, *::after {
-          transition: none !important;
-          animation: none !important;
-        }
-      }
-    </style>
-    <script type="application/ld+json">
-{
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Privacy & Legal | OBRAVEN",
-      "url": "https://www.obraven.com/privacy-legal.html",
-      "description": "Privacy, cookies and legal notice for OBRAVEN Limited.",
-      "isPartOf": {
-            "@type": "WebSite",
-            "name": "OBRAVEN",
-            "url": "https://www.obraven.com/"
-      },
-      "publisher": {
-            "@type": "Organization",
-            "name": "OBRAVEN Limited",
-            "url": "https://www.obraven.com/",
-            "email": "hello@obraven.com"
-      }
-}
-    </script>
-  </head>
-  <body>
-    <main class="page">
-      <header class="hero" aria-label="OBRAVEN">
-        <a class="logo" style="display: block; text-decoration: none;" href="index.html" aria-label="OBRAVEN home">
-          <img
-            src="assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg"
-            alt="OBRAVEN – See further. Decide better."
-            width="1200"
-            height="327"
-            decoding="async"
-            fetchpriority="high"
-            style="display: block; width: 100%; height: auto;" />
-        </a>
-      </header>
-
-      <section aria-label="Privacy, cookies and legal notice">
-        <section class="privacy-legal-intro" aria-labelledby="privacy-legal-heading">
-          <h1 id="privacy-legal-heading">Privacy, cookies & legal notice.</h1>
-          <p class="lead">OBRAVEN keeps this website deliberately simple: no contact forms, no advertising cookies, no marketing cookies, no analytics cookies, no browser analytics scripts, and only security cookies where needed to protect the site.</p>
-          <p class="section-text">Last updated: 2 October 2026.</p>
-        </section>
-
-        <div class="privacy-legal-grid">
-
-          <section class="privacy-legal-section" aria-labelledby="controller-heading">
-            <h2 class="eyebrow" id="controller-heading">1 Controller</h2>
-            <p class="section-text">OBRAVEN Limited is the data controller for business contact, enquiry, booking, meeting, and correspondence information handled through this website, email, Microsoft Teams and Bookings, LinkedIn messages, calendar invitations, and normal business correspondence.</p>
-            <p class="section-text" style="margin-top: var(--sp-element);">Registered office: 107 Viewmount, Rathdrum, Co. Wicklow, A67 AT10, Ireland. Privacy queries: <a class="text-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="information-heading">
-            <h2 class="eyebrow" id="information-heading">2 Information we use</h2>
-            <p class="section-text">We may use your name, role, company, contact details, meeting details, transcripts or notes, correspondence, project or enquiry information, and anything else you choose to send to us.</p>
-            <p class="section-text" style="margin-top: var(--sp-element);">You choose what to send. If you do not give us enough information to reply, arrange a call, or assess a possible engagement, we may not be able to do that.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="why-heading">
-            <h2 class="eyebrow" id="why-heading">3 Why we use it</h2>
-            <p class="section-text">We use this information to respond to enquiries, arrange calls and meetings, create meeting notes and follow-up actions, assess possible work, check conflicts, prepare proposals, manage client or supplier relationships, keep business and accounting records, and meet legal, tax, and accounting obligations.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="basis-heading">
-            <h2 class="eyebrow" id="basis-heading">4 Legal basis</h2>
-            <p class="section-text">For enquiries, calls, meetings, relationship management, and proportionate business follow up, we normally rely on our legitimate interest in running OBRAVEN and responding to business contacts.</p>
-            <p class="section-text" style="margin-top: var(--sp-element);">Where we discuss or agree work, we may rely on steps before a contract or contract performance. Accounting, tax, company, and legal records are kept because the law requires it or because we need them to protect OBRAVEN’s legal position.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="rights-heading">
-            <h2 class="eyebrow" id="rights-heading">5 Your rights</h2>
-            <p class="section-text">You may ask to access, correct, delete, restrict, or receive a copy of your personal data, subject to legal limits. Data portability applies only where the legal conditions are met.</p>
-            <p class="section-text" style="margin-top: var(--sp-element);">We will respond without undue delay and normally within one month. If more time is legally allowed because a request is complex, we will tell you. You may also complain to the <a class="text-link" href="https://www.dataprotection.ie/" target="_blank" rel="noopener noreferrer">Irish Data Protection Commission</a>.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="object-heading">
-            <h2 class="eyebrow" id="object-heading">6 Right to object</h2>
-            <p class="section-text">You may object to processing based on legitimate interests. If you object to direct business development or marketing contact, we will stop that contact. For other objections, we will consider the request and explain the outcome.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="retention-heading">
-            <h2 class="eyebrow" id="retention-heading">7 Retention</h2>
-            <p class="section-text">Enquiry and early stage correspondence is normally kept for up to 24 months after the last meaningful contact, unless a relationship continues or there is another business or legal reason to keep it. Business, contract, accounting, and tax records are normally kept for at least six years where required under Irish law. Insurance, dispute, and engagement records may be kept for longer where needed for limitation, insurance, and risk management purposes.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="sharing-heading">
-            <h2 class="eyebrow" id="sharing-heading">8 Sharing</h2>
-            <p class="section-text">We do not sell personal data. We may share limited information only where reasonably needed with service providers and advisers, including Microsoft 365, Microsoft Teams and Bookings, meeting transcription and note taking services, website, domain, and security providers, approved collaborators or subcontractors, accountants, insurers, and professional advisers.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="international-heading">
-            <h2 class="eyebrow" id="international-heading">9 International processing</h2>
-            <p class="section-text">Some providers, including Microsoft, Cloudflare, and meeting transcription and note taking services, may process data outside the European Economic Area. Where transfer rules apply, this is handled through the provider terms and transfer safeguards available for those services. For client engagements, any specific transfer arrangements will be handled in the engagement terms where needed.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="cookies-heading">
-            <h2 class="eyebrow" id="cookies-heading">10 Cookies and similar technologies</h2>
-            <p class="section-text">This website does not use advertising cookies, marketing cookies, or analytics cookies, and it does not use browser analytics scripts. Because only necessary security cookies may be used, no cookie banner is shown.</p>
-            <p class="section-text" style="margin-top: var(--sp-element);">Cloudflare may process technical, security, and delivery information to run and protect the site. It may also set a necessary security cookie, such as <code>cf_clearance</code>, where needed to check legitimate traffic, and avoid repeated security checks.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="meetings-heading">
-            <h2 class="eyebrow" id="meetings-heading">11 Meetings and bookings</h2>
-            <p class="section-text">Calls may be arranged by email, calendar invitation, Microsoft Teams, or Microsoft Bookings. Teams meeting links and booking pages are provided by Microsoft. Microsoft may use its own cookies and privacy controls when you use those services.</p>
-            <p class="section-text" style="margin-top: var(--sp-element);">Some meetings use a transcription service to help with notes and follow-up. When it is in use, a visible notice appears in the meeting. The service processes the meeting audio to create a transcript and notes, but it does not retain an audio recording. Any transcript or notes we keep are handled under this notice, or under the relevant engagement terms for client work.</p>
-            <p class="section-text" style="margin-top: var(--sp-element);">If you would prefer not to be transcribed, just let us know. Only provide the information needed to arrange the call or meeting. Other external links from this website, including LinkedIn, may also be governed by the relevant third party’s own privacy and cookie controls.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="client-engagements-heading">
-            <h2 class="eyebrow" id="client-engagements-heading">12 Client engagements</h2>
-            <p class="section-text">When OBRAVEN handles client personal data or project material as part of an engagement, that processing is governed by the engagement contract and, where needed, a separate data processing agreement. This website notice does not override engagement terms.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="automated-heading">
-            <h2 class="eyebrow" id="automated-heading">13 Automated decisions</h2>
-            <p class="section-text">We do not use website, meeting, booking, or enquiry information to make decisions about you by solely automated means where the decision would have a legal or similarly significant effect. We do not profile visitors through this website.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="changes-heading">
-            <h2 class="eyebrow" id="changes-heading">14 Changes to this notice</h2>
-            <p class="section-text">Material changes will be reflected on this page and the “Last updated” date will change accordingly.</p>
-          </section>
-
-          <section class="privacy-legal-section" aria-labelledby="notice-heading">
-            <h2 class="eyebrow" id="notice-heading">15 Website notice</h2>
-            <p class="section-text">Content on this website is general information only. It is not technical, legal, financial, tax, or investment advice and is not a professional deliverable. Viewing the website, booking a call, joining a meeting, or sending an email does not create a client relationship. Any professional advice, deliverable, permitted use, or third party reliance requires a scoped written engagement with OBRAVEN Limited.</p>
-          </section>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <p class="footer-inline"><span class="copyright">&copy;</span>&nbsp;2026 OBRAVEN Limited&nbsp;&nbsp;&middot;&nbsp;&nbsp;Independent wind measurement, bankability &amp; owner-side advisory&nbsp;&nbsp;&middot;&nbsp;&nbsp;Registered in Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a class="footer-email-link" href="https://core.cro.ie/e-commerce/company/5774364" target="_blank" rel="noopener noreferrer" aria-label="See OBRAVEN details in CRO">CRO 814152</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;VAT IE4730997RH&nbsp;&nbsp;&middot;&nbsp;&nbsp;Registered office: 107 Viewmount, Rathdrum, Co. Wicklow, A67 AT10, Ireland&nbsp;&nbsp;&middot;&nbsp;&nbsp;<span style="color: var(--ink);" aria-current="page">Privacy &amp; legal</span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a class="footer-email-link" href="https://www.linkedin.com/company/obraven/" target="_blank" rel="noopener noreferrer" aria-label="Follow OBRAVEN on LinkedIn">LinkedIn</a>.</p>
-        <p class="footer-privacy-note">This website uses no contact forms, advertising cookies, marketing cookies, or analytics cookies. Security cookies may be used where needed. Privacy queries: <a class="footer-email-link" href="mailto:hello@obraven.com">hello@obraven.com</a>.</p>
-      </footer>
-    </main>
-  </body>
+<!DOCTYPE html>
+<!-- OBRAVEN Website v2.21.4 | package r0042 | 11 October 2026 -->
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<title>Privacy &amp; Legal | OBRAVEN</title>
+<meta name="description" content="Privacy, cookies, and legal notice for OBRAVEN Limited – how personal data, bookings, meetings, and website use are handled.">
+<link rel="canonical" href="https://www.obraven.com/privacy-legal">
+<meta property="og:title" content="Privacy &amp; Legal | OBRAVEN">
+<meta property="og:description" content="Privacy, cookies, and legal notice for OBRAVEN Limited – how personal data, bookings, meetings, and website use are handled.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OBRAVEN">
+<meta property="og:locale" content="en_IE">
+<meta property="og:url" content="https://www.obraven.com/privacy-legal">
+<meta property="og:image" content="https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png">
+<meta property="og:image:secure_url" content="https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OBRAVEN logo with the tagline See further. Decide better.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy &amp; Legal | OBRAVEN">
+<meta name="twitter:description" content="Privacy, cookies, and legal notice for OBRAVEN Limited – how personal data, bookings, meetings, and website use are handled.">
+<meta name="twitter:image" content="https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png">
+<meta name="twitter:image:alt" content="OBRAVEN logo with the tagline See further. Decide better.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="obraven-site-version" content="v2.21.4">
+<meta name="obraven-package-release" content="r0042">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="alternate" type="application/atom+xml" title="OBRAVEN Insights" href="feed.xml">
+<link rel="preload" href="assets/fonts/manrope/manrope-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css?v=r0042">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://www.obraven.com/#organization","name":"OBRAVEN Limited","alternateName":"OBRAVEN","legalName":"OBRAVEN Limited","url":"https://www.obraven.com/","logo":{"@type":"ImageObject","url":"https://www.obraven.com/assets/brand/OBRAVEN-Logo-Primary-Light-v1.1-web.svg"},"image":"https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png","slogan":"See further. Decide better.","description":"Founder-led measurement strategy, wind resource and energy yield analysis, and independent review for onshore and offshore projects in Ireland and worldwide.","disambiguatingDescription":"Wind Measurement, Energy Yield & Bankability Advisory","email":"\u0068\u0065\u006c\u006c\u006f\u0040\u006f\u0062\u0072\u0061\u0076\u0065\u006e\u002e\u0063\u006f\u006d","foundingDate":"2026","founder":{"@id":"https://www.obraven.com/#stan"},"address":{"@type":"PostalAddress","streetAddress":"107 Viewmount","addressLocality":"Rathdrum","addressRegion":"Co. Wicklow","postalCode":"A67 AT10","addressCountry":"IE"},"identifier":{"@type":"PropertyValue","propertyID":"CRO company number","value":"814152"},"vatID":"IE4730997RH","areaServed":"Worldwide","contactPoint":{"@type":"ContactPoint","contactType":"project enquiries","email":"\u0068\u0065\u006c\u006c\u006f\u0040\u006f\u0062\u0072\u0061\u0076\u0065\u006e\u002e\u0063\u006f\u006d","availableLanguage":["English","Polish","Ukrainian","Russian"]},"knowsAbout":["Wind resource assessment","Energy yield assessment","Wind measurement strategy","Wind lidar","Wake and blockage","Uncertainty and P90","Independent EYA review","Bankability"],"sameAs":["https://www.linkedin.com/company/obraven/","https://core.cro.ie/e-commerce/company/5774364"]},{"@type":"WebSite","@id":"https://www.obraven.com/#website","url":"https://www.obraven.com/","name":"OBRAVEN","alternateName":["OBRAVEN Limited","obraven.com"],"publisher":{"@id":"https://www.obraven.com/#organization"},"inLanguage":"en-IE"},{"@type":"Person","@id":"https://www.obraven.com/#stan","name":"Stan Herasymenko","jobTitle":"Founder & Director","worksFor":{"@id":"https://www.obraven.com/#organization"},"url":"https://www.obraven.com/about#founder","image":"https://www.obraven.com/assets/images/stan-herasymenko-portrait.webp","sameAs":["https://www.linkedin.com/in/shrsmnk/"],"knowsLanguage":["English","Polish","Ukrainian","Russian"],"description":"Founder and director of OBRAVEN. Former Global Head of Energy Analysis Group at Mainstream Renewable Power; previously with DNV and ENERPARK."},{"@type":"WebPage","@id":"https://www.obraven.com/privacy-legal#webpage","url":"https://www.obraven.com/privacy-legal","name":"Privacy & Legal | OBRAVEN","description":"Privacy, cookies, and legal notice for OBRAVEN Limited – how personal data, bookings, meetings, and website use are handled.","isPartOf":{"@id":"https://www.obraven.com/#website"},"about":{"@id":"https://www.obraven.com/#organization"},"inLanguage":"en-IE","primaryImageOfPage":{"@type":"ImageObject","url":"https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png","width":1200,"height":630},"breadcrumb":{"@id":"https://www.obraven.com/privacy-legal#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://www.obraven.com/privacy-legal#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.obraven.com/"},{"@type":"ListItem","position":2,"name":"Privacy & legal","item":"https://www.obraven.com/privacy-legal"}]}]}</script>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="./" aria-label="OBRAVEN home"><img src="assets/brand/OBRAVEN-Logo-Primary-Light-v1.1-web.svg" alt="OBRAVEN" width="459" height="100"></a>
+    <nav aria-label="Primary"><ul class="nav-links"><li><a href="expertise">Expertise</a></li><li><a href="how-obraven-works">How OBRAVEN works</a></li><li><a href="insights">Insights</a></li><li><a href="about">About</a></li><li><a class="btn btn--primary" href="contact">Discuss a project</a></li></ul></nav>
+    <button class="menu-btn" type="button" popovertarget="menu" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+    <nav class="menu-pop" id="menu" popover aria-label="Menu"><ul><li><a href="expertise">Expertise</a></li><li><a href="how-obraven-works">How OBRAVEN works</a></li><li><a href="insights">Insights</a></li><li><a href="about">About</a></li><li><a class="btn btn--primary" href="contact">Discuss a project</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Privacy & legal</span>
+    <h1>Privacy, cookies, and legal notice</h1>
+    <p class="lead">OBRAVEN keeps this website deliberately simple: no contact forms, no advertising cookies, no marketing cookies, no analytics cookies, no browser analytics scripts, and only security cookies where needed to protect the site.</p>
+    
+    <p class="article-meta"><span>Last updated: 2 October 2026</span></p>
+  </div>
+</section>
+<section class="section"><div class="wrap"><div class="legal"><section><h2>1 Controller</h2><p>OBRAVEN Limited is the data controller for business contact, enquiry, booking, meeting, and correspondence information handled through this website, email, Microsoft Teams and Bookings, LinkedIn messages, calendar invitations, and normal business correspondence.</p><p>Registered office: 107 Viewmount, Rathdrum, Co. Wicklow, A67 AT10, Ireland. Privacy queries: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#111;&#98;&#114;&#97;&#118;&#101;&#110;&#46;&#99;&#111;&#109;">&#104;&#101;&#108;&#108;&#111;&#64;&#111;&#98;&#114;&#97;&#118;&#101;&#110;&#46;&#99;&#111;&#109;</a>.</p></section><section><h2>2 Information we use</h2><p>We may use your name, role, company, contact details, meeting details, transcripts or notes, correspondence, project or enquiry information, and anything else you choose to send to us.</p><p>You choose what to send. If you do not give us enough information to reply, arrange a call, or assess a possible engagement, we may not be able to do that.</p></section><section><h2>3 Why we use it</h2><p>We use this information to respond to enquiries, arrange calls and meetings, create meeting notes and follow-up actions, assess possible work, check conflicts, prepare proposals, manage client or supplier relationships, keep business and accounting records, and meet legal, tax, and accounting obligations.</p></section><section><h2>4 Legal basis</h2><p>For enquiries, calls, meetings, relationship management, and proportionate business follow up, we normally rely on our legitimate interest in running OBRAVEN and responding to business contacts.</p><p>Where we discuss or agree work, we may rely on steps before a contract or contract performance. Accounting, tax, company, and legal records are kept because the law requires it or because we need them to protect OBRAVEN’s legal position.</p></section><section><h2>5 Your rights</h2><p>You may ask to access, correct, delete, restrict, or receive a copy of your personal data, subject to legal limits. Data portability applies only where the legal conditions are met.</p><p>We will respond without undue delay and normally within one month. If more time is legally allowed because a request is complex, we will tell you. You may also complain to the <a href="https://www.dataprotection.ie/" target="_blank" rel="noopener noreferrer">Irish Data Protection Commission<span class="sr-only"> (opens in a new tab)</span></a>.</p></section><section><h2>6 Right to object</h2><p>You may object to processing based on legitimate interests. If you object to direct business development or marketing contact, we will stop that contact. For other objections, we will consider the request and explain the outcome.</p></section><section><h2>7 Retention</h2><p>Enquiry and early stage correspondence is normally kept for up to 24 months after the last meaningful contact, unless a relationship continues or there is another business or legal reason to keep it. Business, contract, accounting, and tax records are normally kept for at least six years where required under Irish law. Insurance, dispute, and engagement records may be kept for longer where needed for limitation, insurance, and risk management purposes.</p></section><section><h2>8 Sharing</h2><p>We do not sell personal data. We may share limited information only where reasonably needed with service providers and advisers, including Microsoft 365, Microsoft Teams and Bookings, meeting transcription and note taking services, website, domain, and security providers, approved collaborators or subcontractors, accountants, insurers, and professional advisers.</p></section><section><h2>9 International processing</h2><p>Some providers, including Microsoft, Cloudflare, and meeting transcription and note taking services, may process data outside the European Economic Area. Where transfer rules apply, this is handled through the provider terms and transfer safeguards available for those services. For client engagements, any specific transfer arrangements will be handled in the engagement terms where needed.</p></section><section><h2>10 Cookies and similar technologies</h2><p>This website does not use advertising cookies, marketing cookies, or analytics cookies, and it does not use browser analytics scripts. Because only necessary security cookies may be used, no cookie banner is shown.</p><p>Cloudflare may process technical, security, and delivery information to run and protect the site. It may also set a necessary security cookie, such as <code>cf_clearance</code>, where needed to check legitimate traffic, and avoid repeated security checks.</p></section><section><h2>11 Meetings and bookings</h2><p>Calls may be arranged by email, calendar invitation, Microsoft Teams, or Microsoft Bookings. Teams meeting links and booking pages are provided by Microsoft. Microsoft may use its own cookies and privacy controls when you use those services.</p><p>Some meetings use a transcription service to help with notes and follow-up. When it is in use, a visible notice appears in the meeting. The service processes the meeting audio to create a transcript and notes, but it does not retain an audio recording. Any transcript or notes we keep are handled under this notice, or under the relevant engagement terms for client work.</p><p>If you would prefer not to be transcribed, just let us know. Only provide the information needed to arrange the call or meeting. Other external links from this website, including LinkedIn, may also be governed by the relevant third party’s own privacy and cookie controls.</p></section><section><h2>12 Client engagements</h2><p>When OBRAVEN handles client personal data or project material as part of an engagement, that processing is governed by the engagement contract and, where needed, a separate data processing agreement. This website notice does not override engagement terms.</p></section><section><h2>13 Automated decisions</h2><p>We do not use website, meeting, booking, or enquiry information to make decisions about you by solely automated means where the decision would have a legal or similarly significant effect. We do not profile visitors through this website.</p></section><section><h2>14 Changes to this notice</h2><p>Material changes will be reflected on this page and the “Last updated” date will change accordingly.</p></section><section><h2>15 Website notice</h2><p>Content on this website is general information only. It is not technical, legal, financial, tax, or investment advice and is not a professional deliverable. Viewing the website, booking a call, joining a meeting, or sending an email does not create a client relationship. Any professional advice, deliverable, permitted use, or third party reliance requires a scoped written engagement with OBRAVEN Limited.</p></section></div></div></section></main>
+<footer class="site-footer">
+  <figure class="stripes"><svg class="stripes-svg" viewBox="0 0 100 10" preserveAspectRatio="none" role="img" aria-labelledby="stripes-t"><title id="stripes-t">Annual mean air temperature in County Wicklow, 1960 to 2025, one stripe per year; darker stripes are warmer years. The last decade averaged about 1.2 degrees warmer than the 1960s.</title><rect x="0.000" y="0" width="1.565" height="10" fill="#8B9BAF"><title>1960: 8.7 °C</title></rect><rect x="1.515" y="0" width="1.565" height="10" fill="#70839B"><title>1961: 9.0 °C</title></rect><rect x="3.030" y="0" width="1.565" height="10" fill="#EBEDF0"><title>1962: 7.7 °C</title></rect><rect x="4.545" y="0" width="1.565" height="10" fill="#EBEEF0"><title>1963: 7.5 °C</title></rect><rect x="6.061" y="0" width="1.565" height="10" fill="#9CAABB"><title>1964: 8.5 °C</title></rect><rect x="7.576" y="0" width="1.565" height="10" fill="#DDE1E6"><title>1965: 7.8 °C</title></rect><rect x="9.091" y="0" width="1.565" height="10" fill="#AAB5C4"><title>1966: 8.4 °C</title></rect><rect x="10.606" y="0" width="1.565" height="10" fill="#A2AFBE"><title>1967: 8.4 °C</title></rect><rect x="12.121" y="0" width="1.565" height="10" fill="#99A6B8"><title>1968: 8.6 °C</title></rect><rect x="13.636" y="0" width="1.565" height="10" fill="#AEB9C7"><title>1969: 8.3 °C</title></rect><rect x="15.152" y="0" width="1.565" height="10" fill="#909FB2"><title>1970: 8.6 °C</title></rect><rect x="16.667" y="0" width="1.565" height="10" fill="#6B7F98"><title>1971: 9.1 °C</title></rect><rect x="18.182" y="0" width="1.565" height="10" fill="#B1BCC9"><title>1972: 8.3 °C</title></rect><rect x="19.697" y="0" width="1.565" height="10" fill="#7E90A6"><title>1973: 8.8 °C</title></rect><rect x="21.212" y="0" width="1.565" height="10" fill="#A1AEBE"><title>1974: 8.5 °C</title></rect><rect x="22.727" y="0" width="1.565" height="10" fill="#70839C"><title>1975: 9.0 °C</title></rect><rect x="24.242" y="0" width="1.565" height="10" fill="#8091A7"><title>1976: 8.8 °C</title></rect><rect x="25.758" y="0" width="1.565" height="10" fill="#91A0B3"><title>1977: 8.6 °C</title></rect><rect x="27.273" y="0" width="1.565" height="10" fill="#8898AC"><title>1978: 8.7 °C</title></rect><rect x="28.788" y="0" width="1.565" height="10" fill="#D7DCE2"><title>1979: 7.9 °C</title></rect><rect x="30.303" y="0" width="1.565" height="10" fill="#9DAABB"><title>1980: 8.5 °C</title></rect><rect x="31.818" y="0" width="1.565" height="10" fill="#98A6B7"><title>1981: 8.6 °C</title></rect><rect x="33.333" y="0" width="1.565" height="10" fill="#7F91A7"><title>1982: 8.8 °C</title></rect><rect x="34.848" y="0" width="1.565" height="10" fill="#6A7E97"><title>1983: 9.1 °C</title></rect><rect x="36.364" y="0" width="1.565" height="10" fill="#8192A8"><title>1984: 8.8 °C</title></rect><rect x="37.879" y="0" width="1.565" height="10" fill="#C0C9D3"><title>1985: 8.1 °C</title></rect><rect x="39.394" y="0" width="1.565" height="10" fill="#E3E7EB"><title>1986: 7.8 °C</title></rect><rect x="40.909" y="0" width="1.565" height="10" fill="#A2AFBE"><title>1987: 8.4 °C</title></rect><rect x="42.424" y="0" width="1.565" height="10" fill="#7F91A7"><title>1988: 8.8 °C</title></rect><rect x="43.939" y="0" width="1.565" height="10" fill="#4C6381"><title>1989: 9.5 °C</title></rect><rect x="45.455" y="0" width="1.565" height="10" fill="#596F8B"><title>1990: 9.3 °C</title></rect><rect x="46.970" y="0" width="1.565" height="10" fill="#91A0B3"><title>1991: 8.6 °C</title></rect><rect x="48.485" y="0" width="1.565" height="10" fill="#8898AC"><title>1992: 8.7 °C</title></rect><rect x="50.000" y="0" width="1.565" height="10" fill="#9AA7B9"><title>1993: 8.5 °C</title></rect><rect x="51.515" y="0" width="1.565" height="10" fill="#7A8CA3"><title>1994: 8.9 °C</title></rect><rect x="53.030" y="0" width="1.565" height="10" fill="#516885"><title>1995: 9.4 °C</title></rect><rect x="54.545" y="0" width="1.565" height="10" fill="#A6B2C1"><title>1996: 8.4 °C</title></rect><rect x="56.061" y="0" width="1.565" height="10" fill="#4A6180"><title>1997: 9.5 °C</title></rect><rect x="57.576" y="0" width="1.565" height="10" fill="#546A87"><title>1998: 9.4 °C</title></rect><rect x="59.091" y="0" width="1.565" height="10" fill="#596F8B"><title>1999: 9.3 °C</title></rect><rect x="60.606" y="0" width="1.565" height="10" fill="#74879F"><title>2000: 8.9 °C</title></rect><rect x="62.121" y="0" width="1.565" height="10" fill="#8091A7"><title>2001: 8.8 °C</title></rect><rect x="63.636" y="0" width="1.565" height="10" fill="#536986"><title>2002: 9.4 °C</title></rect><rect x="65.152" y="0" width="1.565" height="10" fill="#596E8A"><title>2003: 9.3 °C</title></rect><rect x="66.667" y="0" width="1.565" height="10" fill="#5D728D"><title>2004: 9.3 °C</title></rect><rect x="68.182" y="0" width="1.565" height="10" fill="#596E8A"><title>2005: 9.3 °C</title></rect><rect x="69.697" y="0" width="1.565" height="10" fill="#49617F"><title>2006: 9.5 °C</title></rect><rect x="71.212" y="0" width="1.565" height="10" fill="#465D7C"><title>2007: 9.6 °C</title></rect><rect x="72.727" y="0" width="1.565" height="10" fill="#7D8FA5"><title>2008: 8.8 °C</title></rect><rect x="74.242" y="0" width="1.565" height="10" fill="#8091A7"><title>2009: 8.8 °C</title></rect><rect x="75.758" y="0" width="1.565" height="10" fill="#D3D9E0"><title>2010: 7.9 °C</title></rect><rect x="77.273" y="0" width="1.565" height="10" fill="#5A708C"><title>2011: 9.3 °C</title></rect><rect x="78.788" y="0" width="1.565" height="10" fill="#8696AB"><title>2012: 8.8 °C</title></rect><rect x="80.303" y="0" width="1.565" height="10" fill="#7B8DA4"><title>2013: 8.9 °C</title></rect><rect x="81.818" y="0" width="1.565" height="10" fill="#4C6381"><title>2014: 9.5 °C</title></rect><rect x="83.333" y="0" width="1.565" height="10" fill="#788AA2"><title>2015: 8.9 °C</title></rect><rect x="84.848" y="0" width="1.565" height="10" fill="#657993"><title>2016: 9.2 °C</title></rect><rect x="86.364" y="0" width="1.565" height="10" fill="#4D6482"><title>2017: 9.5 °C</title></rect><rect x="87.879" y="0" width="1.565" height="10" fill="#586E8A"><title>2018: 9.3 °C</title></rect><rect x="89.394" y="0" width="1.565" height="10" fill="#5D728D"><title>2019: 9.3 °C</title></rect><rect x="90.909" y="0" width="1.565" height="10" fill="#607590"><title>2020: 9.2 °C</title></rect><rect x="92.424" y="0" width="1.565" height="10" fill="#596E8A"><title>2021: 9.3 °C</title></rect><rect x="93.939" y="0" width="1.565" height="10" fill="#354E70"><title>2022: 9.8 °C</title></rect><rect x="95.455" y="0" width="1.565" height="10" fill="#1E3A5F"><title>2023: 10.1 °C</title></rect><rect x="96.970" y="0" width="1.565" height="10" fill="#3F5878"><title>2024: 9.6 °C</title></rect><rect x="98.485" y="0" width="1.565" height="10" fill="#2A4568"><title>2025: 9.9 °C</title></rect></svg><div class="stripes-years" aria-hidden="true"><span class="sy l" tabindex="-1"><span class="tip"><b>1960</b> 8.7&nbsp;°C</span></span><span class="sy l" tabindex="-1"><span class="tip"><b>1961</b> 9.0&nbsp;°C</span></span><span class="sy l" tabindex="-1"><span class="tip"><b>1962</b> 7.7&nbsp;°C</span></span><span class="sy l" tabindex="-1"><span class="tip"><b>1963</b> 7.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1964</b> 8.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1965</b> 7.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1966</b> 8.4&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1967</b> 8.4&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1968</b> 8.6&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1969</b> 8.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1970</b> 8.6&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1971</b> 9.1&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1972</b> 8.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1973</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1974</b> 8.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1975</b> 9.0&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1976</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1977</b> 8.6&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1978</b> 8.7&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1979</b> 7.9&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1980</b> 8.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1981</b> 8.6&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1982</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1983</b> 9.1&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1984</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1985</b> 8.1&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1986</b> 7.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1987</b> 8.4&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1988</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1989</b> 9.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1990</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1991</b> 8.6&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1992</b> 8.7&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1993</b> 8.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1994</b> 8.9&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1995</b> 9.4&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1996</b> 8.4&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1997</b> 9.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1998</b> 9.4&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>1999</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2000</b> 8.9&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2001</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2002</b> 9.4&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2003</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2004</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2005</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2006</b> 9.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2007</b> 9.6&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2008</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2009</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2010</b> 7.9&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2011</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2012</b> 8.8&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2013</b> 8.9&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2014</b> 9.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2015</b> 8.9&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2016</b> 9.2&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2017</b> 9.5&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2018</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2019</b> 9.3&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2020</b> 9.2&nbsp;°C</span></span><span class="sy" tabindex="-1"><span class="tip"><b>2021</b> 9.3&nbsp;°C</span></span><span class="sy r" tabindex="-1"><span class="tip"><b>2022</b> 9.8&nbsp;°C</span></span><span class="sy r" tabindex="-1"><span class="tip"><b>2023</b> 10.1&nbsp;°C</span></span><span class="sy r" tabindex="-1"><span class="tip"><b>2024</b> 9.6&nbsp;°C</span></span><span class="sy r" tabindex="-1"><span class="tip"><b>2025</b> 9.9&nbsp;°C</span></span></div></figure>
+  <div class="wrap">
+    <nav class="foot-nav" aria-label="Site contents">
+      <div><h2>Expertise</h2><ul>
+        <li><a href="expertise#measurement">Measurement strategy</a></li>
+        <li><a href="expertise#yield">Resource and energy yield</a></li>
+        <li><a href="expertise#review">Independent review</a></li>
+      </ul></div>
+      <div><h2>How OBRAVEN works</h2><ul>
+        <li><a href="how-obraven-works#start">Deliver, challenge, or lead</a></li>
+        <li><a href="how-obraven-works#checks">What sits behind an output</a></li>
+        <li><a href="how-obraven-works#routes">Appointed directly or in a team</a></li>
+        <li><a href="report-recipients">For report recipients</a></li>
+      </ul></div>
+      <div class="foot-insights"><h2>Insights</h2><ul>
+        <li><a href="insights/finance-stage-eya-iteration-50">The finance-stage EYA may be iteration 50</a></li><li><a href="insights/analytical-handover">The handover should preserve more than the final number</a></li><li><a href="insights/design-the-campaign">Design the campaign. The kit follows.</a></li>
+        <li><a class="all" href="insights">All Insights</a></li>
+      </ul></div>
+      <div><h2>About</h2><ul>
+        <li><a href="about#firm">The firm</a></li>
+        <li><a href="about#founder">Stan Herasymenko</a></li>
+        <li><a href="about#projects">Announced projects</a></li>
+        <li><a href="about#standards">Standards applied</a></li>
+      </ul></div>
+      <div><h2>Contact</h2><ul>
+        <li><a href="contact">Discuss a project</a></li>
+        <li><a href="https://www.obraven.com/book">Book a call</a></li>
+        <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#111;&#98;&#114;&#97;&#118;&#101;&#110;&#46;&#99;&#111;&#109;">&#104;&#101;&#108;&#108;&#111;&#64;&#111;&#98;&#114;&#97;&#118;&#101;&#110;&#46;&#99;&#111;&#109;</a></li>
+        <li><a href="https://www.linkedin.com/company/obraven/" rel="noopener noreferrer" target="_blank">OBRAVEN on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul></div>
+    </nav>
+    <div class="foot-base">
+      <div class="foot-brand">
+      <img decoding="async" class="foot-logo foot-logo--tag" src="assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-web.svg" alt="OBRAVEN – See further. Decide better." width="459" height="125" loading="lazy">
+      <img decoding="async" class="foot-logo foot-logo--plain" src="assets/brand/OBRAVEN-Logo-Primary-Light-v1.1-web.svg" alt="OBRAVEN" width="459" height="100" loading="lazy"><span class="foot-about foot-name"><button type="button" class="note-btn" popovertarget="note-name">About the name</button><span class="pop" id="note-name" popover role="note">OBRAVEN is a coined name, drawing on Ukrainian <i>obriy</i> (horizon) and <i>obrav</i> (chose). The line beneath the wordmark is the horizon; the gold point below the V marks the moment of clarity. Together they say: See further. Decide better. It sounds rather at home in Ireland, too.</span></span>
+      </div>
+      <div class="foot-imprint">
+      <p class="foot-prop">Measurement strategy, wind resource and energy yield analysis, and independent review for onshore and offshore projects.</p>
+      <div class="foot-legal">
+        <p><span class="c">©</span>&nbsp;2026 OBRAVEN Limited&nbsp;&nbsp;·&nbsp; Wind Measurement, Energy Yield &amp; Bankability Advisory&nbsp;&nbsp;·&nbsp; Registered in Ireland&nbsp;&nbsp;·&nbsp; <a class="nw" href="https://core.cro.ie/e-commerce/company/5774364" rel="noopener noreferrer" target="_blank">CRO 814152<span class="sr-only"> (opens in a new tab)</span></a>&nbsp;&nbsp;·&nbsp; <span class="nw">VAT IE4730997RH</span>&nbsp;&nbsp;·&nbsp; Registered office: 107 Viewmount, Rathdrum, <span class="nw">Co. Wicklow</span>, <span class="nw">A67 AT10</span>, Ireland</p>
+        <p>This website uses no advertising, marketing, or analytics cookies. Content is general information and does not constitute professional advice.&nbsp;&nbsp;<a href="privacy-legal">Privacy &amp; legal</a></p>
+        <p><span class="foot-about"><button type="button" class="note-btn" popovertarget="note-stripes">About the stripes above</button><span class="pop" id="note-stripes" popover role="note">One stripe a year: annual mean air temperature in Co. Wicklow, 1960–2025. Darker is warmer. Warmer air is thinner air, so the same wind carries slightly less power. Style after Ed Hawkins’ warming stripes.</span></span>&nbsp;&nbsp;·&nbsp; Figures and stripes: ERA5 reanalysis; contains modified <a href="https://climate.copernicus.eu/" rel="noopener noreferrer" target="_blank">Copernicus Climate Change Service<span class="sr-only"> (opens in a new tab)</span></a> information.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
 </html>

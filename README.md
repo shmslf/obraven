@@ -1,107 +1,40 @@
-# OBRAVEN
+# OBRAVEN website
 
-Independent wind measurement, bankability and owner-side advisory for utility-scale renewable energy projects.
+The public website of OBRAVEN Limited – Wind Measurement, Energy Yield & Bankability Advisory. Live at <https://www.obraven.com/>.
 
-Live site: <https://www.obraven.com/>
+OBRAVEN is an Ireland-registered advisory firm for wind projects: measurement strategy, wind resource and energy yield analysis, and independent review, onshore and offshore.
 
-## What this repository is
+## What is here
 
-This repository contains the static public website for **OBRAVEN Limited**, an Ireland-registered renewable energy advisory business.
+A static site: plain HTML and CSS, self-hosted fonts, and images. Version v2.21.4, 11 October 2026.
 
-The site is deliberately simple:
+| Page | Address |
+|---|---|
+| Home | <https://www.obraven.com/> |
+| Expertise – measurement, resource and yield, review and bankability | <https://www.obraven.com/expertise> |
+| How OBRAVEN works | <https://www.obraven.com/how-obraven-works> |
+| Insights – 8 articles | <https://www.obraven.com/insights> |
+| Insights feed (Atom) | <https://www.obraven.com/feed.xml> |
+| About – the firm, the founder, standards, company facts | <https://www.obraven.com/about> |
+| For report recipients | <https://www.obraven.com/report-recipients> |
+| Discuss a project | <https://www.obraven.com/contact> |
+| Privacy and legal | <https://www.obraven.com/privacy-legal> |
 
-- static HTML pages
-- local image and font assets
-- no analytics
-- no contact form
-- no externally hosted fonts
-- no non-essential cookies
-- public booking routed through `https://www.obraven.com/book`
-- privacy, cookies and website notice handled on `privacy-legal.html`
+## Privacy by construction
 
-## Public positioning
+- No JavaScript runs on any page. The only `<script>` elements are structured-data blocks for search engines, and the site's own security policy forbids script execution.
+- No analytics, no advertising or marketing cookies, no tracking, no contact form.
+- No requests to third parties: fonts, styles, and images are served from this site.
+- Contact is by email or by a booking link that the visitor chooses to open.
 
-OBRAVEN helps developers, investors and advisory teams decide what to measure, what evidence to commission or challenge, what to trust, and whether the technical and revenue case is robust enough for investment and finance decisions.
+Details: <https://www.obraven.com/privacy-legal>.
 
-The public site should stay focused on:
+## Using this repository
 
-- wind resource measurement strategy and evidence-procurement support
-- independent challenge of energy yield assumptions, loss factors and bankability logic
-- owner-side technical-commercial judgement at high-stakes project decision points
-- founder-led senior review by Stan Herasymenko
+The pages are generated and published as a whole. Please do not open pull requests against the HTML; changes made here would be overwritten by the next release. To report an error on the site, or to ask about anything in it, use the contact details at <https://www.obraven.com/contact>.
 
-## Repository structure
+## Copyright
 
-```text
-/
-├─ index.html
-├─ privacy-legal.html
-├─ README.md
-├─ .gitattributes
-├─ .gitignore
-├─ favicon.ico
-├─ favicon.svg
-├─ favicon-16x16.png
-├─ favicon-32x32.png
-├─ apple-touch-icon.png
-└─ assets/
-   ├─ brand/
-   │  ├─ OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg
-   │  ├─ obraven-social-card-1200x630.png
-   │  ├─ OBRAVEN-M365-Header-DarkNav-TransparentWhite-Final-800x192-v1.3-2026-04-26.png
-   │  └─ OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-Final-800x192-v1.3-2026-04-26.png
-   ├─ fonts/
-   │  ├─ inter/
-   │  └─ manrope/
-   ├─ images/
-   │  └─ obraven-founder-photo.jpg
-   └─ documents/
-      └─ maintenance notes and asset registers
-```
+© 2026 OBRAVEN Limited. All rights reserved. The text, figures, photographs, and the OBRAVEN name and logo may not be reused without written permission. The data figures contain modified Copernicus Climate Change Service information (ERA5 reanalysis); the fonts, Inter and Manrope, are used under the SIL Open Font License.
 
-## Booking route
-
-The public scheduling link is:
-
-```text
-https://www.obraven.com/book
-```
-
-This is a brand-owned Cloudflare 301 redirect to Microsoft Bookings. Do not use the raw Microsoft Bookings URL in public copy unless troubleshooting.
-
-## Privacy, cookies and legal notice
-
-The website avoids non-essential third-party dependencies. Fonts are self-hosted as WOFF2 files under `assets/fonts/`. This keeps typography local to `obraven.com` and avoids runtime browser requests to external font providers.
-
-The footer carries the company’s public statutory details and links to `privacy-legal.html`.
-
-The booking journey leaves the static website and enters Microsoft Bookings. Do not describe the full booking journey as cookie-free.
-
-Do not add maps, location widgets, address schema, Google Business Profile links, or other location-amplifying features to the public site without a deliberate decision.
-
-## Maintenance rules
-
-Before publishing changes:
-
-1. Keep the site static unless there is a strong reason not to.
-2. Do not add analytics, trackers, embedded widgets or third-party scripts casually.
-3. Do not commit client material, credentials, internal operating notes, screenshots, invoices or private OneDrive paths.
-4. Keep public copy aligned with the OBRAVEN positioning: specialist, decision-focused, bankability-aware, owner-side.
-5. Keep the footer consistent across `index.html` and `privacy-legal.html`.
-6. Keep the `Privacy & legal` footer item active, not linked, on `privacy-legal.html`.
-7. Keep the logo on `privacy-legal.html` linked back to `index.html`.
-8. Keep the website notice as a plain section, not a prominent warning or sales block.
-9. Test the four `/book` variants after any Cloudflare or DNS change:
-   - `https://obraven.com/book`
-   - `https://obraven.com/book/`
-   - `https://www.obraven.com/book`
-   - `https://www.obraven.com/book/`
-10. Test the live site in desktop Edge/Chrome and Android.
-11. Check that the browser Network panel shows no calls to Google Fonts, Calendly, analytics or other avoidable third parties.
-12. Check that no new non-essential cookies are set by the static site itself.
-
-## Rights
-
-© 2026 OBRAVEN Limited. All rights reserved.
-
-This repository is publicly visible for website hosting and transparency. No open-source licence is granted for OBRAVEN copy, brand assets, images, visual identity or business materials. Third-party font files remain subject to their own licences.
+OBRAVEN Limited is registered in Ireland, CRO 814152.

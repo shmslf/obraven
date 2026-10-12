@@ -1,82 +1,13 @@
 # OBRAVEN local web fonts
 
-Status: active  
-Date introduced: 2026-04-26  
-Purpose: privacy-conscious local typography for the static OBRAVEN website.
+Updated: 13 October 2026. Inter and Manrope are self-hosted WOFF2 fonts; visitors make no font requests to third-party services. Both families are distributed under the SIL Open Font License.
 
-## Decision
+## Fonts used by the current website
 
-The website self-hosts Inter and Manrope as WOFF2 files instead of loading Google Fonts at runtime.
+Inter: 400, 500 and 600 weights for body text and interface elements. Manrope: 700 and 800 weights for display text. The mappings are in `assets/css/site.css`; `font-display: swap` keeps text readable with the system fallback while a font loads.
 
-Rationale:
+## Compatibility files
 
-- avoids browser requests to third-party font domains
-- supports the website privacy stance
-- keeps typography stable under the `obraven.com` domain
-- preserves a clean fallback stack if web fonts fail
+`inter-latin-700-normal.woff2`, `manrope-latin-500-normal.woff2` and `manrope-latin-600-normal.woff2` are not requested by the current pages. Their existing public addresses are retained as compatibility resources until external consumers are resolved. They are not part of the current typography system. The current font list above is authoritative for this website.
 
-## Required files
-
-```text
-assets/fonts/inter/inter-latin-400-normal.woff2
-assets/fonts/inter/inter-latin-500-normal.woff2
-assets/fonts/inter/inter-latin-600-normal.woff2
-assets/fonts/inter/inter-latin-700-normal.woff2
-
-assets/fonts/manrope/manrope-latin-500-normal.woff2
-assets/fonts/manrope/manrope-latin-600-normal.woff2
-assets/fonts/manrope/manrope-latin-700-normal.woff2
-assets/fonts/manrope/manrope-latin-800-normal.woff2
-```
-
-## CSS mapping
-
-The `@font-face` blocks live inside `index.html`.
-
-Current families:
-
-```text
-Display: Manrope
-Body: Inter
-Fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
-```
-
-Current display policy:
-
-```css
-font-display: swap;
-```
-
-This means fallback text appears first if needed, then swaps to the downloaded local font. The failure mode is acceptable: the site remains readable in the fallback system font.
-
-## Source and licensing
-
-Source used for this local-font setup: Fontsource distributions for Inter and Manrope.
-
-Date recorded: 2026-04-26.
-
-Licensing note:
-
-- Inter is distributed under the SIL Open Font License.
-- Manrope is distributed under the SIL Open Font License.
-- Keep font licence notices if future exports include upstream licence files.
-
-## Future update script
-
-A future update script is stored at:
-
-```text
-scripts/download-fonts-from-fontsource.ps1
-```
-
-Do not run scripts from unknown sources. Review the script before use.
-
-## Test checklist
-
-After updating fonts:
-
-- Open the live site.
-- DevTools → Network → filter `font`.
-- Confirm WOFF2 files load from `www.obraven.com/assets/fonts/...`.
-- Confirm there are no calls to `fonts.googleapis.com` or `fonts.gstatic.com`.
-- Check desktop Edge/Chrome and Android.
+Font distributions: [Inter](https://fontsource.org/fonts/inter) and [Manrope](https://fontsource.org/fonts/manrope). This page documents the public assets; it contains no maintenance executable.

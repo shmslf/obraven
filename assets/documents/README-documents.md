@@ -1,25 +1,7 @@
-# Public-safe website documentation
+# Public website asset information
 
-Status: active  
-Date updated: 2026-04-26
+Updated: 13 October 2026.
 
-This folder is for public-safe documentation that supports maintenance of the website repository.
+The public asset information consists of the asset manifest and the brand, font and image descriptions. The website is static HTML and CSS, with self-hosted resources. Operating notes, authoring tools and historical development material are not part of the public site.
 
-Do include:
-
-- asset registers
-- font-source notes
-- website release notes
-- public-safe maintenance instructions
-
-Do not include:
-
-- client information
-- internal commercial strategy
-- private OneDrive paths
-- screenshots of admin portals
-- credentials
-- invoices or billing evidence
-- OS package internals unless intentionally public-safe
-
-The main operating source of truth for business systems remains Obsidian.
+For corrections or permission to reuse OBRAVEN material, use the contact page. Copyright and legal information are on the Privacy and legal page.

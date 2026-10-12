@@ -22,3 +22,37 @@ https://obraven.pages.dev/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 /assets/brand/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/
+  Cache-Control: no-transform
+/expertise
+  Cache-Control: no-transform
+/how-obraven-works
+  Cache-Control: no-transform
+/insights
+  Cache-Control: no-transform
+/about
+  Cache-Control: no-transform
+/report-recipients
+  Cache-Control: no-transform
+/contact
+  Cache-Control: no-transform
+/privacy-legal
+  Cache-Control: no-transform
+/insights/finance-stage-eya-iteration-50
+  Cache-Control: no-transform
+/insights/analytical-handover
+  Cache-Control: no-transform
+/insights/design-the-campaign
+  Cache-Control: no-transform
+/insights/measurement-efficient
+  Cache-Control: no-transform
+/insights/nearby-is-not-representative
+  Cache-Control: no-transform
+/insights/faster-tools-expand-the-search-space
+  Cache-Control: no-transform
+/insights/layout-change-cost-and-value
+  Cache-Control: no-transform
+/insights/same-availability-different-years
+  Cache-Control: no-transform
+/404.html
+  Cache-Control: no-transform

@@ -1,75 +1,23 @@
-# OBRAVEN website brand assets
+# OBRAVEN public brand assets
 
-Status: active  
-Date updated: 2026-04-26
+Updated: 13 October 2026.
 
-## Purpose
+## Website resources
 
-This folder holds public-safe brand assets needed by the OBRAVEN website and Microsoft 365 organisation theme.
+The website uses the web SVG derivatives `OBRAVEN-Logo-Primary-Light-v1.1-web.svg` and `OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-web.svg`. The primary mark appears in navigation; the tagline lockup appears on Home and in the footer. The 1200 × 630 PNG social card is the sharing preview.
 
-## Files in this export
+## Stable resources for other public surfaces
 
-```text
-OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg
-OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png
-OBRAVEN-M365-Header-DarkNav-TransparentWhite-Final-800x192-v1.1-2026-04-26.png
-OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-Final-800x192-v1.1-2026-04-26.png
-```
+The dated tagline SVG, crisp email-logo PNG and both Microsoft 365 transparent-white header PNGs keep their established addresses. These are shared brand resources, not obsolete website-page elements. Dated artwork is preserved; a revised design receives a new filename. Email and organisation-theme consumers require anonymously accessible HTTPS image addresses.
 
-## Website logo
+## Files
 
-Used in `index.html`:
+- `OBRAVEN-Logo-Primary-Light-v1.1-web.svg`
+- `OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg`
+- `OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-web.svg`
+- `OBRAVEN-Logo-email-source-899px-600dpi-crisp-v1.1-2026-04-26.png`
+- `OBRAVEN-M365-Header-DarkNav-TransparentWhite-800x192-v1.1-2026-04-26.png`
+- `OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-800x192-v1.1-2026-04-26.png`
+- `OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png`
 
-```html
-<img src="assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg">
-```
-
-## Social preview image
-
-Used in Open Graph and Twitter metadata:
-
-```text
-https://www.obraven.com/assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png
-```
-
-Generated from the current OBRAVEN SVG logo.
-
-Dimensions:
-
-```text
-1200 x 630 px
-```
-
-SHA-256:
-
-```text
-0f103642715a27739541b94f532b3b96ef5516c10346aa84fa181e13b0cced70
-```
-
-## Microsoft 365 theme header assets
-
-The Microsoft 365 theme currently uses the compact dark-nav transparent white logo.
-
-Final design judgement from testing:
-
-- transparent white wordmark works best on the dark Microsoft 365 navigation bar
-- white-tile versions looked like stickers
-- black wordmark versions were unsuitable for the dark nav
-- larger 800 x 192 exports improved perceived sharpness
-- internal whitespace was necessary to avoid the logo feeling too dominant
-
-Recommended Microsoft 365 theme colours:
-
-```text
-Navigation bar: #000000
-Text and icons: #FFFFFF
-Accent: #1E3A5F
-Logo on-click link: https://www.obraven.com
-```
-
-## Rules
-
-- Keep filename versions explicit.
-- Avoid overwriting live brand assets with the same filename.
-- Do not place experimental exports directly into production paths.
-- Use `_staging/` for tests and move only approved assets into `assets/brand/`.
+All assets use the OBRAVEN identity. The asset manifest records file sizes and checksums. Contact OBRAVEN before reusing artwork.

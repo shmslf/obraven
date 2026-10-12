@@ -1,32 +1,9 @@
 # OBRAVEN website images
 
-Status: active  
-Date updated: 2026-04-26
+Updated: 13 October 2026.
 
-## Current production image
+The current Home and About pages use `stan-herasymenko-portrait.webp`, an optimised web portrait of founder Stan Herasymenko. Its dimensions and alternative text are declared on the pages.
 
-```text
-assets/images/obraven-founder-photo.jpg
-```
+`obraven-founder-photo.jpg` is the current cropped founder headshot in JPEG format, retained at its established address for compatibility with external image consumers. It is byte-identical to the current approved cropped headshot; it is not the image requested by the website pages. Keeping a JPEG address avoids breaking older links and image readers.
 
-Used on the public website founder section.
-
-## Rules
-
-- Keep public website images under `assets/images/`.
-- Keep brand marks, logos, icons and social preview images under `assets/brand/`.
-- Optimise large images before publishing.
-- Do not commit raw photography exports unless there is a reason.
-- Do not commit screenshots, private evidence, client material or drafts to the public website repository.
-
-## Suggested future image variants
-
-Only create these when needed:
-
-```text
-assets/images/obraven-founder-photo-640.jpg
-assets/images/obraven-founder-photo-992.jpg
-assets/images/obraven-founder-photo-1365.jpg
-```
-
-If responsive images are added later, update `index.html` and this note together.
+Brand marks and social preview artwork are in the brand and social directories. Published figures are credited on their pages. Draft graphics, original photographic source files and private evidence are not published here.

@@ -1,52 +1,284 @@
 {
-  "package": "OBRAVEN-website-governance-update-2026-04-26",
-  "created": "2026-04-26",
-  "status": "proposed",
-  "purpose": "Website code, public README, asset documentation, and Obsidian operating-note updates.",
-  "public_site": "https://www.obraven.com/",
-  "public_booking_link": "https://www.obraven.com/book",
-  "folder_model": {
-    "root": "index.html, README.md, favicons, Git control files",
-    "assets/brand": "Website logo, social card, Microsoft 365 theme header assets",
-    "assets/images": "Founder and website imagery",
-    "assets/fonts": "Self-hosted WOFF2 fonts",
-    "assets/documents": "Public-safe maintenance notes and asset registers"
-  },
-  "assets_in_this_export": [
+  "status": "active",
+  "site_version": "v2.21.7",
+  "updated": "13 October 2026",
+  "public_url": "https://www.obraven.com/",
+  "assets": [
+    {
+      "path": "assets/brand/OBRAVEN-Logo-Primary-Light-v1.1-web.svg",
+      "bytes": 15320,
+      "sha256": "d44f7d6e80281eaf392d610f14cca3790b0368b66de75b600e742777f55f9bb8",
+      "role": "current public resource"
+    },
     {
       "path": "assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg",
-      "size_bytes": 15201,
-      "sha256": "bdb03749896632111b56d220dfdd07f52625ed63464300d1f7785ad87cfadc3b"
+      "bytes": 15201,
+      "sha256": "bdb03749896632111b56d220dfdd07f52625ed63464300d1f7785ad87cfadc3b",
+      "role": "current public resource"
     },
     {
-      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-Final-800x192-v1.3-2026-04-26.png",
-      "size_bytes": 7441,
-      "sha256": "bda2aaa24be7384a1370702a9cd5acd5a99e9641d9c29bbb8467454230fccb11"
+      "path": "assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-web.svg",
+      "bytes": 15332,
+      "sha256": "4cf1afca2f3b4be79941b98e045474a12c72f6e482375627d2509fdeda7686d7",
+      "role": "current public resource"
     },
     {
-      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-Final-800x192-v1.3-2026-04-26.png",
-      "size_bytes": 7797,
-      "sha256": "d10cb47816e351a6bcecc5684e29f2fffb92debe6f7fa223b6d4f5b29f167a2a"
+      "path": "assets/brand/OBRAVEN-Logo-email-source-899px-600dpi-crisp-v1.1-2026-04-26.png",
+      "bytes": 16570,
+      "sha256": "080ebb0ccb9fae08dc65b5a84fc3ba31a81aa477ae509f2fde818a81507399bc",
+      "role": "current public resource"
     },
     {
-      "path": "assets/brand/obraven-social-card-1200x630.png",
-      "size_bytes": 30131,
-      "sha256": "0f103642715a27739541b94f532b3b96ef5516c10346aa84fa181e13b0cced70"
+      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-800x192-v1.1-2026-04-26.png",
+      "bytes": 8215,
+      "sha256": "bf221bbaf1d9e38ac6f43483aa12774538d041e87bab8504333adf91c0b47cd2",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-800x192-v1.1-2026-04-26.png",
+      "bytes": 7935,
+      "sha256": "66159cb13e1f04041a8b3bf983c6e2fb4ec7e068b1091ac377ec53cab25ed159",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png",
+      "bytes": 31743,
+      "sha256": "f04db6a0535334865211adeced69f812ed0a228bf6d0d00aa3d950807c79e85f",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/brand/README-brand-assets.md",
+      "bytes": 1417,
+      "sha256": "c821d3d9122f6b3d0ad861be9a172524a34e263f233a023631d055230c0addff",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/css/site.css",
+      "bytes": 73576,
+      "sha256": "4c93aacf431c90129f2a7ada119d266e5458f9f3b92a6a6fb7a8c463456ac5f3",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/documents/README-documents.md",
+      "bytes": 487,
+      "sha256": "f10c2e184d31f86e8ca62894dbe5a5437347266026a0d79fdede799a24b2e042",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/analytical-chain.webp",
+      "bytes": 28162,
+      "sha256": "802229f18b88a7df140aaa5b40fbeb60f8508f23388e3b9c00113af9a499d459",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/availability-profile.webp",
+      "bytes": 43034,
+      "sha256": "8f845b02a432a32d0ab08120706fe253174d98482ec8a267c28ad2723ef4b83b",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/bankable-open-questions.webp",
+      "bytes": 28526,
+      "sha256": "878ae3d1457458ea8c396f6cc3f92d993f8a06d744e8a1ef59e645e2541013b8",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/campaign-kit-follows.webp",
+      "bytes": 92036,
+      "sha256": "cd3315be5b2bf31dd6fa5327bfdd9b71fb9154ec776cc76e8d0018536b45519e",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/campaign-signed-off.webp",
+      "bytes": 33644,
+      "sha256": "cb0456f54ffe8828d03252b01afecbdd15fa5bc06dea6b7d1cb130909fc3afb4",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/designed-backwards.webp",
+      "bytes": 34900,
+      "sha256": "e330a33c1d53ac5c44a8d3ba61b07fe1719d23530c44cb23ffccfbe4e76dfa92",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/evidence-before-needed.webp",
+      "bytes": 41386,
+      "sha256": "54ad3b18727c79ddc8ff0987ec51ace26a0e44029145ae7b68eac9920e30706d",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/first-49-matter.webp",
+      "bytes": 19580,
+      "sha256": "ffd56c450924daaa971f0f8cd3ce5bca687084bd9887da711ce7e1ae379939d3",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/handover.webp",
+      "bytes": 52972,
+      "sha256": "53cc68b8c1fd794b52e11028b75af9f1c38521f1c02307207b2609d0df562603",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/iteration-50.webp",
+      "bytes": 64838,
+      "sha256": "4344fd8ef39e616d73825d7b7aeb8f5c62df9de4628df02f255999cf5f3b9d88",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/layout-cost-value.webp",
+      "bytes": 44642,
+      "sha256": "67d3ffa7c37c9c1cce1b75b9cb29ce279095a174eae55b175b8e62680c7ae28f",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/measurement-efficient.webp",
+      "bytes": 73676,
+      "sha256": "4cf4d055cefad8129bee761c463b005279f7fab4fb6247d4bfabd46618c62509",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/nearby-representative.webp",
+      "bytes": 100882,
+      "sha256": "d7fd991ab90e5e9a78fded3dbc8596cf905bee052442c0a4a71e1ab52ac43980",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/option-space.webp",
+      "bytes": 59828,
+      "sha256": "1c91d5433d53430ead9abf96b43378c028f7b10a4ab313fbe06d8def7bb00a23",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/previous-question.webp",
+      "bytes": 35516,
+      "sha256": "213d3eff8d335e6b36b1647ae8ea14c0d708739d3be046f5be47be7e174b43cf",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/year-8760.png",
+      "bytes": 9187,
+      "sha256": "dacf26f3f4be2d89f318b3607c6adc138052202152e43e303c089e67ca50b3f4",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/fonts/README-fonts.md",
+      "bytes": 1106,
+      "sha256": "fbd3466df67fd86767270828f3c654f802d4cf28a7db61a47e7ebe425a6c23ef",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/fonts/inter/inter-latin-400-normal.woff2",
+      "bytes": 23664,
+      "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/fonts/inter/inter-latin-500-normal.woff2",
+      "bytes": 24272,
+      "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/fonts/inter/inter-latin-600-normal.woff2",
+      "bytes": 24452,
+      "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/fonts/inter/inter-latin-700-normal.woff2",
+      "bytes": 24356,
+      "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491",
+      "role": "compatibility"
+    },
+    {
+      "path": "assets/fonts/manrope/manrope-latin-500-normal.woff2",
+      "bytes": 14044,
+      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
+      "role": "compatibility"
+    },
+    {
+      "path": "assets/fonts/manrope/manrope-latin-600-normal.woff2",
+      "bytes": 14172,
+      "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593",
+      "role": "compatibility"
+    },
+    {
+      "path": "assets/fonts/manrope/manrope-latin-700-normal.woff2",
+      "bytes": 14212,
+      "sha256": "d2a12c85a831e4b5db341767d0347fa3d1361d22a1fcb3e361a16b6c90080f71",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/fonts/manrope/manrope-latin-800-normal.woff2",
+      "bytes": 13648,
+      "sha256": "74c161dbcbce7c3590803cc72dc1f63313c360e13367aba5075a7b7b3818ea49",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/images/README-images.md",
+      "bytes": 830,
+      "sha256": "2959e34ce29c4cec441754bb323fe862a684d692600992d4ece443c00b8f61f4",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/images/obraven-founder-photo.jpg",
+      "bytes": 334039,
+      "sha256": "7fcd50cfb4ef1fccfc6c146d2d5364ef4acb474ee5e42a7467a950d683a7991e",
+      "role": "compatibility"
+    },
+    {
+      "path": "assets/images/stan-herasymenko-portrait.webp",
+      "bytes": 63292,
+      "sha256": "99990d5bab398198b455b4dbcac182b5bbf8257b121cbc9a8c6d7a8c5ee943fe",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/analytical-handover.jpg",
+      "bytes": 34947,
+      "sha256": "3e832242be7b3e65ce83d6d9adf0e4c85b7416f0a01db4ec517c0c80378a4384",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/design-the-campaign.jpg",
+      "bytes": 27247,
+      "sha256": "74dd6dd911c63a83073cab469acd90402d9fc523516997d921f2c640df43a50a",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/faster-tools-expand-the-search-space.jpg",
+      "bytes": 38040,
+      "sha256": "97f1f93e3b91742230163b09e59e1c04370c65f426b2c4a208e650ec620a5c15",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/finance-stage-eya-iteration-50.jpg",
+      "bytes": 32698,
+      "sha256": "f712d4eb7a4bf642755a644b381057fb3e4517fecdb27348d3b0a1e36dd5aff2",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/layout-change-cost-and-value.jpg",
+      "bytes": 30138,
+      "sha256": "81b995f5f6f923b134a532dc507d2b79d733fd57cf997901fb804cff4404dcd4",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/measurement-efficient.jpg",
+      "bytes": 45560,
+      "sha256": "cd16abc9f00559de432d79f15a9bdb945892bdc168939c8dbdb7ab0bb6aac349",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/nearby-is-not-representative.jpg",
+      "bytes": 53793,
+      "sha256": "411e5ecd2a235ec1e32b9de6df7f2f474c1311df292d2c13dd7cbbdbb0c4cbcc",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/same-availability-different-years.jpg",
+      "bytes": 35870,
+      "sha256": "8a2f5bb265feb174cbdfedd575ac58451e7dfc6185549b74e9821dc1889f52a7",
+      "role": "current public resource"
     }
-  ],
-  "expected_font_files_not_included": [
-    "assets/fonts/inter/inter-latin-400-normal.woff2",
-    "assets/fonts/inter/inter-latin-500-normal.woff2",
-    "assets/fonts/inter/inter-latin-600-normal.woff2",
-    "assets/fonts/inter/inter-latin-700-normal.woff2",
-    "assets/fonts/manrope/manrope-latin-500-normal.woff2",
-    "assets/fonts/manrope/manrope-latin-600-normal.woff2",
-    "assets/fonts/manrope/manrope-latin-700-normal.woff2",
-    "assets/fonts/manrope/manrope-latin-800-normal.woff2"
-  ],
-  "notes": [
-    "Do not commit private OneDrive paths, client material, screenshots, credentials or OS-only notes to the public repository.",
-    "The social preview image was generated from the current OBRAVEN SVG logo as a 1200 x 630 PNG.",
-    "The Microsoft 365 header assets remain useful public assets because Microsoft 365 theme URLs need anonymous HTTPS access."
   ]
 }

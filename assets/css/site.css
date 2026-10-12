@@ -1,4 +1,4 @@
-/* OBRAVEN website v2.21.4 · © 2026 OBRAVEN Limited */
+/* OBRAVEN website v2.21.5 · © 2026 OBRAVEN Limited */
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-600-normal.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
@@ -651,6 +651,7 @@ h1{line-height:var(--lh-h1);letter-spacing:var(--ls-h1)}
 .article-head h1,.article-head .dek{margin-left:calc(13.5rem + var(--s5))}
 .article-head .crumbs,.article-head .article-meta{margin-left:calc(13.5rem + var(--s5))}
 .article-meta{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:var(--s2);border-top:1px solid var(--rule)}
+.page-head .article-meta{margin-top:var(--s2);padding-top:0;border-top:0}
 .margin{position:sticky;top:calc(var(--header-h) + 32px);align-self:start;font-size:var(--fs-small)}
 .toc{list-style:none;counter-reset:t;margin:0 0 var(--s4);border-top:1.5px solid var(--rule-strong)}
 .toc li{counter-increment:t;display:grid;grid-template-columns:1.5rem 1fr;padding:9px 0;border-bottom:1px solid var(--rule)}

@@ -1,6 +1,6 @@
 {
   "status": "active",
-  "site_version": "v2.21.7",
+  "site_version": "v2.21.8",
   "updated": "13 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
@@ -11,33 +11,9 @@
       "role": "current public resource"
     },
     {
-      "path": "assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-2026-04-24.svg",
-      "bytes": 15201,
-      "sha256": "bdb03749896632111b56d220dfdd07f52625ed63464300d1f7785ad87cfadc3b",
-      "role": "current public resource"
-    },
-    {
       "path": "assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-web.svg",
       "bytes": 15332,
       "sha256": "4cf1afca2f3b4be79941b98e045474a12c72f6e482375627d2509fdeda7686d7",
-      "role": "current public resource"
-    },
-    {
-      "path": "assets/brand/OBRAVEN-Logo-email-source-899px-600dpi-crisp-v1.1-2026-04-26.png",
-      "bytes": 16570,
-      "sha256": "080ebb0ccb9fae08dc65b5a84fc3ba31a81aa477ae509f2fde818a81507399bc",
-      "role": "current public resource"
-    },
-    {
-      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-800x192-v1.1-2026-04-26.png",
-      "bytes": 8215,
-      "sha256": "bf221bbaf1d9e38ac6f43483aa12774538d041e87bab8504333adf91c0b47cd2",
-      "role": "current public resource"
-    },
-    {
-      "path": "assets/brand/OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-800x192-v1.1-2026-04-26.png",
-      "bytes": 7935,
-      "sha256": "66159cb13e1f04041a8b3bf983c6e2fb4ec7e068b1091ac377ec53cab25ed159",
       "role": "current public resource"
     },
     {
@@ -48,14 +24,14 @@
     },
     {
       "path": "assets/brand/README-brand-assets.md",
-      "bytes": 1417,
-      "sha256": "c821d3d9122f6b3d0ad861be9a172524a34e263f233a023631d055230c0addff",
+      "bytes": 323,
+      "sha256": "21b6eea066ee044a4c14a99c43c5438282bd197df0bc1dea0a524a1089fdae6d",
       "role": "current public resource"
     },
     {
       "path": "assets/css/site.css",
       "bytes": 73576,
-      "sha256": "4c93aacf431c90129f2a7ada119d266e5458f9f3b92a6a6fb7a8c463456ac5f3",
+      "sha256": "3843db7ee2c6e4980c3a4fbbc22fa941f51003403526d09cc85cc13d4d0908e7",
       "role": "current public resource"
     },
     {
@@ -216,15 +192,9 @@
     },
     {
       "path": "assets/images/README-images.md",
-      "bytes": 830,
-      "sha256": "2959e34ce29c4cec441754bb323fe862a684d692600992d4ece443c00b8f61f4",
+      "bytes": 200,
+      "sha256": "941ff1bca85134e3bfed1e060ca16eb9e1946ef564bacc50fd657258dfaf54ab",
       "role": "current public resource"
-    },
-    {
-      "path": "assets/images/obraven-founder-photo.jpg",
-      "bytes": 334039,
-      "sha256": "7fcd50cfb4ef1fccfc6c146d2d5364ef4acb474ee5e42a7467a950d683a7991e",
-      "role": "compatibility"
     },
     {
       "path": "assets/images/stan-herasymenko-portrait.webp",

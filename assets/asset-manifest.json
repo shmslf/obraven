@@ -1,6 +1,6 @@
 {
   "status": "active",
-  "site_version": "v2.21.10",
+  "site_version": "v2.21.11",
   "updated": "13 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
@@ -36,8 +36,8 @@
     },
     {
       "path": "assets/css/site.css",
-      "bytes": 73577,
-      "sha256": "be91ba6105d53e47855906fe8ae2b45db9180d8a546cd7f7cbccffb077dee487",
+      "bytes": 74199,
+      "sha256": "bb0b6484d7cb8a77ac3023e67fec23ecf27d7b6bb730cc124f71bf3c17539366",
       "role": "current public resource"
     },
     {
@@ -144,8 +144,8 @@
     },
     {
       "path": "assets/fonts/README-fonts.md",
-      "bytes": 1093,
-      "sha256": "faa25060217f60c986b1e1c104bfed2fc584144b0a10c0c6b8276779d2c05483",
+      "bytes": 336,
+      "sha256": "26e424c7360965e84c205d24d13abebec062646ccc7f04290e58bbaf2df6b66f",
       "role": "current public resource"
     },
     {
@@ -165,24 +165,6 @@
       "bytes": 24452,
       "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
       "role": "current public resource"
-    },
-    {
-      "path": "assets/fonts/inter/inter-latin-700-normal.woff2",
-      "bytes": 24356,
-      "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491",
-      "role": "compatibility"
-    },
-    {
-      "path": "assets/fonts/manrope/manrope-latin-500-normal.woff2",
-      "bytes": 14044,
-      "sha256": "19874318747181a650eda439c37955220b849d9c4797c9e0718ee67d4bf929bc",
-      "role": "compatibility"
-    },
-    {
-      "path": "assets/fonts/manrope/manrope-latin-600-normal.woff2",
-      "bytes": 14172,
-      "sha256": "f7ac6258da20ab7541939b59851155753d1d24f1b30cbcb949077a3faa3d1593",
-      "role": "compatibility"
     },
     {
       "path": "assets/fonts/manrope/manrope-latin-700-normal.woff2",

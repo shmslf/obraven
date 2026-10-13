@@ -1,19 +1,19 @@
 {
   "status": "active",
-  "site_version": "v2.21.8",
+  "site_version": "v2.21.9",
   "updated": "13 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
     {
       "path": "assets/brand/OBRAVEN-Logo-Primary-Light-v1.1-web.svg",
-      "bytes": 15320,
-      "sha256": "d44f7d6e80281eaf392d610f14cca3790b0368b66de75b600e742777f55f9bb8",
+      "bytes": 15190,
+      "sha256": "e6fc48c0c5219c7300fab9423b632cf1a7325f5654931fa157543ced0b77e69d",
       "role": "current public resource"
     },
     {
       "path": "assets/brand/OBRAVEN-Logo-PrimaryWithTagline-Light-v1.1-web.svg",
-      "bytes": 15332,
-      "sha256": "4cf1afca2f3b4be79941b98e045474a12c72f6e482375627d2509fdeda7686d7",
+      "bytes": 15202,
+      "sha256": "528068088fd91b51059dd09117c409b73a06b62126d0e842e258ecc5cd01d353",
       "role": "current public resource"
     },
     {
@@ -24,20 +24,20 @@
     },
     {
       "path": "assets/brand/README-brand-assets.md",
-      "bytes": 323,
-      "sha256": "21b6eea066ee044a4c14a99c43c5438282bd197df0bc1dea0a524a1089fdae6d",
+      "bytes": 320,
+      "sha256": "14a3e9dea494ebaabf4c10444e11449823df3bd5d24c0efbefe908ea693b7473",
       "role": "current public resource"
     },
     {
       "path": "assets/css/site.css",
       "bytes": 73576,
-      "sha256": "3843db7ee2c6e4980c3a4fbbc22fa941f51003403526d09cc85cc13d4d0908e7",
+      "sha256": "a48755b5040761a7599ed1765352e127e0442cde31da05ba66346ccf5b1aa1b6",
       "role": "current public resource"
     },
     {
       "path": "assets/documents/README-documents.md",
-      "bytes": 487,
-      "sha256": "f10c2e184d31f86e8ca62894dbe5a5437347266026a0d79fdede799a24b2e042",
+      "bytes": 480,
+      "sha256": "93490f4389389564085436612c61e53e6bf862799f7059b24f6bcea38cafab51",
       "role": "current public resource"
     },
     {
@@ -138,8 +138,8 @@
     },
     {
       "path": "assets/fonts/README-fonts.md",
-      "bytes": 1106,
-      "sha256": "fbd3466df67fd86767270828f3c654f802d4cf28a7db61a47e7ebe425a6c23ef",
+      "bytes": 1093,
+      "sha256": "faa25060217f60c986b1e1c104bfed2fc584144b0a10c0c6b8276779d2c05483",
       "role": "current public resource"
     },
     {
@@ -192,8 +192,8 @@
     },
     {
       "path": "assets/images/README-images.md",
-      "bytes": 200,
-      "sha256": "941ff1bca85134e3bfed1e060ca16eb9e1946ef564bacc50fd657258dfaf54ab",
+      "bytes": 197,
+      "sha256": "a28a157ab43ffd81be053fb5780f98f743ec02128e934408f03f591c2686a533",
       "role": "current public resource"
     },
     {

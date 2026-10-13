@@ -1,6 +1,6 @@
 {
   "status": "active",
-  "site_version": "v2.21.9",
+  "site_version": "v2.21.10",
   "updated": "13 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
@@ -17,6 +17,12 @@
       "role": "current public resource"
     },
     {
+      "path": "assets/brand/OBRAVEN-Logo-email-source-899px-600dpi-crisp-v1.1-2026-04-26.png",
+      "bytes": 16570,
+      "sha256": "080ebb0ccb9fae08dc65b5a84fc3ba31a81aa477ae509f2fde818a81507399bc",
+      "role": "current public resource"
+    },
+    {
       "path": "assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png",
       "bytes": 31743,
       "sha256": "f04db6a0535334865211adeced69f812ed0a228bf6d0d00aa3d950807c79e85f",
@@ -24,14 +30,14 @@
     },
     {
       "path": "assets/brand/README-brand-assets.md",
-      "bytes": 320,
-      "sha256": "14a3e9dea494ebaabf4c10444e11449823df3bd5d24c0efbefe908ea693b7473",
+      "bytes": 717,
+      "sha256": "40772460385a9206deebc24d7f4db4de4027bd9837a65018ffe4a1e9fab3f495",
       "role": "current public resource"
     },
     {
       "path": "assets/css/site.css",
-      "bytes": 73576,
-      "sha256": "a48755b5040761a7599ed1765352e127e0442cde31da05ba66346ccf5b1aa1b6",
+      "bytes": 73577,
+      "sha256": "be91ba6105d53e47855906fe8ae2b45db9180d8a546cd7f7cbccffb077dee487",
       "role": "current public resource"
     },
     {

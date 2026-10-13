@@ -1,7 +1,7 @@
-# Public website asset information
+# Website documents and resource descriptions
 
-Updated: 13 October 2026.
+This directory describes intentionally published resources. Private operating notes, acquisition records, permission evidence and source packages are not public documents.
 
-The public asset information consists of the asset manifest and the brand, font and image descriptions. The website is static HTML and CSS, with self-hosted resources. Operating notes, authoring tools and historical development material are not part of the public site.
+The visitor-facing [Privacy and legal page](https://www.obraven.com/privacy-legal) includes [data and font credits](https://www.obraven.com/privacy-legal#credits). Full font notices are linked from the [font description](../fonts/README-fonts.md). See also [brand resources](../brand/README-brand-assets.md), [images](../images/README-images.md), the [resource inventory](../asset-manifest.json) and [website overview](../../README.md).
 
-For corrections or permission to reuse OBRAVEN material, use the contact page. Copyright and legal information are on the Privacy and legal page.
+All files served by the site are public, including descriptions and notices. A file need not be linked in navigation to be publicly accessible.

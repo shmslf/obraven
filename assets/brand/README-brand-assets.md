@@ -1,7 +1,14 @@
-# Website and hosted brand resources
+# Website brand resources
 
-Two web SVGs serve navigation and the Home/footer tagline lockup; the PNG social card serves website link-sharing previews.
+| Resource | Current purpose |
+|---|---|
+| Primary Light web SVG | Website header wordmark without tagline. |
+| Primary With Tagline Light web SVG | Website footer lock-up. |
+| Social Card Primary With Tagline PNG | Default sharing preview for pages without an article-specific card. |
+| Email-source crisp PNG | Publicly hosted company logo used by Microsoft Teams meeting invitations. |
 
-The crisp email-logo PNG is an intentional public hosting dependency for Teams meeting invitations. Its established HTTPS URL must remain available while invitations/configuration refer to it. The canonical original belongs in Brand assets; this exact deployment copy is required for recipients outside OBRAVEN. Invitation recipients need an anonymously accessible HTTPS image. Migrate and test consumers before retiring or moving this hosted copy.
+The hosted Teams image is an external consumer dependency, even though the same artwork has a canonical original elsewhere. Preserve its exact public filename and URL until the consumer is deliberately migrated and existing invitation compatibility is resolved. A local duplicate alone is not a reason to remove a hosted resource.
 
-The manifest records deployed sizes and checksums. Non-hosted artwork remains with its canonical owner.
+The web SVGs are website-specific exports. Dated master artwork is not silently overwritten. These resources are intentionally published; unrelated email/header exports are outside this website resource set.
+
+[Public inventory](../asset-manifest.json) · [Website overview](../../README.md).

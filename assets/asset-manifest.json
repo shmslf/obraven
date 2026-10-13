@@ -1,6 +1,6 @@
 {
   "status": "active",
-  "site_version": "v2.21.11",
+  "site_version": "v2.21.12",
   "updated": "13 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
@@ -30,20 +30,20 @@
     },
     {
       "path": "assets/brand/README-brand-assets.md",
-      "bytes": 717,
-      "sha256": "40772460385a9206deebc24d7f4db4de4027bd9837a65018ffe4a1e9fab3f495",
+      "bytes": 1041,
+      "sha256": "41bbbde20993b45df81078bd5e9c883ed999c463a4aecc85c240941e71c84396",
       "role": "current public resource"
     },
     {
       "path": "assets/css/site.css",
       "bytes": 74199,
-      "sha256": "bb0b6484d7cb8a77ac3023e67fec23ecf27d7b6bb730cc124f71bf3c17539366",
+      "sha256": "1a0fd69fdf71893ebc73baf2ffe8ae41ec452e56e7aa80e4df34dae98fb89c30",
       "role": "current public resource"
     },
     {
       "path": "assets/documents/README-documents.md",
-      "bytes": 480,
-      "sha256": "93490f4389389564085436612c61e53e6bf862799f7059b24f6bcea38cafab51",
+      "bytes": 802,
+      "sha256": "4372d6e6764b25b0c7c6ff869b7355225058a5e32781484b87646f5ea8a4ef44",
       "role": "current public resource"
     },
     {
@@ -144,8 +144,14 @@
     },
     {
       "path": "assets/fonts/README-fonts.md",
-      "bytes": 336,
-      "sha256": "26e424c7360965e84c205d24d13abebec062646ccc7f04290e58bbaf2df6b66f",
+      "bytes": 1220,
+      "sha256": "ca96ce0ee68779ced0d3956049764d3445bfe5262b3754ca15389df7eb01ff8f",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/fonts/inter/LICENSE.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
       "role": "current public resource"
     },
     {
@@ -167,6 +173,12 @@
       "role": "current public resource"
     },
     {
+      "path": "assets/fonts/manrope/LICENSE.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "role": "current public resource"
+    },
+    {
       "path": "assets/fonts/manrope/manrope-latin-700-normal.woff2",
       "bytes": 14212,
       "sha256": "d2a12c85a831e4b5db341767d0347fa3d1361d22a1fcb3e361a16b6c90080f71",
@@ -180,8 +192,8 @@
     },
     {
       "path": "assets/images/README-images.md",
-      "bytes": 197,
-      "sha256": "a28a157ab43ffd81be053fb5780f98f743ec02128e934408f03f591c2686a533",
+      "bytes": 636,
+      "sha256": "23e948571555a6f3df0a80178d1396706a00d1784705075259317da3aa49588f",
       "role": "current public resource"
     },
     {

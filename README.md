@@ -6,7 +6,7 @@ OBRAVEN is an Ireland-registered advisory firm for wind projects: measurement st
 
 ## What is here
 
-A static site: plain HTML and CSS, self-hosted fonts, and images. Version v2.21.11, 13 October 2026.
+A static site: plain HTML and CSS, self-hosted fonts, and images. Version v2.21.12, 13 October 2026.
 
 | Page | Address |
 |---|---|
@@ -35,6 +35,8 @@ The pages are generated and published as a whole. Please do not open pull reques
 
 ## Copyright
 
-© 2026 OBRAVEN Limited. All rights reserved. The text, figures, photographs, and the OBRAVEN name and logo may not be reused without written permission. The data figures contain modified Copernicus Climate Change Service information (ERA5 reanalysis); the fonts, Inter and Manrope, are used under the SIL Open Font License.
+© 2026 OBRAVEN Limited. The OBRAVEN name and logo and original website content may not be reused without permission. Third-party fonts and data retain their own licence terms; this notice does not restrict rights granted by those licences. Data and font credits: <https://www.obraven.com/privacy-legal#credits>.
+
+Public resource descriptions: [brand assets](assets/brand/README-brand-assets.md), [fonts](assets/fonts/README-fonts.md), [images](assets/images/README-images.md), and [documents](assets/documents/README-documents.md). The [asset inventory](assets/asset-manifest.json) records published resource paths, sizes and checksums.
 
 OBRAVEN Limited is registered in Ireland, CRO 814152.

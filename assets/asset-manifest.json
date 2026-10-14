@@ -1,6 +1,6 @@
 {
   "status": "active",
-  "site_version": "v2.21.15",
+  "site_version": "v2.21.16",
   "updated": "14 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
@@ -37,7 +37,7 @@
     {
       "path": "assets/css/site.css",
       "bytes": 75834,
-      "sha256": "6940d829534b56ad39d1aa1d1013063a75bf594cf508596511ed97a20ca68e46",
+      "sha256": "485eaecafd0a7535d0442f1db28beda5daa7d2fb580cdd59d958a6ef7d7e5971",
       "role": "current public resource"
     },
     {
@@ -138,8 +138,8 @@
     },
     {
       "path": "assets/figures/year-8760.png",
-      "bytes": 9187,
-      "sha256": "dacf26f3f4be2d89f318b3607c6adc138052202152e43e303c089e67ca50b3f4",
+      "bytes": 9177,
+      "sha256": "689b7881574113083113a42c0566fec1794770c4affb642ea6687041df85e3dd",
       "role": "current public resource"
     },
     {

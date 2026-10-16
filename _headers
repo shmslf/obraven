@@ -23,3 +23,5 @@ https://obraven.pages.dev/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 /assets/brand/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/hosted-for/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800

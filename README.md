@@ -6,7 +6,7 @@ OBRAVEN is an Ireland-registered advisory firm for wind projects: measurement st
 
 ## What is here
 
-A static site: plain HTML and CSS, self-hosted fonts, and images. Version v2.21.17, 14 October 2026.
+A static site: plain HTML and CSS, self-hosted fonts, and images. Version 2.21.18, 16 October 2026.
 
 | Page | Address |
 |---|---|
@@ -35,8 +35,8 @@ The pages are generated and published as a whole. Please do not open pull reques
 
 ## Copyright
 
-© 2026 OBRAVEN Limited. The OBRAVEN name and logo and original website content may not be reused without permission. Third-party fonts and data retain their own licence terms; this notice does not restrict rights granted by those licences. Data and font credits: <https://www.obraven.com/privacy-legal#credits>.
+© 2026 OBRAVEN Limited. The OBRAVEN name, logo, and original website content may not be reused without permission. Third-party fonts and data retain their own licence terms; this notice does not restrict rights granted by those licences. Data and font credits: <https://www.obraven.com/privacy-legal#credits>.
 
-Public resource descriptions: [brand assets](assets/brand/README-brand-assets.md), [fonts](assets/fonts/README-fonts.md), [images](assets/images/README-images.md), and [documents](assets/documents/README-documents.md). The [asset inventory](assets/asset-manifest.json) records published resource paths, sizes and checksums.
+What the files are: [brand](assets/brand/README-brand-assets.md), [fonts](assets/fonts/README-fonts.md), and [images](assets/images/README-images.md). The logos in OBRAVEN's [Microsoft 365 apps](hosted-for/microsoft-365-theme/README.md) and [Teams meeting invitations](hosted-for/teams-meeting-invitations/README.md) are served from `hosted-for`. The [asset inventory](assets/asset-manifest.json) lists every published file with its size and checksum.
 
 OBRAVEN Limited is registered in Ireland, CRO 814152.

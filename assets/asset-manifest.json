@@ -1,7 +1,7 @@
 {
   "status": "active",
-  "site_version": "v2.21.17",
-  "updated": "14 October 2026",
+  "site_version": "v2.21.18",
+  "updated": "16 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
     {
@@ -17,12 +17,6 @@
       "role": "current public resource"
     },
     {
-      "path": "assets/brand/OBRAVEN-Logo-email-source-899px-600dpi-crisp-v1.1-2026-04-26.png",
-      "bytes": 16570,
-      "sha256": "080ebb0ccb9fae08dc65b5a84fc3ba31a81aa477ae509f2fde818a81507399bc",
-      "role": "current public resource"
-    },
-    {
       "path": "assets/brand/OBRAVEN-SocialCard-PrimaryWithTagline-1200x630-Light-v1.1-2026-04-24.png",
       "bytes": 31743,
       "sha256": "f04db6a0535334865211adeced69f812ed0a228bf6d0d00aa3d950807c79e85f",
@@ -30,20 +24,14 @@
     },
     {
       "path": "assets/brand/README-brand-assets.md",
-      "bytes": 1041,
-      "sha256": "41bbbde20993b45df81078bd5e9c883ed999c463a4aecc85c240941e71c84396",
+      "bytes": 319,
+      "sha256": "8ffaa4549a44b590a7bfe36738921d437acaf36ff622230289ab2701d29c94c7",
       "role": "current public resource"
     },
     {
       "path": "assets/css/site.css",
       "bytes": 75834,
-      "sha256": "981fc11058949a0868e8f5d5d749e5b1fc79fad0af5dc0f88f9afd0dfc55fb4f",
-      "role": "current public resource"
-    },
-    {
-      "path": "assets/documents/README-documents.md",
-      "bytes": 802,
-      "sha256": "4372d6e6764b25b0c7c6ff869b7355225058a5e32781484b87646f5ea8a4ef44",
+      "sha256": "f783b3892018b07c1fab24fc3a1bd11671118df76015bde77954ba820fff5d34",
       "role": "current public resource"
     },
     {
@@ -71,27 +59,9 @@
       "role": "current public resource"
     },
     {
-      "path": "assets/figures/campaign-signed-off.webp",
-      "bytes": 33644,
-      "sha256": "cb0456f54ffe8828d03252b01afecbdd15fa5bc06dea6b7d1cb130909fc3afb4",
-      "role": "current public resource"
-    },
-    {
       "path": "assets/figures/designed-backwards.webp",
       "bytes": 34900,
       "sha256": "e330a33c1d53ac5c44a8d3ba61b07fe1719d23530c44cb23ffccfbe4e76dfa92",
-      "role": "current public resource"
-    },
-    {
-      "path": "assets/figures/evidence-before-needed.webp",
-      "bytes": 41386,
-      "sha256": "54ad3b18727c79ddc8ff0987ec51ace26a0e44029145ae7b68eac9920e30706d",
-      "role": "current public resource"
-    },
-    {
-      "path": "assets/figures/first-49-matter.webp",
-      "bytes": 19580,
-      "sha256": "ffd56c450924daaa971f0f8cd3ce5bca687084bd9887da711ce7e1ae379939d3",
       "role": "current public resource"
     },
     {
@@ -131,12 +101,6 @@
       "role": "current public resource"
     },
     {
-      "path": "assets/figures/previous-question.webp",
-      "bytes": 35516,
-      "sha256": "213d3eff8d335e6b36b1647ae8ea14c0d708739d3be046f5be47be7e174b43cf",
-      "role": "current public resource"
-    },
-    {
       "path": "assets/figures/year-8760.png",
       "bytes": 9177,
       "sha256": "689b7881574113083113a42c0566fec1794770c4affb642ea6687041df85e3dd",
@@ -144,8 +108,8 @@
     },
     {
       "path": "assets/fonts/README-fonts.md",
-      "bytes": 1220,
-      "sha256": "ca96ce0ee68779ced0d3956049764d3445bfe5262b3754ca15389df7eb01ff8f",
+      "bytes": 750,
+      "sha256": "455c7762b674f58ab0ccd3a00650cfb2fd1265a2903316b9171922ec16643252",
       "role": "current public resource"
     },
     {
@@ -192,8 +156,8 @@
     },
     {
       "path": "assets/images/README-images.md",
-      "bytes": 636,
-      "sha256": "23e948571555a6f3df0a80178d1396706a00d1784705075259317da3aa49588f",
+      "bytes": 251,
+      "sha256": "32ae11e563929c28e5d3d745c000420e160bda42e46ebf4463ecc52bdbd81bc1",
       "role": "current public resource"
     },
     {
@@ -248,6 +212,36 @@
       "path": "assets/social/same-availability-different-years.jpg",
       "bytes": 35870,
       "sha256": "8a2f5bb265feb174cbdfedd575ac58451e7dfc6185549b74e9821dc1889f52a7",
+      "role": "current public resource"
+    },
+    {
+      "path": "hosted-for/microsoft-365-theme/OBRAVEN-M365-Header-DarkNav-TransparentWhite-800x192-v1.1-2026-04-26.png",
+      "bytes": 8215,
+      "sha256": "bf221bbaf1d9e38ac6f43483aa12774538d041e87bab8504333adf91c0b47cd2",
+      "role": "current public resource"
+    },
+    {
+      "path": "hosted-for/microsoft-365-theme/OBRAVEN-M365-Header-DarkNav-TransparentWhite-Compact-800x192-v1.1-2026-04-26.png",
+      "bytes": 7935,
+      "sha256": "66159cb13e1f04041a8b3bf983c6e2fb4ec7e068b1091ac377ec53cab25ed159",
+      "role": "current public resource"
+    },
+    {
+      "path": "hosted-for/microsoft-365-theme/README.md",
+      "bytes": 282,
+      "sha256": "c9dee3b67330c57c6b05769e34e5343249efad1f4cdcd313c6cba47e5f51da61",
+      "role": "current public resource"
+    },
+    {
+      "path": "hosted-for/teams-meeting-invitations/OBRAVEN-Logo-email-source-899px-600dpi-crisp-v1.1-2026-04-26.png",
+      "bytes": 16570,
+      "sha256": "080ebb0ccb9fae08dc65b5a84fc3ba31a81aa477ae509f2fde818a81507399bc",
+      "role": "current public resource"
+    },
+    {
+      "path": "hosted-for/teams-meeting-invitations/README.md",
+      "bytes": 198,
+      "sha256": "b1697d85e44b5eca8fad3de30418b50d36dc05f582ee80587439b7df84c2aba1",
       "role": "current public resource"
     }
   ]

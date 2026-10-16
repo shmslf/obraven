@@ -1,4 +1,4 @@
-/* OBRAVEN website v2.21.18 · © 2026 OBRAVEN Limited */
+/* OBRAVEN website v2.21.19 · © 2026 OBRAVEN Limited */
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-600-normal.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
@@ -1029,5 +1029,8 @@ h2.eyebrow{font-size:var(--fs-eyebrow);font-weight:800;line-height:1.4;letter-sp
  .foot-legal p:first-child{grid-row:2}
  .foot-legal p:last-child{grid-row:3}
 }}
+.error-figure{margin:0;width:100%}
+.error-figure .error-route-graphic{width:min(100%,20rem)}
+.error-figure figcaption{max-width:20rem;margin:var(--s2) auto 0;font-size:var(--fs-xs);color:var(--navy);line-height:1.5}
 .y8760-sun--rise{top:27.0%}
 .y8760-sun--set{top:70.7%}

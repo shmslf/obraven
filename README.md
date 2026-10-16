@@ -6,7 +6,7 @@ OBRAVEN is an Ireland-registered advisory firm for wind projects: measurement st
 
 ## What is here
 
-A static site: plain HTML and CSS, self-hosted fonts, and images. Version 2.21.18, 16 October 2026.
+A static site: plain HTML and CSS, self-hosted fonts, and images. Version 2.21.19, 16 October 2026.
 
 | Page | Address |
 |---|---|

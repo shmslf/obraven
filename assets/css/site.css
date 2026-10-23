@@ -1,4 +1,4 @@
-/* OBRAVEN website v2.21.21 · © 2026 OBRAVEN Limited */
+/* OBRAVEN website v2.21.22 · © 2026 OBRAVEN Limited */
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
 @font-face{font-family:"Inter";src:url("../fonts/inter/inter-latin-600-normal.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
@@ -633,7 +633,9 @@ h1{line-height:var(--lh-h1);letter-spacing:var(--ls-h1)}
 .fp-copy h2{font-size:clamp(1.6rem,1.2rem + 1.4vw,2.4rem);line-height:1.12;margin:var(--s2) 0 var(--s2);transition:color .2s var(--ease)}
 .fp-copy .dek{font-size:var(--fs-lead);color:var(--navy);font-weight:500;line-height:1.5;margin:0}
 .fp-copy .more{margin-top:var(--s3)}
-.fp-side{list-style:none;border-left:1px solid var(--rule);padding-left:var(--s4)}
+.fp-newest{border-left:1px solid var(--rule);padding-left:var(--s4)}
+.fp-newest .fp-label{margin-top:0}
+.fp-side{list-style:none}
 .fp-item{padding-block:var(--s3);border-bottom:1px solid var(--rule)}
 .fp-item:first-child{padding-top:0}
 .fp-item:last-child{border-bottom:0}
@@ -644,7 +646,7 @@ h1{line-height:var(--lh-h1);letter-spacing:var(--ls-h1)}
 .fp-label{font-size:var(--fs-eyebrow);font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);margin:var(--s5) 0 var(--s2)}
 .fp-list{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--s5)}
 .fp-row{padding-block:var(--s3);border-top:1px solid var(--rule)}
-@media (max-width:1024px){.fp-top{grid-template-columns:1fr}.fp-side{border-left:0;padding-left:0;margin-top:var(--s4);border-top:1px solid var(--rule)}.fp-item:first-child{padding-top:var(--s3)}}
+@media (max-width:1024px){.fp-top{grid-template-columns:1fr}.fp-newest{border-left:0;padding-left:0;margin-top:var(--s4);border-top:1px solid var(--rule);padding-top:var(--s4)}.fp-item:first-child{padding-top:var(--s3)}}
 @media (max-width:640px){.fp-lead{grid-template-columns:1fr}.fp-img{aspect-ratio:16/10}.fp-list{grid-template-columns:1fr}}
 .article .wrap.article-grid{max-width:calc(1120px + 2*var(--gutter));display:grid;grid-template-columns:13.5rem minmax(0,1fr);gap:var(--s5)}
 .article-head .wrap{max-width:calc(1120px + 2*var(--gutter))}

@@ -6,14 +6,14 @@ OBRAVEN is an Ireland-registered advisory firm for wind projects: measurement st
 
 ## What is here
 
-A static site: plain HTML and CSS, self-hosted fonts, and images. Version 2.21.21, 16 October 2026.
+A static site: plain HTML and CSS, self-hosted fonts, and images. Version 2.21.22, 23 October 2026.
 
 | Page | Address |
 |---|---|
 | Home | <https://www.obraven.com/> |
 | Expertise – measurement, resource and yield, review and bankability | <https://www.obraven.com/expertise> |
 | How OBRAVEN works | <https://www.obraven.com/how-obraven-works> |
-| Insights – 8 articles | <https://www.obraven.com/insights> |
+| Insights – 9 articles | <https://www.obraven.com/insights> |
 | Insights feed (Atom) | <https://www.obraven.com/feed.xml> |
 | About – the firm, the founder, standards, company facts | <https://www.obraven.com/about> |
 | For report recipients | <https://www.obraven.com/report-recipients> |

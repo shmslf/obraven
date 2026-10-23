@@ -18,10 +18,11 @@ Facts that are safe to repeat: OBRAVEN Limited is registered in Ireland (CRO 814
 - [The handover should preserve more than the final number](https://www.obraven.com/insights/analytical-handover): Model files show what was run. They do not always show why. Reproducible analysis is a commercial asset when a project is sold, financed, or reviewed.
 - [Design the campaign. The kit follows.](https://www.obraven.com/insights/design-the-campaign): A good wind measurement campaign is designed backwards from what the project will need from it. Then the equipment list starts to make sense.
 - [Measurement-efficient, not measurement-free](https://www.obraven.com/insights/measurement-efficient): Model-only bankability in wind is an attractive idea. For lender reliance today, the practical direction is narrower: measured data where it matters.
-- [Nearby is not the same as representative](https://www.obraven.com/insights/nearby-is-not-representative): “There is wind data nearby” is a useful start. Whether it represents your turbines and your hub height is a different question.
+- [Cleaning iced met mast data: the decisions that change the energy yield](https://www.obraven.com/insights/cleaning-iced-met-mast-data): Icing turns met mast cleaning into a judgement call. Most of those calls barely touch the energy yield; a few change it, and you can test which.
 - [Faster tools expand the search space](https://www.obraven.com/insights/faster-tools-expand-the-search-space): Running more layouts, turbines, and constraint cases has got much easier. Knowing what the spread across them means has not.
-- [A layout change can save cost and still lose value](https://www.obraven.com/insights/layout-change-cost-and-value): Wind project value often sits between disciplines. A turbine move that helps civil design may quietly cost generation.
 - [Same 95% availability. Very different years.](https://www.obraven.com/insights/same-availability-different-years): A single long-term availability assumption is usually right for the energy estimate. In a year-by-year financial model, the timing can matter.
+- [Nearby is not the same as representative](https://www.obraven.com/insights/nearby-is-not-representative): “There is wind data nearby” is a useful start. Whether it represents your turbines and your hub height is a different question.
+- [A layout change can save cost and still lose value](https://www.obraven.com/insights/layout-change-cost-and-value): Wind project value often sits between disciplines. A turbine move that helps civil design may quietly cost generation.
 
 ## Optional
 

@@ -1,6 +1,6 @@
 {
   "status": "active",
-  "site_version": "v2.21.24",
+  "site_version": "v2.21.25",
   "updated": "13 November 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
@@ -31,7 +31,7 @@
     {
       "path": "assets/css/site.css",
       "bytes": 76232,
-      "sha256": "3b4d373ac73d74ca31cac18f0db1b2101e16c625594ebadcb6cc470f198b2de5",
+      "sha256": "c1cbd44397290a58270451055bf4595f80fd23cd84a31a556b5073c352c07b1c",
       "role": "current public resource"
     },
     {
@@ -68,6 +68,12 @@
       "path": "assets/figures/designed-backwards.webp",
       "bytes": 34900,
       "sha256": "e330a33c1d53ac5c44a8d3ba61b07fe1719d23530c44cb23ffccfbe4e76dfa92",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/figures/dispatch-down-in-the-yield-case.webp",
+      "bytes": 92422,
+      "sha256": "b046aff963f82c21afeccc9567270d32f235e608ff5d764f3b7ff9579a693f3f",
       "role": "current public resource"
     },
     {
@@ -188,6 +194,12 @@
       "path": "assets/social/design-the-campaign.jpg",
       "bytes": 27247,
       "sha256": "74dd6dd911c63a83073cab469acd90402d9fc523516997d921f2c640df43a50a",
+      "role": "current public resource"
+    },
+    {
+      "path": "assets/social/dispatch-down-in-the-yield-case.jpg",
+      "bytes": 43978,
+      "sha256": "064a0ca08147e8db0188d6f80f90649e42f4a78802fbb0c31484dcf33da8530c",
       "role": "current public resource"
     },
     {

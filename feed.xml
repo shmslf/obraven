@@ -5,9 +5,18 @@
   <link href="https://www.obraven.com/insights"/>
   <link rel="self" type="application/atom+xml" href="https://www.obraven.com/feed.xml"/>
   <id>https://www.obraven.com/insights</id>
-  <updated>2026-10-15T00:00:00Z</updated>
+  <updated>2026-11-02T00:00:00Z</updated>
   <author><name>Stan Herasymenko</name><uri>https://www.obraven.com/about</uri></author>
   <rights>© 2026 OBRAVEN Limited</rights>
+  <entry>
+    <title>Is dispatch-down in your P50?</title>
+    <link href="https://www.obraven.com/insights/dispatch-down-in-the-yield-case"/>
+    <id>https://www.obraven.com/insights/dispatch-down-in-the-yield-case</id>
+    <published>2026-11-02T00:00:00Z</published>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <category term="Energy yield"/>
+    <summary>The Irish grid turns down part of what a wind farm could produce. Where the yield report puts that loss decides whether it is counted once, twice or not at all.</summary>
+  </entry>
   <entry>
     <title>Cleaning iced met mast data: the decisions that change the energy yield</title>
     <link href="https://www.obraven.com/insights/cleaning-iced-met-mast-data"/>

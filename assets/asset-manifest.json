@@ -1,6 +1,6 @@
 {
   "status": "active",
-  "site_version": "v2.21.23",
+  "site_version": "v2.21.24",
   "updated": "23 October 2026",
   "public_url": "https://www.obraven.com/",
   "assets": [
@@ -30,8 +30,8 @@
     },
     {
       "path": "assets/css/site.css",
-      "bytes": 76208,
-      "sha256": "210c1625ea18a503fc9a4763efeef7b08a744e6f116eb95f1cfdd4dc87b219f1",
+      "bytes": 76232,
+      "sha256": "3b4d373ac73d74ca31cac18f0db1b2101e16c625594ebadcb6cc470f198b2de5",
       "role": "current public resource"
     },
     {
